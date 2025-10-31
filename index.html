@@ -2,13 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <title>Mapa GPON – Rutas y Postes Ventanilla</title>
+  <title>Mapa GPON – Ventanilla</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Estilos de Leaflet -->
+
+  <!-- Estilos y scripts de Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  
-  <!-- Scripts principales -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
 
@@ -18,6 +16,34 @@
       margin: 0;
       padding: 0;
     }
+    /* Estilo de la leyenda */
+    .legend {
+      background: white;
+      padding: 10px 14px;
+      line-height: 1.5em;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    }
+    .legend h4 {
+      margin: 0 0 6px 0;
+      font-size: 14px;
+      text-align: center;
+      color: #333;
+    }
+    .legend div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .legend span {
+      display: inline-block;
+      width: 18px;
+      height: 10px;
+      margin-right: 8px;
+      border: 1px solid #555;
+    }
   </style>
 </head>
 
@@ -25,39 +51,66 @@
   <div id="map"></div>
 
   <script>
-    // --- CONFIGURACIÓN DEL MAPA ---
-    const map = L.map('map').setView([-11.870, -77.123], 13); // Centrado en Ventanilla
+    // --- CONFIGURACIÓN BASE ---
+    const map = L.map('map').setView([-11.87, -77.13], 13);
 
-    // Capa base: OpenStreetMap
+    // Capa base
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // --- CARGA DE KML ESTÁTICOS (RUTAS) ---
-  
-    const ruta1 = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml";
-    const ruta2 = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml";
-    const ruta3 = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml";
+    // --- KML DE RUTAS ESTÁTICAS ---
+    const rutas = [
+      {
+        nombre: "Pachacútec",
+        color: "#FFA500", // Naranja
+        url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml"
+      },
+      {
+        nombre: "Villa Los Reyes",
+        color: "#FF0000", // Rojo
+        url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml"
+      },
+      {
+        nombre: "Ventanilla Centro",
+        color: "#8000FF", // Morado
+        url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml"
+      }
+    ];
 
-    // Cargar rutas al mapa
-    omnivore.kml(ruta1).addTo(map);
-    omnivore.kml(ruta2).addTo(map);
-    omnivore.kml(ruta3).addTo(map);
+    // Función para aplicar color a cada ruta
+    rutas.forEach(r => {
+      omnivore.kml(r.url, null, L.geoJson(null, {
+        style: { color: r.color, weight: 3, opacity: 0.9 }
+      })).addTo(map);
+    });
 
-    // --- CARGA DE KML DINÁMICO (POSTES ACTUALIZADOS) ---
-    // Este archivo será actualizado desde tu servidor cada 2 min
+    // --- CARGA DE KML DINÁMICO ---
     const postesUrl = "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/PA_Postes_Act.kml";
     let capaPostes = omnivore.kml(postesUrl).addTo(map);
 
-    // --- REFRESCO AUTOMÁTICO ---
-    // Recarga la capa dinámica cada 2 minutos (120000 ms)
+    // Actualización automática cada 2 minutos
     setInterval(() => {
       map.removeLayer(capaPostes);
       capaPostes = omnivore.kml(postesUrl + "?t=" + Date.now()).addTo(map);
       console.log("Capa de postes actualizada:", new Date().toLocaleTimeString());
     }, 120000);
+
+    // --- LEYENDA ---
+    const legend = L.control({ position: 'bottomright' });
+    legend.onAdd = function () {
+      const div = L.DomUtil.create('div', 'legend');
+      div.innerHTML += '<h4>Zonas del Proyecto</h4>';
+      rutas.forEach(r => {
+        div.innerHTML += `<div><span style="background:${r.color}"></span>${r.nombre}</div>`;
+      });
+      div.innerHTML += `<hr><div><span style="background:#0078FF"></span>Postes (actualizados)</div>`;
+      return div;
+    };
+    legend.addTo(map);
   </script>
 </body>
 </html>
+
 
 
