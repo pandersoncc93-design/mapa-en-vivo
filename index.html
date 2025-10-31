@@ -5,7 +5,7 @@
   <title>Mapa GPON – Ventanilla</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Estilos y scripts de Leaflet -->
+  <!-- Leaflet y extensiones -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
@@ -16,7 +16,6 @@
       margin: 0;
       padding: 0;
     }
-    /* Estilo de la leyenda */
     .legend {
       background: white;
       padding: 10px 14px;
@@ -51,49 +50,46 @@
   <div id="map"></div>
 
   <script>
-    // --- CONFIGURACIÓN BASE ---
+    // --- MAPA BASE ---
     const map = L.map('map').setView([-11.87, -77.13], 13);
-
-    // Capa base
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // --- KML DE RUTAS ESTÁTICAS ---
+    // --- RUTAS ESTÁTICAS ---
     const rutas = [
-      {
-        nombre: "Pachacútec",
-        color: "#FFA500", // Naranja
-        url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml"
-      },
-      {
-        nombre: "Villa Los Reyes",
-        color: "#FF0000", // Rojo
-        url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml"
-      },
-      {
-        nombre: "Ventanilla Centro",
-        color: "#8000FF", // Morado
-        url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml"
-      }
+      { nombre: "Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml" },
+      { nombre: "Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml" },
+      { nombre: "Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml" }
     ];
 
-    // Función para aplicar color a cada ruta
     rutas.forEach(r => {
       omnivore.kml(r.url, null, L.geoJson(null, {
         style: { color: r.color, weight: 3, opacity: 0.9 }
       })).addTo(map);
     });
 
-    // --- CARGA DE KML DINÁMICO ---
-    const postesUrl = "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/PA_Postes_Act.kml";
-    let capaPostes = omnivore.kml(postesUrl).addTo(map);
+    // --- CAPAS DINÁMICAS (POSTES POR ZONA) ---
+    const capasDinamicas = [
+      { nombre: "Postes Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/PA_PACHACUTEC.kml" },
+      { nombre: "Postes Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/PA_VILLA_REYES.kml" },
+      { nombre: "Postes Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/PA_VENTANILLA.kml" }
+    ];
 
-    // Actualización automática cada 2 minutos
+    const capasActivas = {};
+
+    capasDinamicas.forEach(c => {
+      capasActivas[c.nombre] = omnivore.kml(c.url).addTo(map);
+    });
+
+    // --- RECARGA AUTOMÁTICA CADA 2 MINUTOS ---
     setInterval(() => {
-      map.removeLayer(capaPostes);
-      capaPostes = omnivore.kml(postesUrl + "?t=" + Date.now()).addTo(map);
-      console.log("Capa de postes actualizada:", new Date().toLocaleTimeString());
+      Object.keys(capasActivas).forEach(nombre => {
+        const capa = capasDinamicas.find(c => c.nombre === nombre);
+        map.removeLayer(capasActivas[nombre]);
+        capasActivas[nombre] = omnivore.kml(capa.url + "?t=" + Date.now()).addTo(map);
+      });
+      console.log("Capas de postes actualizadas:", new Date().toLocaleTimeString());
     }, 120000);
 
     // --- LEYENDA ---
@@ -104,7 +100,10 @@
       rutas.forEach(r => {
         div.innerHTML += `<div><span style="background:${r.color}"></span>${r.nombre}</div>`;
       });
-      div.innerHTML += `<hr><div><span style="background:#0078FF"></span>Postes (actualizados)</div>`;
+      div.innerHTML += `<hr>`;
+      capasDinamicas.forEach(c => {
+        div.innerHTML += `<div><span style="background:${c.color}"></span>${c.nombre}</div>`;
+      });
       return div;
     };
     legend.addTo(map);
