@@ -1,49 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Mapa KML – SYM</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Mapa GPON – Rutas y Postes Ventanilla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Estilos de Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <!-- Scripts principales -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
 
-    <!-- Librerías principales -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+  <style>
+    html, body, #map {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
 
-    <style>
-      html, body, #map {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
+<body>
+  <div id="map"></div>
 
-  <body>
-    <div id="map"></div>
+  <script>
+    // --- CONFIGURACIÓN DEL MAPA ---
+    const map = L.map('map').setView([-11.870, -77.123], 13); // Centrado en Ventanilla
 
-    <script>
-      // Crear mapa centrado en Ventanilla
-      const map = L.map('map').setView([-11.871, -77.131], 13);
+    // Capa base: OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
 
-      // Capa base OpenStreetMap
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-      }).addTo(map);
+    // --- CARGA DE KML ESTÁTICOS (RUTAS) ---
+  
+    const ruta1 = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml";
+    const ruta2 = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml";
+    const ruta3 = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml";
 
-      // Cargar archivo KML remoto (IMPORTANTE: el link debe ser público)
-      const kmlUrl = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml";
+    // Cargar rutas al mapa
+    omnivore.kml(ruta1).addTo(map);
+    omnivore.kml(ruta2).addTo(map);
+    omnivore.kml(ruta3).addTo(map);
 
-      omnivore.kml(kmlUrl)
-        .on('ready', function() {
-          map.fitBounds(this.getBounds());
-        })
-        .addTo(map);
-    </script>
-  </body>
+    // --- CARGA DE KML DINÁMICO (POSTES ACTUALIZADOS) ---
+    // Este archivo será actualizado desde tu servidor cada 2 min
+    const postesUrl = "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/PA_Postes_Act.kml";
+    let capaPostes = omnivore.kml(postesUrl).addTo(map);
+
+    // --- REFRESCO AUTOMÁTICO ---
+    // Recarga la capa dinámica cada 2 minutos (120000 ms)
+    setInterval(() => {
+      map.removeLayer(capaPostes);
+      capaPostes = omnivore.kml(postesUrl + "?t=" + Date.now()).addTo(map);
+      console.log("Capa de postes actualizada:", new Date().toLocaleTimeString());
+    }, 120000);
+  </script>
+</body>
 </html>
 
 
