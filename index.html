@@ -58,9 +58,9 @@
 
     // --- RUTAS ESTÁTICAS ---
     const rutas = [
-      { nombre: "Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/Rutas_Pachacutec.kml" },
-      { nombre: "Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/Rutas_Villa%20los%20reyes.kml" },
-      { nombre: "Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/Rutas_Ventanilla%20centro.kml" }
+      { nombre: "Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml" },
+      { nombre: "Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml" },
+      { nombre: "Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml" }
     ];
 
     rutas.forEach(r => {
@@ -69,30 +69,17 @@
       })).addTo(map);
     });
 
-    // --- CAPAS DINÁMICAS (POSTES POR ZONA CON ID) ---
+    // --- CAPAS DINÁMICAS (POSTES POR ZONA) ---
     const capasDinamicas = [
-      { nombre: "Postes Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/PA_Postes_Act.kml" },
-      { nombre: "Postes Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/VR_Postes_Act.kml" },
-      { nombre: "Postes Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersonc93-design/mapa-en-vivo/main/VC_Postes_Act.kml" }
+      { nombre: "Postes Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
+      { nombre: "Postes Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VR_Postes_Act.kml" },
+      { nombre: "Postes Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VC_Postes_Act.kml" }
     ];
 
     const capasActivas = {};
 
-    function cargarCapaKML(url, color) {
-      return omnivore.kml(url, null, L.geoJson(null, {
-        pointToLayer: function (feature, latlng) {
-          return L.circleMarker(latlng, {
-            radius: 5,
-            color: color,
-            weight: 1,
-            fillOpacity: 0.9
-          }).bindTooltip(feature.properties.name || 'Sin ID', { permanent: true, direction: 'top', className: 'label-id' });
-        }
-      })).addTo(map);
-    }
-
     capasDinamicas.forEach(c => {
-      capasActivas[c.nombre] = cargarCapaKML(c.url, c.color);
+      capasActivas[c.nombre] = omnivore.kml(c.url).addTo(map);
     });
 
     // --- RECARGA AUTOMÁTICA CADA 2 MINUTOS ---
@@ -100,12 +87,12 @@
       Object.keys(capasActivas).forEach(nombre => {
         const capa = capasDinamicas.find(c => c.nombre === nombre);
         map.removeLayer(capasActivas[nombre]);
-        capasActivas[nombre] = cargarCapaKML(capa.url + '?t=' + Date.now(), capa.color);
+        capasActivas[nombre] = omnivore.kml(capa.url + "?t=" + Date.now()).addTo(map);
       });
-      console.log('Capas actualizadas:', new Date().toLocaleTimeString());
+      console.log("Capas de postes actualizadas:", new Date().toLocaleTimeString());
     }, 120000);
 
-    // --- LEYENDA ÚNICA ---
+    // --- LEYENDA ---
     const legend = L.control({ position: 'bottomright' });
     legend.onAdd = function () {
       const div = L.DomUtil.create('div', 'legend');
@@ -113,6 +100,7 @@
       rutas.forEach(r => {
         div.innerHTML += `<div><span style="background:${r.color}"></span>${r.nombre}</div>`;
       });
+      div.innerHTML += `<hr>`;
       capasDinamicas.forEach(c => {
         div.innerHTML += `<div><span style="background:${c.color}"></span>${c.nombre}</div>`;
       });
@@ -122,7 +110,6 @@
   </script>
 </body>
 </html>
-
 
 
 
