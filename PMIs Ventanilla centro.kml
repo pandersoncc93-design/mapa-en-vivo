@@ -1,0 +1,2344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PUNTOS VENTANILLA CENTRO.kmz</name>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	<Schema name="PUNTOS VENTANILLA" id="S_PUNTOS_VENTANILLA_IDDS">
+		<SimpleField type="int" name="N"><displayName>&lt;b&gt;N&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD_"><displayName>&lt;b&gt;LATITUD &lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DESCRIPCION_"><displayName>&lt;b&gt;DESCRIPCION &lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<color>ffff5500</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS VENTANILLA/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS VENTANILLA/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS VENTANILLA/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS VENTANILLA/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff5500</color>
+		</PolyStyle>
+	</Style>
+	<Style id="hlightPointStyle0">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS VENTANILLA/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS VENTANILLA/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS VENTANILLA/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS VENTANILLA/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS VENTANILLA/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS VENTANILLA/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS VENTANILLA/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS VENTANILLA/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle0">
+		<IconStyle>
+			<color>ffff5500</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS VENTANILLA/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS VENTANILLA/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS VENTANILLA/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS VENTANILLA/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff5500</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff5500</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>PUNTOS VENTANILLA</name>
+		<open>1</open>
+		<Placemark>
+			<name>PMI-001-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">1</SimpleData>
+					<SimpleData name="LATITUD_">-11.9202</SimpleData>
+					<SimpleData name="LONGITUD">-77.1173</SimpleData>
+					<SimpleData name="DESCRIPCION_">AV, CENTRAL AH, PARQUE PORCINO ZONA ALTURA DE LA MZ, S4</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11729200000001,-11.920196,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-002-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">2</SimpleData>
+					<SimpleData name="LATITUD_">-11.9379</SimpleData>
+					<SimpleData name="LONGITUD">-77.1165</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH, PARQUE PORCINO ZONA 12 CALLE HUANCAVELICA CON CALLE AYACUCHO ALTURA MZ, S12 LOTE 466 AH,</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.116455,-11.93794900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-003-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">3</SimpleData>
+					<SimpleData name="LATITUD_">-11.9443</SimpleData>
+					<SimpleData name="LONGITUD">-77.1114</SimpleData>
+					<SimpleData name="DESCRIPCION_">AV, DEL BIERZO CON JR, LIMA AH, PARQUE PORCINO ZONA 13 ALTURA DE LA MZ, A44 LOTE A76 REF, FRENTE AL IE, INICIAL N°102</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11137499999998,-11.94434300000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-004-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">4</SimpleData>
+					<SimpleData name="LATITUD_">-11.9374</SimpleData>
+					<SimpleData name="LONGITUD">-77.1277</SimpleData>
+					<SimpleData name="DESCRIPCION_">AV, DEL BIERZO ALTURA DE LA EMPRESA LOGIMINSA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12766000000001,-11.93735699999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-005-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">5</SimpleData>
+					<SimpleData name="LATITUD_">-11.9128</SimpleData>
+					<SimpleData name="LONGITUD">-77.1154</SimpleData>
+					<SimpleData name="DESCRIPCION_">AV. CENTRAL ALTURA DE LA MZ. S2 LOTE 112D AH. PARQUE PORCINO ZONA 2</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11540599999999,-11.912811,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-006-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">6</SimpleData>
+					<SimpleData name="LATITUD_">-11.8988</SimpleData>
+					<SimpleData name="LONGITUD">-77.1258</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE KEIKO SIFIA FUJIMORI ALTURA DE LA MZ, N LOTE 13 AH, KENJI FUJIMORI HIGUSHI</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12576800000001,-11.89877000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-007-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">7</SimpleData>
+					<SimpleData name="LATITUD_">-11.8982</SimpleData>
+					<SimpleData name="LONGITUD">-77.1246</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 6 ALTURA MZ, B LOTE 18 AH, KENJI FUJIMORI HIGUSHI</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.124596,-11.89822900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-008-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">8</SimpleData>
+					<SimpleData name="LATITUD_">-11.8976</SimpleData>
+					<SimpleData name="LONGITUD">-77.1258</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH, SUSANA HIGUSHI ALTURA DE LA MZ, J</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12577100000001,-11.897562,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-009-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">9</SimpleData>
+					<SimpleData name="LATITUD_">-11.8952</SimpleData>
+					<SimpleData name="LONGITUD">-77.1236</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. HEROES DEL CENEPA ALTURA DE LA MZ. F LOTE 14</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.123577,-11.89517299999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-010-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">10</SimpleData>
+					<SimpleData name="LATITUD_">-11.8927</SimpleData>
+					<SimpleData name="LONGITUD">-77.1247</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH, LOS ALAMOS ALTURA DE LA MZ, E LOTE 16</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12468800000001,-11.89268999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-011-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">11</SimpleData>
+					<SimpleData name="LATITUD_">-11.891</SimpleData>
+					<SimpleData name="LONGITUD">-77.1243</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH, LUIS ALBERTO KOURI HANNA ALTURA DE LA MZ, H LOTE 01</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12428999999999,-11.89095200000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-012-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">12</SimpleData>
+					<SimpleData name="LATITUD_">-11.8643</SimpleData>
+					<SimpleData name="LONGITUD">-77.1264</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB. ZONA INDUSTRIAL – CALLE MANTARO (ALTURA DE LA MZ. I9)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12639,-11.86425000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-013-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">13</SimpleData>
+					<SimpleData name="LATITUD_">-11.869</SimpleData>
+					<SimpleData name="LONGITUD">-77.1126</SimpleData>
+					<SimpleData name="DESCRIPCION_">ESPADAS DEL COLEGIO VIRGEN DE FATIMA CON EL AA,HH PROGRESO</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11263899999999,-11.86898900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-014-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">14</SimpleData>
+					<SimpleData name="LATITUD_">-11.871</SimpleData>
+					<SimpleData name="LONGITUD">-77.1085</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE LAS VIOLETAS REFERENCIA ENTRE A,H RICARDO DURAN Y 8 DE OCTUBRE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.10851900000002,-11.870974,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-015-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">15</SimpleData>
+					<SimpleData name="LATITUD_">-11.8725</SimpleData>
+					<SimpleData name="LONGITUD">-77.1089</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 18 COMO REFERENCIA A ESPALDAS DEL MERCADO 9 DE FEBRERO</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.108936,-11.872527,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-016-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">16</SimpleData>
+					<SimpleData name="LATITUD_">-11.8745</SimpleData>
+					<SimpleData name="LONGITUD">-77.1158</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 15 ZONA 2 DE HIJOS DE VENTANILLA / COLEGIO AMERCICA SCHOOL SEGUNDARIA / PRIMARIA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.115804,-11.87452700000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-017-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">17</SimpleData>
+					<SimpleData name="LATITUD_">-11.8755</SimpleData>
+					<SimpleData name="LONGITUD">-77.1128</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 2 CON CALLE HUGO GALDOS ZONA 1 HIJOS DE VENTANILLA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.112829,-11.87552600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-018-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">18</SimpleData>
+					<SimpleData name="LATITUD_">-11.8762</SimpleData>
+					<SimpleData name="LONGITUD">-77.1117</SimpleData>
+					<SimpleData name="DESCRIPCION_">ZONA 1 DE HIJOS DE VENTANILLA AMPLICION /CALLE S/N CON CALLE 1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.111718,-11.876197,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-019-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">19</SimpleData>
+					<SimpleData name="LATITUD_">-11.8708</SimpleData>
+					<SimpleData name="LONGITUD">-77.1107</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 8 VENTANILLA ALTA CON CALLE 1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.110676,-11.870847,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-020-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">20</SimpleData>
+					<SimpleData name="LATITUD_">-11.8684</SimpleData>
+					<SimpleData name="LONGITUD">-77.1157</SimpleData>
+					<SimpleData name="DESCRIPCION_">AV. PEDRO BELTRAN ALTURA DE LA CALLE 23 URB. SATELITE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11572399999999,-11.86836900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-021-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">21</SimpleData>
+					<SimpleData name="LATITUD_">-11.8711</SimpleData>
+					<SimpleData name="LONGITUD">-77.1256</SimpleData>
+					<SimpleData name="DESCRIPCION_">AV REVOLUCION CON CALLE PAVAYACU URB, ZONA INDUSTRIAL DE VENTANILLA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.125561,-11.87110100000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-022-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">22</SimpleData>
+					<SimpleData name="LATITUD_">-11.8832</SimpleData>
+					<SimpleData name="LONGITUD">-77.1255</SimpleData>
+					<SimpleData name="DESCRIPCION_">A,H VIRGEN DE FATIMA CALLE 2 CON CALLE 3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12552299999999,-11.88315599999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-023-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">23</SimpleData>
+					<SimpleData name="LATITUD_">-11.8861</SimpleData>
+					<SimpleData name="LONGITUD">-77.1231</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB, ANTONIA MORENO DE CACERES I SECTOR LADO IZQ, CALLE 5 Y MZ D</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.123104,-11.886131,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-024-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">24</SimpleData>
+					<SimpleData name="LATITUD_">-11.8957</SimpleData>
+					<SimpleData name="LONGITUD">-77.1253</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE TIWINZA Y CALLE 1 LIMITE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.125349,-11.895729,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-025-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">25</SimpleData>
+					<SimpleData name="LATITUD_">-11.8682</SimpleData>
+					<SimpleData name="LONGITUD">-77.1125</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE JOSE FLORES ALT, DE LA MZ, A LT, 15 URB, SANTA ROSA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11252500000002,-11.868245,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-026-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">26</SimpleData>
+					<SimpleData name="LATITUD_">-11.8733</SimpleData>
+					<SimpleData name="LONGITUD">-77.0981</SimpleData>
+					<SimpleData name="DESCRIPCION_">AV, A MZ, E2C LT, 1 AMPL, DE LOS HIJOS DE LA ZONA A – VENTANILLA ALTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.098119,-11.873313,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-027-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">27</SimpleData>
+					<SimpleData name="LATITUD_">-11.8656</SimpleData>
+					<SimpleData name="LONGITUD">-77.1303</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE K CON CALLE F MZ, Y LT, 1 A,H, VILLAMOTO</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13027700000002,-11.86558,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-028-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">28</SimpleData>
+					<SimpleData name="LATITUD_">-11.8699</SimpleData>
+					<SimpleData name="LONGITUD">-77.1331</SimpleData>
+					<SimpleData name="DESCRIPCION_">PASAJE 05 MZ, R A,H, EL MIRADOR DE LOS HUMEDALES DE VENTANILLA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.133112,-11.86990399999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-029-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">29</SimpleData>
+					<SimpleData name="LATITUD_">-11.8832</SimpleData>
+					<SimpleData name="LONGITUD">-77.1311</SimpleData>
+					<SimpleData name="DESCRIPCION_">ADP, LOS CEDROS DE VENTANILLA – CALLLE 10 CON CALLE 9 (REF, I,E, POLITECNICO DE VENTANILLA)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.131118,-11.883203,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-030-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">30</SimpleData>
+					<SimpleData name="LATITUD_">-11.8794</SimpleData>
+					<SimpleData name="LONGITUD">-77.1325</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH, LOS LICENCIADOS – CALLE 1 CON CALLE 9</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.132527,-11.87940900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-031-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">31</SimpleData>
+					<SimpleData name="LATITUD_">-11.8658</SimpleData>
+					<SimpleData name="LONGITUD">-77.1316</SimpleData>
+					<SimpleData name="DESCRIPCION_">A,H VILLA MOTO EN TRE LA CALLE K Y LA MAZ T/P</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13161699999999,-11.865766,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-032-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">32</SimpleData>
+					<SimpleData name="LATITUD_">-11.8677</SimpleData>
+					<SimpleData name="LONGITUD">-77.1325</SimpleData>
+					<SimpleData name="DESCRIPCION_">A,H, 6 DE AGOSTO ENTRE LAS MZ F/H</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13248200000001,-11.867747,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-033-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">33</SimpleData>
+					<SimpleData name="LATITUD_">-11.8719</SimpleData>
+					<SimpleData name="LONGITUD">-77.1123</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 7 PARQUE UNION VENTANILLA ALTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11233099999998,-11.87194700000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-034-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">34</SimpleData>
+					<SimpleData name="LATITUD_">-11.88</SimpleData>
+					<SimpleData name="LONGITUD">-77.1335</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE KUMAMOTO CO PSJ D REFERENCIA HOSTAL HS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13350800000001,-11.880002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-035-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">35</SimpleData>
+					<SimpleData name="LATITUD_">-11.8728</SimpleData>
+					<SimpleData name="LONGITUD">-77.1131</SimpleData>
+					<SimpleData name="DESCRIPCION_">A,H ALBERTO FUJIMORI VENTANILLA ALTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.113058,-11.87282,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-036-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">36</SimpleData>
+					<SimpleData name="LATITUD_">-11.8695</SimpleData>
+					<SimpleData name="LONGITUD">-77.1332</SimpleData>
+					<SimpleData name="DESCRIPCION_">A,H EL MIRADOR DE LOS HUMEDALES ENTRE EL PASAJE 3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.133207,-11.869537,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-037-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">37</SimpleData>
+					<SimpleData name="LATITUD_">-11.872</SimpleData>
+					<SimpleData name="LONGITUD">-77.1458</SimpleData>
+					<SimpleData name="DESCRIPCION_">AUTOPISTA LA PLAYA / COOP, APURIMAC</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.145757,-11.87201799999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-038-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">38</SimpleData>
+					<SimpleData name="LATITUD_">-11.8814</SimpleData>
+					<SimpleData name="LONGITUD">-77.146</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 07 ALTURA DE LA MZ, N LT, 16 VALLE VERDE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.146012,-11.88138200000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-039-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">39</SimpleData>
+					<SimpleData name="LATITUD_">-11.8967</SimpleData>
+					<SimpleData name="LONGITUD">-77.1278</SimpleData>
+					<SimpleData name="DESCRIPCION_">PARQUE N°07 – VIRGEN DE FATIMA AH, ANGAMOS 1ER, SECTOR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12782199999998,-11.89669699999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-040-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">40</SimpleData>
+					<SimpleData name="LATITUD_">-11.8922</SimpleData>
+					<SimpleData name="LONGITUD">-77.1295</SimpleData>
+					<SimpleData name="DESCRIPCION_">PS, B7 CON PS, 05 ALTURA DE LA MZ, J2 LT, 15 AH, ANGAMOS 2DO, SECTOR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.129456,-11.89223500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-041-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">41</SimpleData>
+					<SimpleData name="LATITUD_">-11.8972</SimpleData>
+					<SimpleData name="LONGITUD">-77.1297</SimpleData>
+					<SimpleData name="DESCRIPCION_">PS, 33 MZ, D6 LT,22 A,H, ANGAMOS 1ER, SECTOR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12970900000001,-11.89720199999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-042-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">42</SimpleData>
+					<SimpleData name="LATITUD_">-11.8829</SimpleData>
+					<SimpleData name="LONGITUD">-77.1134</SimpleData>
+					<SimpleData name="DESCRIPCION_">ENTRE LA MZ, H Y LA MZ, I AP, MARIA JOSE CORDOVA DE MARCOS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11338099999999,-11.882869,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-043-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">43</SimpleData>
+					<SimpleData name="LATITUD_">-11.8832</SimpleData>
+					<SimpleData name="LONGITUD">-77.1133</SimpleData>
+					<SimpleData name="DESCRIPCION_">LOSA DE CEMENTO 1RO DE MAYO – VILLAMOTO REF, MZ I</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.113332,-11.883182,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-044-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">44</SimpleData>
+					<SimpleData name="LATITUD_">-11.8728</SimpleData>
+					<SimpleData name="LONGITUD">-77.1167</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE KENKO – CALLE 17 URB SATELITE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11666,-11.872798,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-045-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">45</SimpleData>
+					<SimpleData name="LATITUD_">-11.8807</SimpleData>
+					<SimpleData name="LONGITUD">-77.145</SimpleData>
+					<SimpleData name="DESCRIPCION_">ALAMEDA A – AH VALLE VERDE REF, MZ M</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14495400000001,-11.880682,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-046-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">46</SimpleData>
+					<SimpleData name="LATITUD_">-11.899</SimpleData>
+					<SimpleData name="LONGITUD">-77.1258</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE KEIKO SOFIA FUJIMORI – AH KENJI FUJIMORI</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12581900000001,-11.89901,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-047-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">47</SimpleData>
+					<SimpleData name="LATITUD_">-11.8963</SimpleData>
+					<SimpleData name="LONGITUD">-77.1289</SimpleData>
+					<SimpleData name="DESCRIPCION_">PARQUE N°08 SAN MARTIN DE PORRES AH ANGAMOS 1ER SECTOR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.128939,-11.89625599999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-048-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">48</SimpleData>
+					<SimpleData name="LATITUD_">-11.8868</SimpleData>
+					<SimpleData name="LONGITUD">-77.1322</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 6 – PARQUE N°02 AH LOS HIJOS DEL ALMTE GRAU</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13223600000002,-11.88679099999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-049-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">49</SimpleData>
+					<SimpleData name="LATITUD_">-11.8943</SimpleData>
+					<SimpleData name="LONGITUD">-77.1272</SimpleData>
+					<SimpleData name="DESCRIPCION_">AV, NESTOR GAMBETTA – PARQUE N°11 TODOS UNIDOS AH, ANGAMOS 1ER SECTOR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.127201,-11.89433600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-050-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">50</SimpleData>
+					<SimpleData name="LATITUD_">-11.8756</SimpleData>
+					<SimpleData name="LONGITUD">-77.1098</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 24 – REF, LOSA PRINCIPAL AH, VENTANILLA ALTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.10975500000001,-11.87560400000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-051-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">51</SimpleData>
+					<SimpleData name="LATITUD_">-11.884</SimpleData>
+					<SimpleData name="LONGITUD">-77.1315</SimpleData>
+					<SimpleData name="DESCRIPCION_">PARQUE N°35 – REF, MZ R12 AH, ANGAMOS 3ER SECTOR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.131533,-11.88398799999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-052-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">52</SimpleData>
+					<SimpleData name="LATITUD_">-11.8705</SimpleData>
+					<SimpleData name="LONGITUD">-77.1156</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE LOS FICUS URB SATELITE – REF, MZ V70</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11557900000001,-11.87053800000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-053-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">53</SimpleData>
+					<SimpleData name="LATITUD_">-11.8705</SimpleData>
+					<SimpleData name="LONGITUD">-77.1135</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 3 CON CALLE 4 AH, VENTANILLA ALTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.113528,-11.87045900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-054-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">54</SimpleData>
+					<SimpleData name="LATITUD_">-11.8768</SimpleData>
+					<SimpleData name="LONGITUD">-77.1086</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 18 – AH, VENTANILLA ALTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.108647,-11.876847,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-055-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">55</SimpleData>
+					<SimpleData name="LATITUD_">-11.9181</SimpleData>
+					<SimpleData name="LONGITUD">-77.1185</SimpleData>
+					<SimpleData name="DESCRIPCION_">MZ. S3 LOTE 1T AH. PARQUE PORCINO ZONA 3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.118504,-11.91807299999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-056-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">56</SimpleData>
+					<SimpleData name="LATITUD_">-11.8775</SimpleData>
+					<SimpleData name="LONGITUD">-77.1043</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 40 CON CALLE 33 – AH, VENTANILLA ALTA ALTURA DEL COLEGIO POLITECNICO</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.10431800000001,-11.87749899999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-057-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">57</SimpleData>
+					<SimpleData name="LATITUD_">-11.8907</SimpleData>
+					<SimpleData name="LONGITUD">-77.1171</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 24 – URB, ANTONIA MORENO DE CACERES SECTOR 3 – REF, MZ W</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.117116,-11.890714,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-058-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">58</SimpleData>
+					<SimpleData name="LATITUD_">-11.8855</SimpleData>
+					<SimpleData name="LONGITUD">-77.1338</SimpleData>
+					<SimpleData name="DESCRIPCION_">PASAJE D2 AV, MERCURIO – AH HIJOS DEL AMTE, GRAU – REF, CUNA JARDIN</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13376799999999,-11.885492,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-059-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">59</SimpleData>
+					<SimpleData name="LATITUD_">-11.8893</SimpleData>
+					<SimpleData name="LONGITUD">-77.1194</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB, ANTONIA MORENO DE CACERES 3 SECTOR CENTRO ENTRE LA MZ, A Y MZ, A1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.119376,-11.88927699999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-060-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">60</SimpleData>
+					<SimpleData name="LATITUD_">-11.889</SimpleData>
+					<SimpleData name="LONGITUD">-77.12</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB, ANTONIA MORENO DE CACERES 2 SECTOR CENTRO JIRON 3 ALTURA DE LA MZ, H1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.119952,-11.88904,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-061-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">61</SimpleData>
+					<SimpleData name="LATITUD_">-11.8893</SimpleData>
+					<SimpleData name="LONGITUD">-77.1205</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB, ANTONIA MORENO DE CACERES 2 SECTOR DERECHO ALTURA DE LA MZ, G1 LOTE 1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12046100000001,-11.88934100000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-062-VC</name>
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">62</SimpleData>
+					<SimpleData name="LATITUD_">-11.888</SimpleData>
+					<SimpleData name="LONGITUD">-11.888</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB, ANTONIA MORENO DE CACERES 2 SECTOR CENTRO JIRON 2</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12211111111111,-11.888,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-063-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">63</SimpleData>
+					<SimpleData name="LATITUD_">-11.8875</SimpleData>
+					<SimpleData name="LONGITUD">-77.1223</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB, ANTONIA MORENO DE CACERES 1 SECTOR IZQUIERDO CALLE 7 AV, VALVERDE ALTURA DE LA MZ, R</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12232299999999,-11.88751799999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-064-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">64</SimpleData>
+					<SimpleData name="LATITUD_">-11.8881</SimpleData>
+					<SimpleData name="LONGITUD">-77.1232</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB, ANTONIA MORENO DE CACERES 1 SECTOR DERECHO CALLE 6 ALTURA DE LA MZ, Q1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12320099999999,-11.88805099999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-065-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">65</SimpleData>
+					<SimpleData name="LATITUD_">-11.8853</SimpleData>
+					<SimpleData name="LONGITUD">-77.124</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB, ANTONIA MORENO DE CACERES 1 SECTOR IZQUIERDO ALTURA DE LA IE, N°5093 ANTONIO RAYMONDI</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12403399999999,-11.885304,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-066-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">66</SimpleData>
+					<SimpleData name="LATITUD_">-11.8632</SimpleData>
+					<SimpleData name="LONGITUD">-77.1264</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE MARTIN PZ ALT, MZ, I11 URB, ZONA INDUSTRIAL DE VENTANILLA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12636999999999,-11.86323700000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-067-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">67</SimpleData>
+					<SimpleData name="LATITUD_">-11.875</SimpleData>
+					<SimpleData name="LONGITUD">-77.1239</SimpleData>
+					<SimpleData name="DESCRIPCION_">PARQUE VIRGEN DE LAS MERCEDES CALLE 5 ALTURA DE LA MZ. 18 LOTE 8 URB. SATELITE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.123909,-11.87504699999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-068-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">68</SimpleData>
+					<SimpleData name="LATITUD_">-11.8744</SimpleData>
+					<SimpleData name="LONGITUD">-77.1048</SimpleData>
+					<SimpleData name="DESCRIPCION_">PARQUE INMACULADA CONSECCION AMPL, A DE VENTANILLA ALTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.10482500000001,-11.87439199999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-069-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">69</SimpleData>
+					<SimpleData name="LATITUD_">-11.8781</SimpleData>
+					<SimpleData name="LONGITUD">-77.1031</SimpleData>
+					<SimpleData name="DESCRIPCION_">AMPLIACION B DE VENTANILLA ALTA ALT, MZ, II LOTE 15</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.10305200000001,-11.878059,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-070-VC</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffff5500</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VENTANILLA_IDDS">
+					<SimpleData name="N">70</SimpleData>
+					<SimpleData name="LATITUD_">-11.877</SimpleData>
+					<SimpleData name="LONGITUD">-77.1099</SimpleData>
+					<SimpleData name="DESCRIPCION_">CALLE 24 CON CALLE 27 ALT, MZ, Y1 LOTE 12 AH, VENTANILLA ALTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.109921,-11.877002,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

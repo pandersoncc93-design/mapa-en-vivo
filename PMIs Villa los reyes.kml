@@ -1,0 +1,2344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PUNTOS VENTANILLA - VR.kmz</name>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	<Schema name="PUNTOS VILLA LOS REYES" id="S_PUNTOS_VILLA_LOS_REYES_IDDS">
+		<SimpleField type="int" name="N"><displayName>&lt;b&gt;N&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD_"><displayName>&lt;b&gt;LATITUD &lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DESCRIPCION_"><displayName>&lt;b&gt;DESCRIPCION &lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle1">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS VILLA LOS REYES/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS VILLA LOS REYES/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS VILLA LOS REYES/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS VILLA LOS REYES/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="hlightPointStyle10">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS VILLA LOS REYES/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS VILLA LOS REYES/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS VILLA LOS REYES/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS VILLA LOS REYES/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normPointStyle1">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS VILLA LOS REYES/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS VILLA LOS REYES/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS VILLA LOS REYES/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS VILLA LOS REYES/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle10">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS VILLA LOS REYES/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS VILLA LOS REYES/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS VILLA LOS REYES/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS VILLA LOS REYES/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff00ffff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00ffff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="pointStyleMap1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>PUNTOS VILLA LOS REYES</name>
+		<open>1</open>
+		<Placemark>
+			<name>PMI-001-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">1</SimpleData>
+					<SimpleData name="LATITUD_">-11.8211</SimpleData>
+					<SimpleData name="LONGITUD">-77.1399</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H LAS LOMAS / LAS DOS LOSAS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.139906,-11.82114000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-002-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">2</SimpleData>
+					<SimpleData name="LATITUD_">-11.8453</SimpleData>
+					<SimpleData name="LONGITUD">-77.1263</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H HEROES DEL CENEPA - PARTE POSTERIOR DEL PODER JUDICIAL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12628699999999,-11.84530799999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-003-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">3</SimpleData>
+					<SimpleData name="LATITUD_">-11.8483</SimpleData>
+					<SimpleData name="LONGITUD">-77.1318</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H VIVIENDA TALLER SEÑOR DE LOS MILAGROS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.131782,-11.84835,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-004-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">4</SimpleData>
+					<SimpleData name="LATITUD_">-11.8201</SimpleData>
+					<SimpleData name="LONGITUD">-77.1393</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LAS LOMAS ( CALLE 19 CALLE 25)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.139324,-11.82011499999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-005-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">5</SimpleData>
+					<SimpleData name="LATITUD_">-11.8253</SimpleData>
+					<SimpleData name="LONGITUD">-77.1391</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H. CHAVIN DE HUANTAR - REF. COLEGIO INICIAL N°151</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.139087,-11.82528500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-006-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">6</SimpleData>
+					<SimpleData name="LATITUD_">-11.8228</SimpleData>
+					<SimpleData name="LONGITUD">-77.1275</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LA PAZ - AV. LOS ARBOLITOS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12750100000001,-11.82282100000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-007-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">7</SimpleData>
+					<SimpleData name="LATITUD_">-11.8248</SimpleData>
+					<SimpleData name="LONGITUD">-77.1251</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H. SAN PEDRO - JR. AYACUCHO / CALLE 11 ALT. DE LA MZ K LOTE 4</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12514400000001,-11.824803,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-008-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">8</SimpleData>
+					<SimpleData name="LATITUD_">-11.8271</SimpleData>
+					<SimpleData name="LONGITUD">-77.1242</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. VILLA LOS REYES I SECTOR (CALLE 25 / CALLE01)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.124173,-11.827143,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-009-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">9</SimpleData>
+					<SimpleData name="LATITUD_">-11.8275</SimpleData>
+					<SimpleData name="LONGITUD">-77.1215</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. VILLA LOS REYES 1 SECTOR ( AV. AUXILIAR ALT. DE LA MZ M LOTE 24)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12148999999999,-11.827456,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-010-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">10</SimpleData>
+					<SimpleData name="LATITUD_">-11.8282</SimpleData>
+					<SimpleData name="LONGITUD">-77.1246</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. VILLA LOS REYES I SECTOR - CALLE 24 / CALLE 03</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.124574,-11.82821499999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-011-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">11</SimpleData>
+					<SimpleData name="LATITUD_">-11.8313</SimpleData>
+					<SimpleData name="LONGITUD">-77.1217</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. VILLA LOS REYES II SECTOR - CALLE 03 / AV. 01</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.121666,-11.83130700000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-012-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">12</SimpleData>
+					<SimpleData name="LATITUD_">-11.8388</SimpleData>
+					<SimpleData name="LONGITUD">-77.1282</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. NUEVO PROGRESO - AV. EL SALVADOR / CA. VENEZUELA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.128207,-11.83877300000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-013-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">13</SimpleData>
+					<SimpleData name="LATITUD_">-11.8288</SimpleData>
+					<SimpleData name="LONGITUD">-77.136</SimpleData>
+					<SimpleData name="DESCRIPCION_">AMPLIACION KEIKO SOFIA - ALT. DE LA MZ G LOTE 9</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13601099999998,-11.828789,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-014-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">14</SimpleData>
+					<SimpleData name="LATITUD_">-11.8359</SimpleData>
+					<SimpleData name="LONGITUD">-77.1132</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LOS LAURELES 1 SECTOR - AV. PLAYA HERMOSA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.113197,-11.83593400000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-015-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">15</SimpleData>
+					<SimpleData name="LATITUD_">-11.8361</SimpleData>
+					<SimpleData name="LONGITUD">-77.1226</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. MONTE SION - LOSA DEPORTIVA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.122647,-11.83613199999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-016-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">16</SimpleData>
+					<SimpleData name="LATITUD_">-11.8473</SimpleData>
+					<SimpleData name="LONGITUD">-77.1313</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. VIV. TALLERES SEÑOR DE LOS MILAGROS - AV. 8</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13126200000001,-11.84734099999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-017-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">17</SimpleData>
+					<SimpleData name="LATITUD_">-11.8464</SimpleData>
+					<SimpleData name="LONGITUD">-77.1228</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LAS BRISAS - PARCELA C - F1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.122829,-11.84641599999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-018-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">18</SimpleData>
+					<SimpleData name="LATITUD_">-11.8348</SimpleData>
+					<SimpleData name="LONGITUD">-77.1366</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LOS CEDROS II ETAPA- PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13658100000001,-11.834845,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-019-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">19</SimpleData>
+					<SimpleData name="LATITUD_">-11.8257</SimpleData>
+					<SimpleData name="LONGITUD">-77.1373</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H. KEIKO SOFIA II ETAPA - AV. ARQUTECTOS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13729999999998,-11.82568399999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-020-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">20</SimpleData>
+					<SimpleData name="LATITUD_">-11.8217</SimpleData>
+					<SimpleData name="LONGITUD">-77.1409</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH . LAS LOMAS -CALLE 39/ CALLE 04 (ALT. DEL PARQUE)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14088700000002,-11.82165599999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-021-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">21</SimpleData>
+					<SimpleData name="LATITUD_">-11.8354</SimpleData>
+					<SimpleData name="LONGITUD">-77.1232</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH 12 DE OCTUBRE - PARQUE ( AV. SUCRE / JR. JAVIER PRADO9</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.123181,-11.83542800000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-022-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">22</SimpleData>
+					<SimpleData name="LATITUD_">-11.8525</SimpleData>
+					<SimpleData name="LONGITUD">-77.1325</SimpleData>
+					<SimpleData name="DESCRIPCION_">AREA INDUSTRIAL ( CALLE P / CALLE 12)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.132451,-11.852488,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-023-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">23</SimpleData>
+					<SimpleData name="LATITUD_">-11.8348</SimpleData>
+					<SimpleData name="LONGITUD">-77.1354</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LOS CEDROS II ETAPA( CALLE NICARAGUA / CALLE ITALIA)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13537100000001,-11.83481800000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-024-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">24</SimpleData>
+					<SimpleData name="LATITUD_">-11.8274</SimpleData>
+					<SimpleData name="LONGITUD">-77.1437</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SAGRADO CORAZON DE JESÚS 2 ( CALLE 06)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.143666,-11.82743099999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-025-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">25</SimpleData>
+					<SimpleData name="LATITUD_">-11.8258</SimpleData>
+					<SimpleData name="LONGITUD">-77.1415</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SAN ANTONIO</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14150099999999,-11.82576,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-026-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">26</SimpleData>
+					<SimpleData name="LATITUD_">-11.8232</SimpleData>
+					<SimpleData name="LONGITUD">-77.1432</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LUZ Y PAZ ( CALLE 15 / CALLE 25)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.143169,-11.82322199999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-027-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">27</SimpleData>
+					<SimpleData name="LATITUD_">-11.8186</SimpleData>
+					<SimpleData name="LONGITUD">-77.1333</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LUIS FELIPE DE LAS CASAS ( JR. AUGUSTO BELEGUIA/ JR. MIGUEL IGLESIAS)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13334000000002,-11.81858099999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-028-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">28</SimpleData>
+					<SimpleData name="LATITUD_">-11.8267</SimpleData>
+					<SimpleData name="LONGITUD">-77.1214</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. VILLA LOS REYES 1 SECTOR ( KM 37)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.121379,-11.826727,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-029-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">29</SimpleData>
+					<SimpleData name="LATITUD_">-11.848</SimpleData>
+					<SimpleData name="LONGITUD">-77.1328</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H VIVIENDA TALLER SEÑOR DE LOS MILAGROS ( CALLE 02/ CALLE 09)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.132763,-11.84798799999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-030-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">30</SimpleData>
+					<SimpleData name="LATITUD_">-11.835</SimpleData>
+					<SimpleData name="LONGITUD">-77.1251</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. 12 DE OCTUBRE ( JR. JOSE OLAYA / JR. LUNA PIZARRO)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12514200000001,-11.83496400000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-031-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">31</SimpleData>
+					<SimpleData name="LATITUD_">-11.8449</SimpleData>
+					<SimpleData name="LONGITUD">-77.1321</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. AMPLIACION HEROES DEL CENEPA ( ALT. DE LA MZ O LOTE 11)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.132116,-11.84491800000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-032-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">32</SimpleData>
+					<SimpleData name="LATITUD_">-11.8416</SimpleData>
+					<SimpleData name="LONGITUD">-77.1302</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. AMPLIACION HEROES DEL CENEPA (JR. LA LIBERTAD / CALLE 07)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13020499999999,-11.84162900000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-033-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">33</SimpleData>
+					<SimpleData name="LATITUD_">-11.8383</SimpleData>
+					<SimpleData name="LONGITUD">-77.1315</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH VISTA ALEGRE ( ALT. DE LA MZ D4 LOTE 9)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13153599999998,-11.838293,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-034-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">34</SimpleData>
+					<SimpleData name="LATITUD_">-11.8419</SimpleData>
+					<SimpleData name="LONGITUD">-77.1289</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH MARIA JESUS ESPINOZA (JR LOS PINOS / JR. LOS GIRASOLES)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.128889,-11.84193199999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-035-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">35</SimpleData>
+					<SimpleData name="LATITUD_">-11.8431</SimpleData>
+					<SimpleData name="LONGITUD">-77.13</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. 31 DE DICIEMBRE (JR LAS AZUCENAS / JR. LIMA)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12998,-11.84312199999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-036-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">36</SimpleData>
+					<SimpleData name="LATITUD_">-11.8378</SimpleData>
+					<SimpleData name="LONGITUD">-77.1293</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. NUEVO PROGRESO (CALLE CANADA / AV. HUANCAPUNCO)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.129279,-11.83783399999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-037-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">37</SimpleData>
+					<SimpleData name="LATITUD_">-11.8348</SimpleData>
+					<SimpleData name="LONGITUD">-77.1309</SimpleData>
+					<SimpleData name="DESCRIPCION_">AMPLIACION FELIX MORENO 22 (AV 11 DE OCTUBRE / CALLE 03)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13092200000001,-11.83481299999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-038-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">38</SimpleData>
+					<SimpleData name="LATITUD_">-11.8269</SimpleData>
+					<SimpleData name="LONGITUD">-77.1365</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. 1 DE NOVIEMBRE LOS ANGELISTOS ( ALT. DE LA MZ B LOTE 08)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13648800000001,-11.82692600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-039-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">39</SimpleData>
+					<SimpleData name="LATITUD_">-11.8252</SimpleData>
+					<SimpleData name="LONGITUD">-77.1274</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH SANTA MARGARITA (AV. CENTRAL / CALLE 12)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.127371,-11.82520700000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-040-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">40</SimpleData>
+					<SimpleData name="LATITUD_">-11.846</SimpleData>
+					<SimpleData name="LONGITUD">-77.1193</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. JOSE MARIA ARGUEDAS / GAMBETA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11928399999998,-11.846026,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-041-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">41</SimpleData>
+					<SimpleData name="LATITUD_">-11.8418</SimpleData>
+					<SimpleData name="LONGITUD">-77.1154</SimpleData>
+					<SimpleData name="DESCRIPCION_">ENTRADA DE ENMANUEL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.115407,-11.84175900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-042-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">42</SimpleData>
+					<SimpleData name="LATITUD_">-11.8546</SimpleData>
+					<SimpleData name="LONGITUD">-77.1372</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. AREA INDUSTRIAL ( (AV CONSTRUCTORES ALT. DE LA MZ C5)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13717,-11.85461699999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-043-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">43</SimpleData>
+					<SimpleData name="LATITUD_">-11.8239</SimpleData>
+					<SimpleData name="LONGITUD">-77.1364</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH.LAS LOMAS ( ALT. DE LA MZ A3 LOTE 01)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13643199999999,-11.82385500000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-044-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">44</SimpleData>
+					<SimpleData name="LATITUD_">-11.8272</SimpleData>
+					<SimpleData name="LONGITUD">-77.1324</SimpleData>
+					<SimpleData name="DESCRIPCION_">AAH. LOS CEDROS ( ALT. DE LA MZ U1 LOTE 11)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13242800000002,-11.82715999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-045-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">45</SimpleData>
+					<SimpleData name="LATITUD_">-11.8262</SimpleData>
+					<SimpleData name="LONGITUD">-77.1354</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. KEIKO SOFIA ( JR. LOS PINOS / JR. MEXICO)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13537199999999,-11.826164,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-046-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">46</SimpleData>
+					<SimpleData name="LATITUD_">-11.8193</SimpleData>
+					<SimpleData name="LONGITUD">-77.1281</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SAN PABLO ( CALLE TACNA / PASAJE 1 - ALT. DE LA MZ J1 LOTE 14)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.128077,-11.819297,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-047-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">47</SimpleData>
+					<SimpleData name="LATITUD_">-11.8446</SimpleData>
+					<SimpleData name="LONGITUD">-77.1297</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. HEROES DEL CENEPA ( CALLE A / CALLE C - ALT. DE LA MZ I LOTE 1)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.129722,-11.84457000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-048-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">48</SimpleData>
+					<SimpleData name="LATITUD_">-11.825</SimpleData>
+					<SimpleData name="LONGITUD">-77.139</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. CHAVIN DE HUANTAR ( CALLE 6 - ALT. DEL COLEGIO I.E.I N°151)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13904199999999,-11.82501500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-049-VR</name>
+			<styleUrl>#pointStyleMap10</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">49</SimpleData>
+					<SimpleData name="LATITUD_">-11.8248</SimpleData>
+					<SimpleData name="LONGITUD">-77.1251</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SAN PEDRO (ALT DE LA MZ E LT 18 - JR. SARITA COLONIA)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13622222222223,-11.82288888888889,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-050-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">50</SimpleData>
+					<SimpleData name="LATITUD_">-11.8403</SimpleData>
+					<SimpleData name="LONGITUD">-77.1206</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. CUEVA DE LOS TALLOS ( MZ A1 LT 12 - JR. CABO MIGUEL PALMA RAMIREZ)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12063999999999,-11.84030799999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-051-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">51</SimpleData>
+					<SimpleData name="LATITUD_">-11.8409</SimpleData>
+					<SimpleData name="LONGITUD">-77.1249</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. JOSE OLAYA ( ALT. DE LA MZ H1 LT 11 - JR. LAS PALMERAS)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12493600000001,-11.84085699999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-052-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">52</SimpleData>
+					<SimpleData name="LATITUD_">-11.8396</SimpleData>
+					<SimpleData name="LONGITUD">-77.1244</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H. JOSE OLAYA ( ALT. DE LA MZ T LT. 19 - JR. LAS ORQUIDIAS)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12442799999999,-11.839561,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-053-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">53</SimpleData>
+					<SimpleData name="LATITUD_">-11.8399</SimpleData>
+					<SimpleData name="LONGITUD">-77.1312</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H. VISTA ALEGRE (ALT. DE LA MZ E4 LOTE 16 - JR. CUSCO)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13117800000001,-11.83987300000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-054-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">54</SimpleData>
+					<SimpleData name="LATITUD_">-11.835</SimpleData>
+					<SimpleData name="LONGITUD">-77.1185</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SAGRADO CORAZON DE JESUS ( ALT. DE LA MZ C LOTE 9)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.118515,-11.83497399999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-055-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">55</SimpleData>
+					<SimpleData name="LATITUD_">-11.8335</SimpleData>
+					<SimpleData name="LONGITUD">-77.1207</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. NUEVA GENERACION (ALT. DE LA MZ J LOTE 4)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.120651,-11.833548,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-056-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">56</SimpleData>
+					<SimpleData name="LATITUD_">-11.8363</SimpleData>
+					<SimpleData name="LONGITUD">-77.1194</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. EL GOLFO DE VENTANILLA ( ALT. DE LA MZ X2 LOTE 1 - PSJE. LOS PROFETAS)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11942800000001,-11.8363,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-057-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">57</SimpleData>
+					<SimpleData name="LATITUD_">-11.8278</SimpleData>
+					<SimpleData name="LONGITUD">-77.1312</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LOS CEDROS ( ALT DE LA MZ D 11 - AV. NICARAGUA)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13117800000001,-11.82781600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-058-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">58</SimpleData>
+					<SimpleData name="LATITUD_">-11.8233</SimpleData>
+					<SimpleData name="LONGITUD">-77.1272</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SANTA MARGARITA( ALT DE LA MZ F LOTE 11 - CALLE 03)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12716100000002,-11.82327000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-059-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">59</SimpleData>
+					<SimpleData name="LATITUD_">-11.8454</SimpleData>
+					<SimpleData name="LONGITUD">-77.1261</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SANTA ROSA DE PACHACUTEC (ALT. DE LA MZ G LOTE 13)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12611100000001,-11.845383,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-060-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">60</SimpleData>
+					<SimpleData name="LATITUD_">-11.8453</SimpleData>
+					<SimpleData name="LONGITUD">-77.1245</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. EL MIRADOR ( ALTMZ E LOTE 1 - CA. LOS PROCERES)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12445700000001,-11.845315,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-061-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">61</SimpleData>
+					<SimpleData name="LATITUD_">-11.8338</SimpleData>
+					<SimpleData name="LONGITUD">-77.1164</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LOS ANGELES - ( ALT. DE LA MZ C LOTE 8)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.116392,-11.833799,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-062-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">62</SimpleData>
+					<SimpleData name="LATITUD_">-11.8357</SimpleData>
+					<SimpleData name="LONGITUD">-77.1159</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LOS LAURELES 2 SECTOR ( ALT. DE LA MZ D1 LOTE 5)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.11588500000001,-11.83572900000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-063-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">63</SimpleData>
+					<SimpleData name="LATITUD_">-11.8425</SimpleData>
+					<SimpleData name="LONGITUD">-77.1265</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. MARIA JESUS ESPINOZA ( ALT. DE LA MZ Z LOTE 9 - JR. LOS ROBLES)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12645600000002,-11.842548,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-064-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">64</SimpleData>
+					<SimpleData name="LATITUD_">-11.8497</SimpleData>
+					<SimpleData name="LONGITUD">-77.1298</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. AGRUP. 7 DE JUNIO ( ALT. DE LA MZ P LOTE 01 - AV- 200 MILLAS)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12979299999999,-11.84967599999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-065-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">65</SimpleData>
+					<SimpleData name="LATITUD_">-11.8501</SimpleData>
+					<SimpleData name="LONGITUD">-77.1325</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. VIVIENDA TALLER SEÑOR DE LOS MILAGROS ( ALT. DE LA MZ C8 MZ 16 - CALLE 08/ CALLE 06)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.132462,-11.850087,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-066-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">66</SimpleData>
+					<SimpleData name="LATITUD_">-11.8223</SimpleData>
+					<SimpleData name="LONGITUD">-77.1349</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LUIS FELIPE DE LAS CASAS ( ALT. DE LA MZ D1 LOTE 15 - JR. MANUEL PARDO)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13486399999999,-11.82234299999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-067-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">67</SimpleData>
+					<SimpleData name="LATITUD_">-11.8204</SimpleData>
+					<SimpleData name="LONGITUD">-77.1283</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SAN PABLO ( ALT. DE LA MZ H1 LOTE 1)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.128303,-11.82039099999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-068-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">68</SimpleData>
+					<SimpleData name="LATITUD_">-11.8181</SimpleData>
+					<SimpleData name="LONGITUD">-77.1323</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LA PAZ ( ALT. DE LA MZ U10 LOTE 4)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13233099999999,-11.818093,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-069-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">69</SimpleData>
+					<SimpleData name="LATITUD_">-11.8327</SimpleData>
+					<SimpleData name="LONGITUD">-77.1269</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. HIJOS DE VILLA LOS REYES (ALT. DE LA MZ F LOTE 11 - AV. BRASIL)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12687099999999,-11.832686,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-070-VR</name>
+			<styleUrl>#pointStyleMap1</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff00ffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_VILLA_LOS_REYES_IDDS">
+					<SimpleData name="N">70</SimpleData>
+					<SimpleData name="LATITUD_">-11.8461</SimpleData>
+					<SimpleData name="LONGITUD">-77.1279</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. SANTA ROSA DE PACHACUTEC ( ALT. DE LA MZ C LOTE 5 - CA ESVARDO GUTIERREZ)</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.12787299999999,-11.846111,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

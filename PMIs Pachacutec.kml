@@ -1,0 +1,2621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PMIs Pachacutec.kml</name>
+	<Schema name="PUNTOS PACHACUTEC" id="S_PUNTOS_PACHACUTEC_IDDS">
+		<SimpleField type="int" name="N"><displayName>&lt;b&gt;N&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD_"><displayName>&lt;b&gt;LATITUD &lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="DESCRIPCION_"><displayName>&lt;b&gt;DESCRIPCION &lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle00">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS PACHACUTEC/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS PACHACUTEC/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS PACHACUTEC/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS PACHACUTEC/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle00">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>N</b></td><td>$[PUNTOS PACHACUTEC/N]</td></tr>
+  <tr><td><b>LATITUD </b></td><td>$[PUNTOS PACHACUTEC/LATITUD_]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PUNTOS PACHACUTEC/LONGITUD]</td></tr>
+  <tr><td><b>DESCRIPCION </b></td><td>$[PUNTOS PACHACUTEC/DESCRIPCION_]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle00</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>PUNTOS PACHACUTEC</name>
+		<open>1</open>
+		<Placemark>
+			<name>PMI-001-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">1</SimpleData>
+					<SimpleData name="LATITUD_">-11.8454</SimpleData>
+					<SimpleData name="LONGITUD">-77.1325</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H PEDRO LABARTHE - ALTURA DE LA MZ G / PARTE ALTA DEL PARQUE MONITOR HUASCAR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.132509,-11.845398,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-002-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">2</SimpleData>
+					<SimpleData name="LATITUD_">-11.8512</SimpleData>
+					<SimpleData name="LONGITUD">-77.1636</SimpleData>
+					<SimpleData name="DESCRIPCION_">ASOCIACION DE AGROPECUARIOS PRODUCTORES Y POSESIONARIOS (AAPYP) CURVA DEL AGUA PARK</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16363399999999,-11.85114999999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-003-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">3</SimpleData>
+					<SimpleData name="LATITUD_">-11.8569</SimpleData>
+					<SimpleData name="LONGITUD">-77.1563</SimpleData>
+					<SimpleData name="DESCRIPCION_">ASOCIACION DE AGROPECUARIOS PRODUCTORES Y POSESIONARIOS (AAPYP) CARRETERA LOS DELFINES</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15626,-11.856935,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-004-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">4</SimpleData>
+					<SimpleData name="LATITUD_">-11.8573</SimpleData>
+					<SimpleData name="LONGITUD">-77.1436</SimpleData>
+					<SimpleData name="DESCRIPCION_">I SECTOR DE OASIS - AV LOS TOPOGRAFOS / CALLE LOS GIRASOLES</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.143581,-11.85730799999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-005-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">5</SimpleData>
+					<SimpleData name="LATITUD_">-11.841</SimpleData>
+					<SimpleData name="LONGITUD">-77.1637</SimpleData>
+					<SimpleData name="DESCRIPCION_">N°05 A.H ROSMERY SEGURA - CALLE48 /VIVERO MUNICIPAL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16373900000001,-11.84101399999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-006-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">6</SimpleData>
+					<SimpleData name="LATITUD_">-11.8404</SimpleData>
+					<SimpleData name="LONGITUD">-77.1598</SimpleData>
+					<SimpleData name="DESCRIPCION_">I ETAPA DE TECHO PROPIO - LOSA DEPORTIVA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.159818,-11.84039300000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-007-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">7</SimpleData>
+					<SimpleData name="LATITUD_">-11.8279</SimpleData>
+					<SimpleData name="LONGITUD">-77.1671</SimpleData>
+					<SimpleData name="DESCRIPCION_">JENY BUMACHAR - AV SANTA ROSA - ENTRADA AL DISTRITO SANTA ROSA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.167089,-11.827903,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-008-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">8</SimpleData>
+					<SimpleData name="LATITUD_">-11.8298</SimpleData>
+					<SimpleData name="LONGITUD">-77.1428</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL C4 - CALLE 3 / CALLE ESMERALDA -PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14277,-11.829769,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-009-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">9</SimpleData>
+					<SimpleData name="LATITUD_">-11.829</SimpleData>
+					<SimpleData name="LONGITUD">-77.1383</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H KEIKO SOFIA II ETAPA - ENTRE EL PARQUE / LOSA DEPORTIVA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13834,-11.82902200000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-010-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">10</SimpleData>
+					<SimpleData name="LATITUD_">-11.8358</SimpleData>
+					<SimpleData name="LONGITUD">-77.1423</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H 06 DE DICIEMBRE - ALAMEDA / AV LOS TECNICOS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14226800000002,-11.83577,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-011-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">11</SimpleData>
+					<SimpleData name="LATITUD_">-11.8379</SimpleData>
+					<SimpleData name="LONGITUD">-77.1531</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H PESQUERO II ETAPA - LOSA DEPORTIVA / CALLE LOS CHASQUIS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15307300000002,-11.83791900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-012-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">12</SimpleData>
+					<SimpleData name="LATITUD_">-11.8426</SimpleData>
+					<SimpleData name="LONGITUD">-77.1521</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H LOS JAZMINES - LOSA DEPORTIVA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.152113,-11.84262,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-013-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">13</SimpleData>
+					<SimpleData name="LATITUD_">-11.8314</SimpleData>
+					<SimpleData name="LONGITUD">-77.1537</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL B1 - CA. GRAU/ CALLE 28 / PARTE ALTA DE PLAZA CIVICA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.153667,-11.83138500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-014-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">14</SimpleData>
+					<SimpleData name="LATITUD_">-11.8363</SimpleData>
+					<SimpleData name="LONGITUD">-77.1663</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL - E5/ AV. PUMACOCHA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16628900000001,-11.836271,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-015-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">15</SimpleData>
+					<SimpleData name="LATITUD_">-11.837</SimpleData>
+					<SimpleData name="LONGITUD">-77.1524</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. PESQUERO I - AV. 190 MZ. B</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.152399,-11.83704200000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-016-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">16</SimpleData>
+					<SimpleData name="LATITUD_">-11.8353</SimpleData>
+					<SimpleData name="LONGITUD">-77.1628</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL E2 PROLONGACION HUAYNA CAPAC / CA. LOS CHASQUIS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16279100000001,-11.83533900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-017-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">17</SimpleData>
+					<SimpleData name="LATITUD_">-11.8335</SimpleData>
+					<SimpleData name="LONGITUD">-77.1539</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. JAIME YOSHIYAMA CALLE 25- MZ. T´ / LOCAL COMUNAL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.153871,-11.833505,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-018-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">18</SimpleData>
+					<SimpleData name="LATITUD_">-11.8308</SimpleData>
+					<SimpleData name="LONGITUD">-77.1562</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL B2 CALLE 35 AV. MIGUEL GRAU</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15621,-11.83074999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-019-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">19</SimpleData>
+					<SimpleData name="LATITUD_">-11.849</SimpleData>
+					<SimpleData name="LONGITUD">-77.1523</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H CERRO CACHITO - COMEDOR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.152327,-11.84900200000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-020-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">20</SimpleData>
+					<SimpleData name="LATITUD_">-11.8344</SimpleData>
+					<SimpleData name="LONGITUD">-77.1599</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL E2 - AV. 190 - PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15992799999999,-11.834425,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-021-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">21</SimpleData>
+					<SimpleData name="LATITUD_">-11.8379</SimpleData>
+					<SimpleData name="LONGITUD">-77.1726</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H PUERTO PACHACUTEC - AV. PUMACOCHA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.17262499999998,-11.83788000000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-022-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">22</SimpleData>
+					<SimpleData name="LATITUD_">-11.8361</SimpleData>
+					<SimpleData name="LONGITUD">-77.1632</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL E2 / AV. 150 IZQUIERDO - CALLE 49</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.163172,-11.836127,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-023-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">23</SimpleData>
+					<SimpleData name="LATITUD_">-11.824</SimpleData>
+					<SimpleData name="LONGITUD">-77.1527</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H LEANDRA ORTEGA - AV. AMAZONAS - FERRETERIA CAPO</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.152664,-11.82396499999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-024-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">24</SimpleData>
+					<SimpleData name="LATITUD_">-11.8259</SimpleData>
+					<SimpleData name="LONGITUD">-77.1512</SimpleData>
+					<SimpleData name="DESCRIPCION_">A. H LEANDRA ORTEGA - CALLE PUNTA SAL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.151158,-11.82591400000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-025-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">25</SimpleData>
+					<SimpleData name="LATITUD_">-11.8386</SimpleData>
+					<SimpleData name="LONGITUD">-77.1343</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. OLIVOS DE LA PAZ - CA. FILANDIA / CA. NICARAGUA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.134317,-11.838581,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-026-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">26</SimpleData>
+					<SimpleData name="LATITUD_">-11.8403</SimpleData>
+					<SimpleData name="LONGITUD">-77.1366</SimpleData>
+					<SimpleData name="DESCRIPCION_">AP. OMAR MARCOS ARTEAGA II AV. LOS ELECTRICISTAS / CA. AUSTRALIA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.136565,-11.84034900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-027-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">27</SimpleData>
+					<SimpleData name="LATITUD_">-11.8434</SimpleData>
+					<SimpleData name="LONGITUD">-77.1348</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. LAS BRISAS AV. LOS ELECTRICISTAS/ ESPALDA DE LA IGLESIA UNION MISIONERA AGAPE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13481299999998,-11.843445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-028-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">28</SimpleData>
+					<SimpleData name="LATITUD_">-11.8334</SimpleData>
+					<SimpleData name="LONGITUD">-77.1401</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. HIROSHIMA - JR. BAHIA AZUL / AV. GRAU</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14005100000001,-11.833369,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-029-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">29</SimpleData>
+					<SimpleData name="LATITUD_">-11.8311</SimpleData>
+					<SimpleData name="LONGITUD">-77.1427</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL C4 - CA. BAHIA AZUL / CA. 2</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14273999999999,-11.831132,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-030-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">30</SimpleData>
+					<SimpleData name="LATITUD_">-11.8296</SimpleData>
+					<SimpleData name="LONGITUD">-77.1415</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. BUENA VISTA / AV. LOS INDUSTRIALES - CA. LAS TOTORITAS</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14149,-11.829599,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-031-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">31</SimpleData>
+					<SimpleData name="LATITUD_">-11.849</SimpleData>
+					<SimpleData name="LONGITUD">-77.1564</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. NUEVO PACHACUTEC / AV. PERU - JR. CHOTA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.156373,-11.84896599999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-032-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">32</SimpleData>
+					<SimpleData name="LATITUD_">-11.8495</SimpleData>
+					<SimpleData name="LONGITUD">-77.1357</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H LA LIBERTAD - LOSA DEPORTIVA .</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.135704,-11.84949399999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-033-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">33</SimpleData>
+					<SimpleData name="LATITUD_">-11.845</SimpleData>
+					<SimpleData name="LONGITUD">-77.1339</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H PEDRO LABARTHE -MZ C - PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.133912,-11.84504799999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-034-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">34</SimpleData>
+					<SimpleData name="LATITUD_">-11.8458</SimpleData>
+					<SimpleData name="LONGITUD">-77.1437</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H COVIPOL - AV. VILCASHUAMAN - PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.143747,-11.845789,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-035-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">35</SimpleData>
+					<SimpleData name="LATITUD_">-11.8449</SimpleData>
+					<SimpleData name="LONGITUD">-77.1445</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H SOL Y MAR - AV. SACCSAHUAMAN -CAMINOS DEL INCA DERECHA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14449199999999,-11.84485499999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-036-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">36</SimpleData>
+					<SimpleData name="LATITUD_">-11.8341</SimpleData>
+					<SimpleData name="LONGITUD">-77.1416</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL D3 - CALLE GRAU - MZ A1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.141643,-11.83410000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-037-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">37</SimpleData>
+					<SimpleData name="LATITUD_">-11.8472</SimpleData>
+					<SimpleData name="LONGITUD">-77.1479</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H LA VICTORIA II - PASAJE F-40 - AV. CONSTRUCTORES</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.147851,-11.847194,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-038-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">38</SimpleData>
+					<SimpleData name="LATITUD_">-11.8483</SimpleData>
+					<SimpleData name="LONGITUD">-77.1497</SimpleData>
+					<SimpleData name="DESCRIPCION_">A. H LA VICTORIA II SECTOR - JR. CUCHIPUNCO -COLEGIO INICIAL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.149708,-11.84835,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-039-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">39</SimpleData>
+					<SimpleData name="LATITUD_">-11.8255</SimpleData>
+					<SimpleData name="LONGITUD">-77.1586</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL A1 - CALLE LAS TOTORITAS / CALLE 44</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15860800000002,-11.82548600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-040-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">40</SimpleData>
+					<SimpleData name="LATITUD_">-11.8399</SimpleData>
+					<SimpleData name="LONGITUD">-77.1621</SimpleData>
+					<SimpleData name="DESCRIPCION_">II ETAPA DE TECHO PROPIO - LOSA DEPORTIVA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.162053,-11.839853,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-041-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">41</SimpleData>
+					<SimpleData name="LATITUD_">-11.8446</SimpleData>
+					<SimpleData name="LONGITUD">-77.1585</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H INCAWASI PARQUE EX TOTORAL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.158547,-11.84462400000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-042-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">42</SimpleData>
+					<SimpleData name="LATITUD_">-11.8419</SimpleData>
+					<SimpleData name="LONGITUD">-77.1457</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H SANTA PATRICIA - PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14572200000001,-11.84193899999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-043-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">43</SimpleData>
+					<SimpleData name="LATITUD_">-11.8415</SimpleData>
+					<SimpleData name="LONGITUD">-77.1346</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H OMAR MARCOS II - COLEGIO FE Y ALEGRIA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.134569,-11.841535,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-044-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">44</SimpleData>
+					<SimpleData name="LATITUD_">-11.8486</SimpleData>
+					<SimpleData name="LONGITUD">-77.1343</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H FAMILIAS UNIDAS - PASAJE 2 / CANCHITA DEPORTIVA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.134319,-11.84859,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-045-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">45</SimpleData>
+					<SimpleData name="LATITUD_">-11.8397</SimpleData>
+					<SimpleData name="LONGITUD">-77.1787</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H PUERTO PACHACUTEC / AV SANTA ROSA - CALLE 09</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.178724,-11.83971500000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-046-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">46</SimpleData>
+					<SimpleData name="LATITUD_">-11.8374</SimpleData>
+					<SimpleData name="LONGITUD">-77.1415</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. 6 DICIEMBRE/ PASAJE C.5/ ALAMEDA CENTRAL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.141459,-11.83740499999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-047-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">47</SimpleData>
+					<SimpleData name="LATITUD_">-11.8592</SimpleData>
+					<SimpleData name="LONGITUD">-77.1411</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB. PARQUE INDUSTRIAL I - CALLE ASTURIAS /</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.141063,-11.85919999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-048-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">48</SimpleData>
+					<SimpleData name="LATITUD_">-11.859</SimpleData>
+					<SimpleData name="LONGITUD">-77.1344</SimpleData>
+					<SimpleData name="DESCRIPCION_">URB. PARQUE INDUSTRIAL II - CALLE 5 / CALLE D6</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.134427,-11.858989,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-049-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">49</SimpleData>
+					<SimpleData name="LATITUD_">-11.8416</SimpleData>
+					<SimpleData name="LONGITUD">-77.1437</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H. SANTA PATRICIA I ETAPA - AV. SACSAYHUAMÁN / AV. 150 DERECHA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.143682,-11.84163200000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-050-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">50</SimpleData>
+					<SimpleData name="LATITUD_">-11.8514</SimpleData>
+					<SimpleData name="LONGITUD">-77.1462</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H. LOS NARANJOS - CALLE BERMINTONG / ALT. DEL PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14622199999998,-11.851426,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-051-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">51</SimpleData>
+					<SimpleData name="LATITUD_">-11.854</SimpleData>
+					<SimpleData name="LONGITUD">-77.1435</SimpleData>
+					<SimpleData name="DESCRIPCION_">AVIMAPA - CANCHITA DE TIERRA / ALT. DE LA MZ. G</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14350799999998,-11.85400999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-052-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">52</SimpleData>
+					<SimpleData name="LATITUD_">-11.8313</SimpleData>
+					<SimpleData name="LONGITUD">-77.1576</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL B2 - CALLE 38 / ALT. DE LA LOSA DEPORTIVA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.157582,-11.83126899999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-053-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">53</SimpleData>
+					<SimpleData name="LATITUD_">-11.8326</SimpleData>
+					<SimpleData name="LONGITUD">-77.1549</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL B2 - CALLE 31 / AV. F</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15495,-11.83263500000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-054-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">54</SimpleData>
+					<SimpleData name="LATITUD_">-11.8336</SimpleData>
+					<SimpleData name="LONGITUD">-77.1696</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL B4/ ESPALDAS DE CONSORCIO ROMA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1696,-11.83358100000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-055-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">55</SimpleData>
+					<SimpleData name="LATITUD_">-11.8384</SimpleData>
+					<SimpleData name="LONGITUD">-77.1604</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL E6 -CALLE 41 / PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1604,-11.838359,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-056-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">56</SimpleData>
+					<SimpleData name="LATITUD_">-11.8392</SimpleData>
+					<SimpleData name="LONGITUD">-77.1551</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H PESQUERO AVANZA / PASAJE MZ J - ESPALDAS DEL MERCADO</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15505400000001,-11.83918999999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-057-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">57</SimpleData>
+					<SimpleData name="LATITUD_">-11.8329</SimpleData>
+					<SimpleData name="LONGITUD">-77.1476</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL D2/ CALLE GRAU/ COLEGIO CARITAS FELICES</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14755799999999,-11.832855,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-058-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">58</SimpleData>
+					<SimpleData name="LATITUD_">-11.8429</SimpleData>
+					<SimpleData name="LONGITUD">-77.1613</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. ROMERY SEGURA - LOCAL COMUNAL</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.161333,-11.84291200000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-059-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">59</SimpleData>
+					<SimpleData name="LATITUD_">-11.8356</SimpleData>
+					<SimpleData name="LONGITUD">-77.1555</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL E4 - AV. 190/ ALT. MZ. X LOTE 4</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.155513,-11.83559700000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-060-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">60</SimpleData>
+					<SimpleData name="LATITUD_">-11.8568</SimpleData>
+					<SimpleData name="LONGITUD">-77.1412</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H. INCA PACHACUTEC – CA. LOS JAZMINES / REF. IGLESIA MISION CRISTIANA TEMPLO SALEM</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.141232,-11.85682299999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-061-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">61</SimpleData>
+					<SimpleData name="LATITUD_">-11.837</SimpleData>
+					<SimpleData name="LONGITUD">-77.1465</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. PAZ UNION MB B - LT 18</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.146524,-11.836998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-062-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">62</SimpleData>
+					<SimpleData name="LATITUD_">-11.8335</SimpleData>
+					<SimpleData name="LONGITUD">-77.1473</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL D2 - CALLE ANGAMOS / CALLE 12</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14731,-11.833498,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-063-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">63</SimpleData>
+					<SimpleData name="LATITUD_">-11.8315</SimpleData>
+					<SimpleData name="LONGITUD">-77.1612</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL B3/ CALLE 49 - CALLE SECHIN</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16116100000001,-11.83146099999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-064-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">64</SimpleData>
+					<SimpleData name="LATITUD_">-11.8392</SimpleData>
+					<SimpleData name="LONGITUD">-77.1396</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H SHALOM/ ESPALDAS DEL MERCADO HATUN KURI</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13964599999998,-11.83924099999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-065-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">65</SimpleData>
+					<SimpleData name="LATITUD_">-11.8302</SimpleData>
+					<SimpleData name="LONGITUD">-77.163</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH- 15 DE OCTUBRE MZ -D LT 1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16299899999999,-11.83017899999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-066-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">66</SimpleData>
+					<SimpleData name="LATITUD_">-11.8544</SimpleData>
+					<SimpleData name="LONGITUD">-77.1421</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. AVIMAPA -ALT. MZ. J LT. 15</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.142145,-11.85436100000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-067-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">67</SimpleData>
+					<SimpleData name="LATITUD_">-11.8289</SimpleData>
+					<SimpleData name="LONGITUD">-77.1646</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL B4/ CALLE C - CALLE E</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.164614,-11.82892000000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-068-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">68</SimpleData>
+					<SimpleData name="LATITUD_">-11.8424</SimpleData>
+					<SimpleData name="LONGITUD">-77.1446</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H . LOS ANDES – ALT. MZ. H LT. 10 – REF: PARQUE</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.144638,-11.8424,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-069-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">69</SimpleData>
+					<SimpleData name="LATITUD_">-11.858</SimpleData>
+					<SimpleData name="LONGITUD">-77.1443</SimpleData>
+					<SimpleData name="DESCRIPCION_">A-H OASIS I - AV- TOPOGRAFOS CON AV- LAS FLORES</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14432100000001,-11.858018,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-070-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">70</SimpleData>
+					<SimpleData name="LATITUD_">-11.8461</SimpleData>
+					<SimpleData name="LONGITUD">-77.1535</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH LA UNION / REF ESPALDA DEL CENTRO DE SAQLUD CIUDAD PACHACUTEC</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.153474,-11.84610900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-071-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">71</SimpleData>
+					<SimpleData name="LATITUD_">-11.8561</SimpleData>
+					<SimpleData name="LONGITUD">-77.1476</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH- OASIS 3 AV- A MZ K1</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14762999999999,-11.856089,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-072-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">72</SimpleData>
+					<SimpleData name="LATITUD_">-11.853</SimpleData>
+					<SimpleData name="LONGITUD">-77.1511</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH-OASIS 3 - AV- A / CALLE 7</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15112699999999,-11.853025,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-073-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">73</SimpleData>
+					<SimpleData name="LATITUD_">-11.8501</SimpleData>
+					<SimpleData name="LONGITUD">-77.1511</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH- SAN PEDRO ISRAEL / CALLE 4 MZ E LT 16</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15108499999999,-11.850137,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-074-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">74</SimpleData>
+					<SimpleData name="LATITUD_">-11.848</SimpleData>
+					<SimpleData name="LONGITUD">-77.1583</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. VISTA AL MAR/ REF MERCADO VISTA AL MAR</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15831899999999,-11.84796800000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-075-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">75</SimpleData>
+					<SimpleData name="LATITUD_">-11.8446</SimpleData>
+					<SimpleData name="LONGITUD">-77.1461</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. KAWACHI MZ I LT 7</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.146112,-11.844564,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-076-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">76</SimpleData>
+					<SimpleData name="LATITUD_">-11.8388</SimpleData>
+					<SimpleData name="LONGITUD">-77.161</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH TECHO PROPIO I / AV TAHUANTINSUYO / REF ESPALDA DE PRECIO UNO</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16098899999999,-11.83882299999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-077-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">77</SimpleData>
+					<SimpleData name="LATITUD_">-11.8485</SimpleData>
+					<SimpleData name="LONGITUD">-77.1577</SimpleData>
+					<SimpleData name="DESCRIPCION_">A.H NUEVO PACHACUTEC - AV. PERU/ ALT. MZ F3 LT 01</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15768199999999,-11.84845200000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-078-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">78</SimpleData>
+					<SimpleData name="LATITUD_">-11.8496</SimpleData>
+					<SimpleData name="LONGITUD">-77.1513</SimpleData>
+					<SimpleData name="DESCRIPCION_">ASOC. DISCAPACITADOS CERRO CACHITO/CALLE LOS CEDROS/MZ E</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15128,-11.84964199999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-079-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">79</SimpleData>
+					<SimpleData name="LATITUD_">-11.8383</SimpleData>
+					<SimpleData name="LONGITUD">-77.1812</SimpleData>
+					<SimpleData name="DESCRIPCION_">AH. PUERTO PACHACUTEC/AV. SANTA ROSA CALLE 9</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.181186,-11.838336,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PMI-080-PA</name>
+			<styleUrl>#pointStyleMap00</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0055ff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PUNTOS_PACHACUTEC_IDDS">
+					<SimpleData name="N">80</SimpleData>
+					<SimpleData name="LATITUD_">-11.8257</SimpleData>
+					<SimpleData name="LONGITUD">-77.1542</SimpleData>
+					<SimpleData name="DESCRIPCION_">GRUPO RESIDENCIAL A1 - ENTRADA A.H LEANDRA ORTEGA</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15417499999998,-11.825689,0</coordinates>
+			</Point>
+		</Placemark>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	</Folder>
+</Document>
+</kml>
