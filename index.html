@@ -5,7 +5,6 @@
   <title>Mapa GPON – Ventanilla</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Leaflet y extensiones -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
@@ -43,6 +42,19 @@
       margin-right: 8px;
       border: 1px solid #555;
     }
+    
+    /* --- NUEVO ESTILO PARA EL ID --- */
+    /* Esto hace que el ID se vea como texto simple sobre el mapa */
+    .poste-id-tooltip {
+      background: rgba(255, 255, 255, 0.75); /* Fondo blanco semi-transparente */
+      border: none;
+      box-shadow: none;
+      font-weight: bold;
+      font-size: 10px;
+      color: #000;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
   </style>
 </head>
 
@@ -69,6 +81,41 @@
       })).addTo(map);
     });
 
+    
+    /* --- INICIO DE CAMBIOS IMPORTANTES --- */
+
+    // --- FUNCIÓN PARA PROCESAR CADA POSTE ---
+    // Esta función se llamará por cada punto (Placemark) en tus KML de postes
+    function onEachPoste(feature, layer) {
+      
+      // 1. Añadir Popup con Metadata (al hacer click)
+      // Tomamos la 'description' del KML
+      const metadata = feature.properties.description;
+      if (metadata) {
+        // Reemplazamos saltos de línea (\n) por <br> para que se vea bien en HTML
+        const popupContent = metadata.replace(/(\r\n|\n|\r)/gm, "<br>");
+        layer.bindPopup(popupContent);
+      }
+
+      // 2. Añadir Tooltip con ID (permanente)
+      // Tomamos el 'name' del KML
+      const id = feature.properties.name;
+      if (id) {
+        layer.bindTooltip(id, {
+          permanent: true,       // Para que se muestre siempre
+          direction: 'auto',     // Leaflet decide dónde ponerlo
+          className: 'poste-id-tooltip', // El estilo CSS que añadimos arriba
+          offset: [0, -10]       // Lo subimos un poco para que no tape el punto
+        });
+      }
+    }
+
+    // Opciones para las capas GeoJSON que crearán los postes
+    const geoJsonOptions = {
+      onEachFeature: onEachPoste
+      // NOTA: Si quisieras cambiar el ícono azul, aquí se usaría 'pointToLayer'
+    };
+
     // --- CAPAS DINÁMICAS (POSTES POR ZONA) ---
     const capasDinamicas = [
       { nombre: "Postes Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
@@ -78,39 +125,56 @@
 
     const capasActivas = {};
 
+    // Modificamos la carga inicial para usar las opciones de GeoJSON
     capasDinamicas.forEach(c => {
-      capasActivas[c.nombre] = omnivore.kml(c.url).addTo(map);
+      // Creamos una capa GeoJSON vacía con nuestras opciones
+      const layerGroup = L.geoJson(null, geoJsonOptions);
+      // Usamos Omnivore para parsear el KML y añadirlo a nuestra capa personalizada
+      capasActivas[c.nombre] = omnivore.kml(c.url, null, layerGroup).addTo(map);
     });
 
-    // --- RECARGA AUTOMÁTICA CADA 2 MINUTOS ---
+    
+    // --- RECARGA AUTOMÁTICA CADA 1 MINUTO ---
     setInterval(() => {
       Object.keys(capasActivas).forEach(nombre => {
         const capa = capasDinamicas.find(c => c.nombre === nombre);
-        map.removeLayer(capasActivas[nombre]);
-        capasActivas[nombre] = omnivore.kml(capa.url + "?t=" + Date.now()).addTo(map);
+        
+        // 1. Quita la capa vieja del mapa
+        map.removeLayer(capasActivas[nombre]); 
+
+        // 2. Crea una nueva capa vacía con las mismas opciones (popups/tooltips)
+        const newLayerGroup = L.geoJson(null, geoJsonOptions);
+        
+        // 3. Carga el KML actualizado en la nueva capa
+        // Añadimos un timestamp ("?t=" + Date.now()) para evitar que el navegador use el caché
+        capasActivas[nombre] = omnivore.kml(capa.url + "?t=" + Date.now(), null, newLayerGroup).addTo(map);
       });
       console.log("Capas de postes actualizadas:", new Date().toLocaleTimeString());
-    }, 120000);
+    }, 60000); // <-- Actualizado a 60,000 milisegundos (1 minuto)
 
-    // --- LEYENDA ---
+
+    // --- LEYENDA (CORREGIDA) ---
     const legend = L.control({ position: 'bottomright' });
     legend.onAdd = function () {
       const div = L.DomUtil.create('div', 'legend');
       div.innerHTML += '<h4>Zonas del Proyecto</h4>';
+      
+      // Usamos SOLO el array 'rutas' que tiene los nombres correctos de las zonas
+      // Esto elimina las entradas duplicadas de "Postes..."
       rutas.forEach(r => {
         div.innerHTML += `<div><span style="background:${r.color}"></span>${r.nombre}</div>`;
       });
-      div.innerHTML += `<hr>`;
-      capasDinamicas.forEach(c => {
-        div.innerHTML += `<div><span style="background:${c.color}"></span>${c.nombre}</div>`;
-      });
+      
+      // El <hr> y el segundo bucle se eliminaron
       return div;
     };
     legend.addTo(map);
+
+    /* --- FIN DE CAMBIOS IMPORTANTES --- */
+
   </script>
 </body>
 </html>
-
 
 
 
