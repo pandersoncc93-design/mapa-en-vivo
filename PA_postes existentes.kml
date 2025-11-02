@@ -1,0 +1,2765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PA_postes existentes.kml</name>
+	<Schema name="EXISTENTES" id="S_EXISTENTES_SDD2">
+		<SimpleField type="string" name="NOMBRE"><displayName>&lt;b&gt;NOMBRE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD"><displayName>&lt;b&gt;LATITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="PEMD2" id="S_PEMD2_DDS">
+		<SimpleField type="double" name="X"><displayName>&lt;b&gt;X&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Y"><displayName>&lt;b&gt;Y&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME"><displayName>&lt;b&gt;NAME&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="PEMD2" id="S_PEMD2_DDS0">
+		<SimpleField type="double" name="X"><displayName>&lt;b&gt;X&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Y"><displayName>&lt;b&gt;Y&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="NAME"><displayName>&lt;b&gt;NAME&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="POSTES 11M" id="S_POSTES_11M_SDD02">
+		<SimpleField type="string" name="NOMBRE"><displayName>&lt;b&gt;NOMBRE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD"><displayName>&lt;b&gt;LATITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="POSTES 13M" id="S_POSTES_13M_SDD2">
+		<SimpleField type="string" name="NOMBRE"><displayName>&lt;b&gt;NOMBRE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD"><displayName>&lt;b&gt;LATITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="POSTES 9M" id="S_POSTES_9M_SDD002">
+		<SimpleField type="string" name="NOMBRE"><displayName>&lt;b&gt;NOMBRE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD"><displayName>&lt;b&gt;LATITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="PTZ (95)" id="S_PTZ__95__SDD02">
+		<SimpleField type="string" name="NOMBRE"><displayName>&lt;b&gt;NOMBRE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD"><displayName>&lt;b&gt;LATITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="PTZ (95)" id="S_PTZ__95__SDD020">
+		<SimpleField type="string" name="NOMBRE"><displayName>&lt;b&gt;NOMBRE&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LATITUD"><displayName>&lt;b&gt;LATITUD&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="LONGITUD"><displayName>&lt;b&gt;LONGITUD&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Schema name="Postes-9m" id="S_Postes_9m_DDS">
+		<SimpleField type="double" name="Longitud"><displayName>&lt;b&gt;Longitud&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Latitud"><displayName>&lt;b&gt;Latitud&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Name"><displayName>&lt;b&gt;Name&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle0013002">
+		<IconStyle>
+			<color>ffff0000</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[POSTES 11M/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[POSTES 11M/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[POSTES 11M/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="hlightPointStyle1">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>X</b></td><td>$[PEMD2/X]</td></tr>
+  <tr><td><b>Y</b></td><td>$[PEMD2/Y]</td></tr>
+  <tr><td><b>NAME</b></td><td>$[PEMD2/NAME]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="hlightPointStyle11">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Longitud</b></td><td>$[Postes-13m/Longitud]</td></tr>
+  <tr><td><b>Latitud</b></td><td>$[Postes-13m/Latitud]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Postes-13m/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="hlightPointStyle1100116">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[PTZ (95)/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[PTZ (95)/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PTZ (95)/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="hlightPointStyle1100132">
+		<IconStyle>
+			<color>ff005555</color>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[PTZ (95)/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[PTZ (95)/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PTZ (95)/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+		<LineStyle>
+			<color>ffe7ebef</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffe7ebef</color>
+		</PolyStyle>
+	</Style>
+	<Style id="hlightPointStyle126">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[EXISTENTES/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[EXISTENTES/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[EXISTENTES/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="hlightPointStyle2202922">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff00</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[POSTES 13M/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[POSTES 13M/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[POSTES 13M/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff55ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff55ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="hlightPointStyle4">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Longitud</b></td><td>$[Postes-9m/Longitud]</td></tr>
+  <tr><td><b>Latitud</b></td><td>$[Postes-9m/Latitud]</td></tr>
+  <tr><td><b>Name</b></td><td>$[Postes-9m/Name]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="icon-503-0088FF">
+		<IconStyle>
+			<color>ff0088ff</color>
+			<Icon>
+				<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="icon-503-BC4780">
+		<IconStyle>
+			<color>ffbc4780</color>
+			<Icon>
+				<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_placemark_circle80">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle80</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin382">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin451</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin471</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="normPointStyle011102">
+		<IconStyle>
+			<color>ffff0000</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[POSTES 11M/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[POSTES 11M/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[POSTES 11M/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normPointStyle10">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Longitud</b></td><td>$[Postes-9m/Longitud]</td></tr>
+  <tr><td><b>Latitud</b></td><td>$[Postes-9m/Latitud]</td></tr>
+  <tr><td><b>Name</b></td><td>$[Postes-9m/Name]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle1201100027">
+		<IconStyle>
+			<color>ff005555</color>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[PTZ (95)/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[PTZ (95)/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PTZ (95)/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+		<LineStyle>
+			<color>ffe7ebef</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffe7ebef</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normPointStyle1201100030">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[PTZ (95)/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[PTZ (95)/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[PTZ (95)/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle3">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>X</b></td><td>$[PEMD2/X]</td></tr>
+  <tr><td><b>Y</b></td><td>$[PEMD2/Y]</td></tr>
+  <tr><td><b>NAME</b></td><td>$[PEMD2/NAME]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle3900262">
+		<IconStyle>
+			<color>ffffff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff00</color>
+		</LabelStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[POSTES 13M/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[POSTES 13M/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[POSTES 13M/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ffff55ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff55ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normPointStyle412">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>NOMBRE</b></td><td>$[EXISTENTES/NOMBRE]</td></tr>
+  <tr><td><b>LATITUD</b></td><td>$[EXISTENTES/LATITUD]</td></tr>
+  <tr><td><b>LONGITUD</b></td><td>$[EXISTENTES/LONGITUD]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff0000ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normPointStyle5">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Longitud</b></td><td>$[Postes-13m/Longitud]</td></tr>
+  <tr><td><b>Latitud</b></td><td>$[Postes-13m/Latitud]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Postes-13m/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="pointStyleMap032">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle412</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle126</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap11112">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle011102</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle0013002</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap2701932">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle3900262</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle2202922</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap315121297">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle1201100030</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle1100116</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap3151215">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle1201100027</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle1100132</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap7">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle11</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_placemark_circle_highlight8">
+		<IconStyle>
+			<color>ffff0000</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff00</color>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin471">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_placemark_circle80">
+		<IconStyle>
+			<color>ffff0000</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff00ff00</color>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffff0000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin451">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>postes existentes</name>
+		<open>1</open>
+		<Placemark>
+			<name>P9-447</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-447</SimpleData>
+					<SimpleData name="LATITUD">-11.849</SimpleData>
+					<SimpleData name="LONGITUD">-77.1361</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13614396967212,-11.84902245340713,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-446</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-446</SimpleData>
+					<SimpleData name="LATITUD">-11.8492</SimpleData>
+					<SimpleData name="LONGITUD">-77.1365</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13652188897156,-11.84924554426124,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>EXIST-20</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap032</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EXISTENTES_SDD2">
+					<SimpleData name="NOMBRE">EXIST-20</SimpleData>
+					<SimpleData name="LATITUD">-11.8492</SimpleData>
+					<SimpleData name="LONGITUD">-77.1369</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13676904339732,-11.84917137771242,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-445</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-445</SimpleData>
+					<SimpleData name="LATITUD">-11.8495</SimpleData>
+					<SimpleData name="LONGITUD">-77.1372</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13726679680035,-11.84946586455343,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-444</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-444</SimpleData>
+					<SimpleData name="LATITUD">-11.8498</SimpleData>
+					<SimpleData name="LONGITUD">-77.1375</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13750808132104,-11.8498165127511,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-443</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-443</SimpleData>
+					<SimpleData name="LATITUD">-11.8502</SimpleData>
+					<SimpleData name="LONGITUD">-77.1377</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13770335225266,-11.85014943269593,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-442</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-442</SimpleData>
+					<SimpleData name="LATITUD">-11.8506</SimpleData>
+					<SimpleData name="LONGITUD">-77.1379</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13796411289175,-11.85064453611545,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-37</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-37</SimpleData>
+					<SimpleData name="LATITUD">-11.8361</SimpleData>
+					<SimpleData name="LONGITUD">-77.1463</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1462730894157,-11.8360581831736,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-410</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-410</SimpleData>
+					<SimpleData name="LATITUD">-11.8359</SimpleData>
+					<SimpleData name="LONGITUD">-77.1467</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14662975449635,-11.83591087996325,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-372</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-372</SimpleData>
+					<SimpleData name="LATITUD">-11.8358</SimpleData>
+					<SimpleData name="LONGITUD">-77.147</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14696842348245,-11.83580890087035,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-373</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-373</SimpleData>
+					<SimpleData name="LATITUD">-11.8355</SimpleData>
+					<SimpleData name="LONGITUD">-77.1469</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14686461533648,-11.8354391439318,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-374</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-374</SimpleData>
+					<SimpleData name="LATITUD">-11.8349</SimpleData>
+					<SimpleData name="LONGITUD">-77.1468</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14675008169475,-11.83487064004002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-375</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-375</SimpleData>
+					<SimpleData name="LATITUD">-11.8343</SimpleData>
+					<SimpleData name="LONGITUD">-77.1466</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14659878166225,-11.83429337677036,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-376</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-376</SimpleData>
+					<SimpleData name="LATITUD">-11.8338</SimpleData>
+					<SimpleData name="LONGITUD">-77.1465</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14649462234264,-11.8338784339322,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-12</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap7</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Postes_9m_DDS">
+					<SimpleData name="Longitud">-77.1344</SimpleData>
+					<SimpleData name="Latitud">-11.8594</SimpleData>
+					<SimpleData name="Name">P9-12</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1343885,-11.85939445,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-10</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap7</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Postes_9m_DDS">
+					<SimpleData name="Longitud">-77.1341</SimpleData>
+					<SimpleData name="Latitud">-11.8598</SimpleData>
+					<SimpleData name="Name">P9-10</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13413201,-11.85979050000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-09</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap7</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Postes_9m_DDS">
+					<SimpleData name="Longitud">-77.1338</SimpleData>
+					<SimpleData name="Latitud">-11.8603</SimpleData>
+					<SimpleData name="Name">P9-09</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13383227999999,-11.86030005999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-353</name>
+			<open>1</open>
+			<styleUrl>#msn_placemark_circle</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Postes_9m_DDS">
+					<SimpleData name="Longitud">-77.1372</SimpleData>
+					<SimpleData name="Latitud">-11.862</SimpleData>
+					<SimpleData name="Name">P9-353</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13707663385479,-11.86157779342755,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>VC-03</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap9</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PEMD2_DDS0">
+					<SimpleData name="X">-77.1377</SimpleData>
+					<SimpleData name="Y">-11.8615</SimpleData>
+					<SimpleData name="NAME">VC-03</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13765375,-11.86146685,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>VC-03</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap3</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PEMD2_DDS">
+					<SimpleData name="X">-77.1377</SimpleData>
+					<SimpleData name="Y">-11.8615</SimpleData>
+					<SimpleData name="NAME">VC-03</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13765375,-11.86146685,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-510</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-510</SimpleData>
+					<SimpleData name="LATITUD">-11.8538</SimpleData>
+					<SimpleData name="LONGITUD">-77.1422</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14216328068768,-11.85377597407836,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-509</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-509</SimpleData>
+					<SimpleData name="LATITUD">-11.8542</SimpleData>
+					<SimpleData name="LONGITUD">-77.1417</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14177123063672,-11.85409525897279,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-54</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-54</SimpleData>
+					<SimpleData name="LATITUD">-11.8546</SimpleData>
+					<SimpleData name="LONGITUD">-77.1412</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14126971581214,-11.85449671058699,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-671</name>
+			<open>1</open>
+			<description>antes P9-508-A</description>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-671</SimpleData>
+					<SimpleData name="LATITUD">-11.8408</SimpleData>
+					<SimpleData name="LONGITUD">-77.1347</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.141077960163,-11.85461565085767,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-508</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-508</SimpleData>
+					<SimpleData name="LATITUD">-11.8543</SimpleData>
+					<SimpleData name="LONGITUD">-77.1409</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1408186689129,-11.85431033177124,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-507</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-507</SimpleData>
+					<SimpleData name="LATITUD">-11.8539</SimpleData>
+					<SimpleData name="LONGITUD">-77.1406</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14048534563867,-11.8539242332493,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-506</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-506</SimpleData>
+					<SimpleData name="LATITUD">-11.8536</SimpleData>
+					<SimpleData name="LONGITUD">-77.1403</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14021666962967,-11.8535918713539,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-485</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-485</SimpleData>
+					<SimpleData name="LATITUD">-11.8532</SimpleData>
+					<SimpleData name="LONGITUD">-77.14</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13987403248728,-11.85318776689736,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-484</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-484</SimpleData>
+					<SimpleData name="LATITUD">-11.8529</SimpleData>
+					<SimpleData name="LONGITUD">-77.1397</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13965158402061,-11.85290024308468,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-51</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-51</SimpleData>
+					<SimpleData name="LATITUD">-11.8526</SimpleData>
+					<SimpleData name="LONGITUD">-77.1395</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13950330878166,-11.85271157277733,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-50</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-50</SimpleData>
+					<SimpleData name="LATITUD">-11.8523</SimpleData>
+					<SimpleData name="LONGITUD">-77.1393</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13922405265501,-11.85219853604977,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-483</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-483</SimpleData>
+					<SimpleData name="LATITUD">-11.8522</SimpleData>
+					<SimpleData name="LONGITUD">-77.1392</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13917768604996,-11.8521356227332,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-482</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-482</SimpleData>
+					<SimpleData name="LATITUD">-11.8519</SimpleData>
+					<SimpleData name="LONGITUD">-77.1389</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13894627563258,-11.8518752788284,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-90</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-90</SimpleData>
+					<SimpleData name="LATITUD">-11.8517</SimpleData>
+					<SimpleData name="LONGITUD">-77.1388</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13883512278773,-11.85174055354442,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-462</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-462</SimpleData>
+					<SimpleData name="LATITUD">-11.8514</SimpleData>
+					<SimpleData name="LONGITUD">-77.1386</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13862206255992,-11.85148007061945,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-441</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-441</SimpleData>
+					<SimpleData name="LATITUD">-11.851</SimpleData>
+					<SimpleData name="LONGITUD">-77.1382</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13819629510647,-11.85100428979957,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-24</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-24</SimpleData>
+					<SimpleData name="LATITUD">-11.8387</SimpleData>
+					<SimpleData name="LONGITUD">-77.1669</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16687195739482,-11.83860367736898,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-22</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-22</SimpleData>
+					<SimpleData name="LATITUD">-11.8386</SimpleData>
+					<SimpleData name="LONGITUD">-77.1672</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16739431436591,-11.83852738248726,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-21</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-21</SimpleData>
+					<SimpleData name="LATITUD">-11.8385</SimpleData>
+					<SimpleData name="LONGITUD">-77.1676</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16758675780572,-11.83849879798589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-20</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-20</SimpleData>
+					<SimpleData name="LATITUD">-11.8383</SimpleData>
+					<SimpleData name="LONGITUD">-77.1682</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16831905050415,-11.83828533280075,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P-22</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap3151215</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PTZ__95__SDD02">
+					<SimpleData name="NOMBRE">P-22</SimpleData>
+					<SimpleData name="LATITUD">-11.8382</SimpleData>
+					<SimpleData name="LONGITUD">-77.1688</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16896002817754,-11.83812678990665,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-20</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-20</SimpleData>
+					<SimpleData name="LATITUD">-11.8395</SimpleData>
+					<SimpleData name="LONGITUD">-77.1556</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.155557450994,-11.83951238853122,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-19</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-19</SimpleData>
+					<SimpleData name="LATITUD">-11.8396</SimpleData>
+					<SimpleData name="LONGITUD">-77.1558</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1557859386,-11.83963121459999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-258</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-258</SimpleData>
+					<SimpleData name="LATITUD">-11.8393</SimpleData>
+					<SimpleData name="LONGITUD">-77.156</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15599010500001,-11.83927887519999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-257</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-257</SimpleData>
+					<SimpleData name="LATITUD">-11.839</SimpleData>
+					<SimpleData name="LONGITUD">-77.1561</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15613174393491,-11.83903806474808,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-18</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-18</SimpleData>
+					<SimpleData name="LATITUD">-11.8386</SimpleData>
+					<SimpleData name="LONGITUD">-77.156</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15600011595453,-11.83863237480332,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-17</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-17</SimpleData>
+					<SimpleData name="LATITUD">-11.8384</SimpleData>
+					<SimpleData name="LONGITUD">-77.1559</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15592480908556,-11.83838893285163,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-256</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-256</SimpleData>
+					<SimpleData name="LATITUD">-11.8379</SimpleData>
+					<SimpleData name="LONGITUD">-77.1558</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1557822365199,-11.83775738621106,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-16</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-16</SimpleData>
+					<SimpleData name="LATITUD">-11.8372</SimpleData>
+					<SimpleData name="LONGITUD">-77.1556</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15561242567456,-11.83716219689942,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-29</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-29</SimpleData>
+					<SimpleData name="LATITUD">-11.837</SimpleData>
+					<SimpleData name="LONGITUD">-77.1554</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15545575635146,-11.83707301254272,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-236</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-236</SimpleData>
+					<SimpleData name="LATITUD">-11.8368</SimpleData>
+					<SimpleData name="LONGITUD">-77.1554</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15536111072265,-11.83670319104612,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-235</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-235</SimpleData>
+					<SimpleData name="LATITUD">-11.8363</SimpleData>
+					<SimpleData name="LONGITUD">-77.1552</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15524755057845,-11.83626121254907,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-234</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-234</SimpleData>
+					<SimpleData name="LATITUD">-11.8357</SimpleData>
+					<SimpleData name="LONGITUD">-77.1551</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15509665708187,-11.83573817944074,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-36</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-36</SimpleData>
+					<SimpleData name="LATITUD">-11.8363</SimpleData>
+					<SimpleData name="LONGITUD">-77.166</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16595537992585,-11.83638745116787,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-37</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-37</SimpleData>
+					<SimpleData name="LATITUD">-11.8362</SimpleData>
+					<SimpleData name="LONGITUD">-77.1659</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16588931093303,-11.83615298014691,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-38</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-38</SimpleData>
+					<SimpleData name="LATITUD">-11.8358</SimpleData>
+					<SimpleData name="LONGITUD">-77.1658</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1658128582408,-11.83576495032793,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-39</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-39</SimpleData>
+					<SimpleData name="LATITUD">-11.8354</SimpleData>
+					<SimpleData name="LONGITUD">-77.1657</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16569025095551,-11.83534112293853,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-133</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-133</SimpleData>
+					<SimpleData name="LATITUD">-11.8295</SimpleData>
+					<SimpleData name="LONGITUD">-77.1562</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16564288645034,-11.835151696543,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-40</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-40</SimpleData>
+					<SimpleData name="LATITUD">-11.835</SimpleData>
+					<SimpleData name="LONGITUD">-77.1656</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16561422587424,-11.83500731491752,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-5</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-5</SimpleData>
+					<SimpleData name="LATITUD">-11.8344</SimpleData>
+					<SimpleData name="LONGITUD">-77.1655</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16550961176418,-11.834538162172,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-41</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-41</SimpleData>
+					<SimpleData name="LATITUD">-11.8342</SimpleData>
+					<SimpleData name="LONGITUD">-77.1658</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16573761058939,-11.83436470715314,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-42</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-42</SimpleData>
+					<SimpleData name="LATITUD">-11.8339</SimpleData>
+					<SimpleData name="LONGITUD">-77.1661</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16609326253726,-11.83409086373697,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-10</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-10</SimpleData>
+					<SimpleData name="LATITUD">-11.8321</SimpleData>
+					<SimpleData name="LONGITUD">-77.1634</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16635745842136,-11.83385386902233,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-20</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-20</SimpleData>
+					<SimpleData name="LATITUD">-11.8332</SimpleData>
+					<SimpleData name="LONGITUD">-77.1653</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16519584352721,-11.83313974023981,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-6</name>
+			<open>1</open>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-6</SimpleData>
+					<SimpleData name="LATITUD">-11.8336</SimpleData>
+					<SimpleData name="LONGITUD">-77.1661</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16611679957063,-11.83358458193348,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-43</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-43</SimpleData>
+					<SimpleData name="LATITUD">-11.8333</SimpleData>
+					<SimpleData name="LONGITUD">-77.1656</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16555519392581,-11.83333582140732,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-49</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-49</SimpleData>
+					<SimpleData name="LATITUD">-11.8331</SimpleData>
+					<SimpleData name="LONGITUD">-77.1656</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16543408257056,-11.83310177049255,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-50</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-50</SimpleData>
+					<SimpleData name="LATITUD">-11.833</SimpleData>
+					<SimpleData name="LONGITUD">-77.1658</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.16582792341829,-11.83301742420378,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-226</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-226</SimpleData>
+					<SimpleData name="LATITUD">-11.8333</SimpleData>
+					<SimpleData name="LONGITUD">-77.1542</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15419668964489,-11.83328679342693,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-225</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-225</SimpleData>
+					<SimpleData name="LATITUD">-11.833</SimpleData>
+					<SimpleData name="LONGITUD">-77.1541</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15412074974739,-11.83296201680592,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-88</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-88</SimpleData>
+					<SimpleData name="LATITUD">-11.8312</SimpleData>
+					<SimpleData name="LONGITUD">-77.1619</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1618586669031,-11.83110464394325,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-89</name>
+			<open>1</open>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-89</SimpleData>
+					<SimpleData name="LATITUD">-11.8308</SimpleData>
+					<SimpleData name="LONGITUD">-77.1618</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1617734254,-11.83082742600002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-142</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-142</SimpleData>
+					<SimpleData name="LATITUD">-11.8261</SimpleData>
+					<SimpleData name="LONGITUD">-77.1562</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15616821523956,-11.82613210842023,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-141</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-141</SimpleData>
+					<SimpleData name="LATITUD">-11.8262</SimpleData>
+					<SimpleData name="LONGITUD">-77.1558</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1558023316,-11.82621851880001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-140</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-140</SimpleData>
+					<SimpleData name="LATITUD">-11.8263</SimpleData>
+					<SimpleData name="LONGITUD">-77.1554</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15544489965843,-11.8263183574689,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-139</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-139</SimpleData>
+					<SimpleData name="LATITUD">-11.8267</SimpleData>
+					<SimpleData name="LONGITUD">-77.1555</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15554899622003,-11.82672425831293,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-14</name>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-14</SimpleData>
+					<SimpleData name="LATITUD">-11.8271</SimpleData>
+					<SimpleData name="LONGITUD">-77.1556</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1556115668,-11.82705081379999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-138</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-138</SimpleData>
+					<SimpleData name="LATITUD">-11.8275</SimpleData>
+					<SimpleData name="LONGITUD">-77.1557</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1558118089974,-11.82748141898943,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-137</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-137</SimpleData>
+					<SimpleData name="LATITUD">-11.8279</SimpleData>
+					<SimpleData name="LONGITUD">-77.1558</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15583327124291,-11.82787891002845,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-136</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-136</SimpleData>
+					<SimpleData name="LATITUD">-11.8283</SimpleData>
+					<SimpleData name="LONGITUD">-77.1559</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1559239118,-11.8282675208,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-135</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-135</SimpleData>
+					<SimpleData name="LATITUD">-11.8287</SimpleData>
+					<SimpleData name="LONGITUD">-77.156</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1560323647837,-11.82869981763719,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-134</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-134</SimpleData>
+					<SimpleData name="LATITUD">-11.829</SimpleData>
+					<SimpleData name="LONGITUD">-77.1561</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15613653451001,-11.82911475494818,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-87</name>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-87</SimpleData>
+					<SimpleData name="LATITUD">-11.853</SimpleData>
+					<SimpleData name="LONGITUD">-77.1551</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15510335210647,-11.85297281193131,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-547</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-547</SimpleData>
+					<SimpleData name="LATITUD">-11.8349</SimpleData>
+					<SimpleData name="LONGITUD">-77.1382</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15465194793457,-11.85274127111549,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-529</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-529</SimpleData>
+					<SimpleData name="LATITUD">-11.8387</SimpleData>
+					<SimpleData name="LONGITUD">-77.1421</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15419094443044,-11.85245557695954,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-320</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-320</SimpleData>
+					<SimpleData name="LATITUD">-11.8524</SimpleData>
+					<SimpleData name="LONGITUD">-77.1545</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1538223265221,-11.85225051730789,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-319</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-319</SimpleData>
+					<SimpleData name="LATITUD">-11.8521</SimpleData>
+					<SimpleData name="LONGITUD">-77.154</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15355434721509,-11.85200854110765,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-318</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-318</SimpleData>
+					<SimpleData name="LATITUD">-11.8517</SimpleData>
+					<SimpleData name="LONGITUD">-77.1536</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15339448064189,-11.85151268953585,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-317</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-317</SimpleData>
+					<SimpleData name="LATITUD">-11.8511</SimpleData>
+					<SimpleData name="LONGITUD">-77.1535</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15329058370182,-11.85113390080822,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>EXIST-15</name>
+			<styleUrl>#pointStyleMap032</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EXISTENTES_SDD2">
+					<SimpleData name="NOMBRE">EXIST-15</SimpleData>
+					<SimpleData name="LATITUD">-11.8506</SimpleData>
+					<SimpleData name="LONGITUD">-77.1534</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15319494086029,-11.85063756045382,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-316</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-316</SimpleData>
+					<SimpleData name="LATITUD">-11.85</SimpleData>
+					<SimpleData name="LONGITUD">-77.1532</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15309887351998,-11.85008699763836,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-315</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-315</SimpleData>
+					<SimpleData name="LATITUD">-11.8494</SimpleData>
+					<SimpleData name="LONGITUD">-77.153</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15290139033115,-11.84947394267512,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-313</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-313</SimpleData>
+					<SimpleData name="LATITUD">-11.8482</SimpleData>
+					<SimpleData name="LONGITUD">-77.1527</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15268329312215,-11.84857184091008,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-24</name>
+			<LookAt>
+				<longitude>-77.15245399888748</longitude>
+				<latitude>-11.848176161211</latitude>
+				<altitude>0</altitude>
+				<heading>19.66852353206898</heading>
+				<tilt>0</tilt>
+				<range>107.6103762526566</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_placemark_circle80</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-77.15251697379769,-11.84816429496494,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>EXIST-14</name>
+			<styleUrl>#pointStyleMap032</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EXISTENTES_SDD2">
+					<SimpleData name="NOMBRE">EXIST-14</SimpleData>
+					<SimpleData name="LATITUD">-11.8478</SimpleData>
+					<SimpleData name="LONGITUD">-77.1524</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15241114171083,-11.84779667598959,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-570</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-570</SimpleData>
+					<SimpleData name="LATITUD">-11.8294</SimpleData>
+					<SimpleData name="LONGITUD">-77.1358</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15217111681667,-11.84760871062903,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-312</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-312</SimpleData>
+					<SimpleData name="LATITUD">-11.8476</SimpleData>
+					<SimpleData name="LONGITUD">-77.1521</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15187661120204,-11.84749345984846,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-311</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-311</SimpleData>
+					<SimpleData name="LATITUD">-11.8474</SimpleData>
+					<SimpleData name="LONGITUD">-77.1517</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15162712928569,-11.8472694153512,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-310</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-310</SimpleData>
+					<SimpleData name="LATITUD">-11.847</SimpleData>
+					<SimpleData name="LONGITUD">-77.1519</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15190877969465,-11.84691480864808,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-309</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-309</SimpleData>
+					<SimpleData name="LATITUD">-11.8466</SimpleData>
+					<SimpleData name="LONGITUD">-77.1521</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15208972211677,-11.84658807989839,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-308</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-308</SimpleData>
+					<SimpleData name="LATITUD">-11.8462</SimpleData>
+					<SimpleData name="LONGITUD">-77.1523</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1521973389298,-11.84627094593393,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-307</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-307</SimpleData>
+					<SimpleData name="LATITUD">-11.846</SimpleData>
+					<SimpleData name="LONGITUD">-77.1518</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1518932357305,-11.84610154222184,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-306</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-306</SimpleData>
+					<SimpleData name="LATITUD">-11.8457</SimpleData>
+					<SimpleData name="LONGITUD">-77.1515</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1514784021505,-11.84585164083102,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-75</name>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-75</SimpleData>
+					<SimpleData name="LATITUD">-11.8454</SimpleData>
+					<SimpleData name="LONGITUD">-77.1514</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15137961999999,-11.84543687000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-305</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-305</SimpleData>
+					<SimpleData name="LATITUD">-11.8451</SimpleData>
+					<SimpleData name="LONGITUD">-77.1514</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15133576171569,-11.84521105408312,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-304</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-304</SimpleData>
+					<SimpleData name="LATITUD">-11.8451</SimpleData>
+					<SimpleData name="LONGITUD">-77.1518</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15175686747133,-11.84509036632026,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-74</name>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-74</SimpleData>
+					<SimpleData name="LATITUD">-11.845</SimpleData>
+					<SimpleData name="LONGITUD">-77.1517</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15180118309357,-11.84489120228906,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-303</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-303</SimpleData>
+					<SimpleData name="LATITUD">-11.8448</SimpleData>
+					<SimpleData name="LONGITUD">-77.1517</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15168141985683,-11.84482884885542,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P-70</name>
+			<styleUrl>#pointStyleMap315121297</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+					<Icon>
+						<href>http://maps.google.com/mapfiles/kml/shapes/webcam.png</href>
+					</Icon>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_PTZ__95__SDD020">
+					<SimpleData name="NOMBRE">P-70</SimpleData>
+					<SimpleData name="LATITUD">-11.844</SimpleData>
+					<SimpleData name="LONGITUD">-77.1515</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15149193999999,-11.84404688000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-302</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-302</SimpleData>
+					<SimpleData name="LATITUD">-11.8445</SimpleData>
+					<SimpleData name="LONGITUD">-77.1517</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.15157710485842,-11.84439583605488,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-341</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-341</SimpleData>
+					<SimpleData name="LATITUD">-11.8468</SimpleData>
+					<SimpleData name="LONGITUD">-77.148</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14793471576587,-11.84680382187161,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-340</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-340</SimpleData>
+					<SimpleData name="LATITUD">-11.8467</SimpleData>
+					<SimpleData name="LONGITUD">-77.1479</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14789724635008,-11.84665605843342,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-339</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-339</SimpleData>
+					<SimpleData name="LATITUD">-11.8463</SimpleData>
+					<SimpleData name="LONGITUD">-77.1478</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14781177936405,-11.84628616387004,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-338</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-338</SimpleData>
+					<SimpleData name="LATITUD">-11.8458</SimpleData>
+					<SimpleData name="LONGITUD">-77.1477</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14766992365068,-11.8457449818811,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>EXIST-17</name>
+			<styleUrl>#pointStyleMap032</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_EXISTENTES_SDD2">
+					<SimpleData name="NOMBRE">EXIST-17</SimpleData>
+					<SimpleData name="LATITUD">-11.8455</SimpleData>
+					<SimpleData name="LONGITUD">-77.1475</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14750301689381,-11.84552030672032,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P11-28</name>
+			<styleUrl>#pointStyleMap11112</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_11M_SDD02">
+					<SimpleData name="NOMBRE">P11-28</SimpleData>
+					<SimpleData name="LATITUD">-11.8453</SimpleData>
+					<SimpleData name="LONGITUD">-77.1476</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1475102140229,-11.84526719849523,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-337</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-337</SimpleData>
+					<SimpleData name="LATITUD">-11.8454</SimpleData>
+					<SimpleData name="LONGITUD">-77.1472</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14718049699219,-11.84534199931596,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-336</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-336</SimpleData>
+					<SimpleData name="LATITUD">-11.8452</SimpleData>
+					<SimpleData name="LONGITUD">-77.1469</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1469287802,-11.84519692679999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-335</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-335</SimpleData>
+					<SimpleData name="LATITUD">-11.8449</SimpleData>
+					<SimpleData name="LONGITUD">-77.1467</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14672741672616,-11.84489355200757,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-334</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-334</SimpleData>
+					<SimpleData name="LATITUD">-11.8448</SimpleData>
+					<SimpleData name="LONGITUD">-77.1467</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14670843243114,-11.84481235717463,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-594</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-594</SimpleData>
+					<SimpleData name="LATITUD">-11.8306</SimpleData>
+					<SimpleData name="LONGITUD">-77.139</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13888118663573,-11.83053780869144,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-636</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-636</SimpleData>
+					<SimpleData name="LATITUD">-11.8373</SimpleData>
+					<SimpleData name="LONGITUD">-77.1375</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13899169681677,-11.83059120122601,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-595</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-595</SimpleData>
+					<SimpleData name="LATITUD">-11.8307</SimpleData>
+					<SimpleData name="LONGITUD">-77.1395</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13931306986328,-11.83062492759536,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P13-45</name>
+			<styleUrl>#pointStyleMap2701932</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_13M_SDD2">
+					<SimpleData name="NOMBRE">P13-45</SimpleData>
+					<SimpleData name="LATITUD">-11.8307</SimpleData>
+					<SimpleData name="LONGITUD">-77.1399</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.13984614899987,-11.83074743287983,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-596</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-596</SimpleData>
+					<SimpleData name="LATITUD">-11.8303</SimpleData>
+					<SimpleData name="LONGITUD">-77.1401</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14012773328901,-11.83038380066471,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-597</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-597</SimpleData>
+					<SimpleData name="LATITUD">-11.83</SimpleData>
+					<SimpleData name="LONGITUD">-77.1405</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1404280163998,-11.83006521553511,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-598</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-598</SimpleData>
+					<SimpleData name="LATITUD">-11.8298</SimpleData>
+					<SimpleData name="LONGITUD">-77.1408</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14081996871246,-11.82973690051085,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-599</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-599</SimpleData>
+					<SimpleData name="LATITUD">-11.8292</SimpleData>
+					<SimpleData name="LONGITUD">-77.1406</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14128721071545,-11.82965203379335,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>P9-600</name>
+			<styleUrl>#msn_ylw-pushpin382</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_POSTES_9M_SDD002">
+					<SimpleData name="NOMBRE">P9-600</SimpleData>
+					<SimpleData name="LATITUD">-11.8293</SimpleData>
+					<SimpleData name="LONGITUD">-77.1403</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14157097213597,-11.82956855199949,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-10T15:44:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="pictures">
+					<value><![CDATA[<br/><img src="C:/Users/pierr/AppData/Local/Microsoft/Windows/INetCache/IE/BK0CROMY/files/image_14_2.jpg"/>]]></value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14031618,-11.83884552,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-10T15:46:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14044325,-11.83860597,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-10T15:47:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14062095,-11.83826962,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-10T15:47:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14077652,-11.83819776,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9-R</name>
+			<TimeStamp><when>2022-10-10T15:48:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="pictures">
+					<value><![CDATA[<br/><img src="C:/Users/pierr/AppData/Local/Microsoft/Windows/INetCache/IE/BK0CROMY/files/image_15_2.jpg"/>]]></value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.1410216,-11.83810916,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-10T15:50:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14123417,-11.83821843,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-10T15:51:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14156508000001,-11.83841302,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-10T15:51:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14165963000001,-11.83845503,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9-R</name>
+			<TimeStamp><when>2022-10-10T15:54:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+				<Data name="pictures">
+					<value><![CDATA[<br/><img src="C:/Users/pierr/AppData/Local/Microsoft/Windows/INetCache/IE/BK0CROMY/files/image_16_2.jpg"/>]]></value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14242607,-11.83891049,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Exist</name>
+			<TimeStamp><when>2022-10-10T15:53:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14207605,-11.83871754,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-10T15:55:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14252632,-11.83892952,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>11</name>
+			<TimeStamp><when>2022-10-10T15:55:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14285791,-11.8391753,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Existen</name>
+			<TimeStamp><when>2022-10-10T15:58:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-0088FF</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14298364,-11.8393443,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>11</name>
+			<TimeStamp><when>2022-10-08T09:40:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BC4780</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14319820999999,-11.83941058,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-08T09:41:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BC4780</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14342821,-11.83902731,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-08T09:42:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BC4780</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14366123000001,-11.83865519,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>9</name>
+			<TimeStamp><when>2022-10-08T09:44:00Z</when>
+</TimeStamp>
+			<styleUrl>#icon-503-BC4780</styleUrl>
+			<ExtendedData>
+				<Data name="rating">
+					<value>0</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-77.14392979,-11.83819218,0</coordinates>
+			</Point>
+		</Placemark>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10441"></atom:link>
+	</Folder>
+</Document>
+</kml>
