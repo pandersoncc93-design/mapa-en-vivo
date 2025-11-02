@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,9 +16,7 @@
       padding: 0;
     }
     
-    /* --- INICIO DE CAMBIOS CSS --- */
-    
-    /* Esta es la clase base compartida (caja blanca, sombra, etc.) */
+    /* Clase base compartida (caja blanca) */
     .legend {
       background: white;
       padding: 10px 14px;
@@ -37,8 +34,7 @@
       color: #333;
     }
     
-    /* ¡LA REGLA PROBLEMÁTICA HA SIDO CORREGIDA! */
-    /* Ahora, esto SOLO se aplica a la leyenda de abajo (info-legend-box) */
+    /* Estilos SOLO para la leyenda de zonas */
     .info-legend-box div {
       display: flex;
       align-items: center;
@@ -51,8 +47,6 @@
       margin-right: 8px;
       border: 1px solid #555;
     }
-    /* --- FIN DE CAMBIOS CSS --- */
-    
     
     .poste-id-tooltip {
       background: rgba(255, 255, 255, 0.75);
@@ -65,25 +59,20 @@
       border-radius: 3px;
     }
 
-    /* ESTILOS DASHBOARD (Ahora usa 'dashboard-box') */
+    /* ESTILOS DASHBOARD */
     .dashboard-box {
       max-height: 300px;
-      overflow-y: auto;
+      overflow-y: auto; /* Permite el scroll */
       width: 250px;
     }
     .dashboard-list {
       padding-left: 10px;
     }
     
-    /* Esta regla ahora sí funcionará como 3 filas,
-       porque .legend div ya no la afecta */
+    /* Filas del dashboard */
     .dashboard-zone-summary {
       margin-bottom: 5px;
       font-size: 13px;
-    }
-    
-    .summary-label {
-      /* Ya no necesita reglas de flex */
     }
     
     .toggle-list {
@@ -157,8 +146,6 @@
     // --- LEYENDA (Estática) ---
     const legend = L.control({ position: 'bottomright' });
     legend.onAdd = function () {
-      // --- CAMBIO JS ---
-      // Se añade la clase 'info-legend-box' para aislar su CSS
       const div = L.DomUtil.create('div', 'legend info-legend-box');
       div.innerHTML += '<h4>Zonas del Proyecto</h4>';
       rutas.forEach(r => {
@@ -168,20 +155,27 @@
     };
     legend.addTo(map);
 
+    /* --- INICIO DE LA CORRECCIÓN (TÁCTIL) --- */
+    
     // --- DASHBOARD DE REPORTE (Dinámico) ---
     const dashboard = L.control({ position: 'topright' });
     dashboard.onAdd = function (map) {
-      // --- CAMBIO JS ---
-      // Se reemplaza 'dashboard' por 'dashboard-box' para aislar su CSS
-      this._div = L.DomUtil.create('div', 'legend dashboard-box');
+      this._div = L.DomEvent.create('div', 'legend dashboard-box');
+      
+      // Detener que el click en el dashboard se propague al mapa
       L.DomEvent.disableClickPropagation(this._div);
-      L.DomEvent.on(this._div, 'mousewheel', L.DomEvent.stopPropagation);
+      
+      // ¡ESTA ES LA LÍNEA CORREGIDA!
+      // Detener que el SCROLL (rueda o táctil) se propague al mapa
+      L.DomEvent.disableScrollPropagation(this._div);
       
       this._div.innerHTML = '<h4>Reporte de Postes</h4>';
-      this._listContainer = L.DomUtil.create('div', 'dashboard-list', this._div);
+      this._listContainer = L.DomEvent.create('div', 'dashboard-list', this._div);
       return this._div;
     };
     dashboard.addTo(map);
+    
+    /* --- FIN DE LA CORRECCIÓN (TÁCTIL) --- */
 
     // Función para actualizar el contenido del dashboard
     function updateDashboard() {
@@ -195,7 +189,6 @@
         const data = dashboardData[nombreZona] || [];
         const count = data.length;
 
-        // Este HTML ahora se mostrará como una fila
         html += `<div class="dashboard-zone-summary">`;
         html += `<span class="summary-label"><strong>${c.nombre}:</strong> ${count} p.</span>`;
         
@@ -309,3 +302,4 @@
   </script>
 </body>
 </html>
+
