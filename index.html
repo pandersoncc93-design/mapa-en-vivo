@@ -124,6 +124,13 @@
       border-bottom: 1px solid #ccc;
       padding-bottom: 3px;
     }
+
+    .leaflet-bar a.find-me-btn {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%23333" d="M256 0c-17.67 0-32 14.33-32 32v14.08C108.7 61.12 21.12 108.7 6.08 224H32c17.67 0 32 14.33 32 32s-14.33 32-32 32H6.08C21.12 403.3 108.7 490.9 224 505.9V480c0-17.67 14.33-32 32-32s32 14.33 32 32v25.92C403.3 490.9 490.9 403.3 505.9 288H480c-17.67 0-32-14.33-32-32s14.33-32 32-32h25.92C490.9 108.7 403.3 21.12 288 6.08V32c0-17.67-14.33-32-32-32zM256 128c-70.69 0-128 57.31-128 128s57.31 128 128 128 128-57.31 128-128-57.31-128-128-128zm0 192c-35.35 0-64-28.65-64-64s28.65-64 64-64 64 28.65 64 64-28.65 64-64 64z"/></svg>');
+      background-size: 16px 16px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   </style>
 </head>
 
@@ -446,6 +453,73 @@
       capasDinamicas.forEach(loadDynamicLayer);
     }, 60000); // 1 minuto
 
+    // =======================================================
+    // --- INICIO DE BLOQUE NUEVO (Geolocalización) ---
+    // =======================================================
+
+    // 1. Define el estilo del "punto azul"
+    const estiloUbicacion = {
+      radius: 7,
+      fillColor: "#1a73e8", // Azul Google
+      color: "#fff",
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.9
+    };
+    let marcadorUbicacion = null; // Variable para guardar el marcador
+
+    // 2. Crea un nuevo control de Leaflet (el botón)
+    L.Control.FindMe = L.Control.extend({
+      onAdd: function(map) {
+        const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+        const link = L.DomUtil.create('a', 'leaflet-control-zoom-in find-me-btn', container);
+        link.href = '#';
+        link.title = 'Encontrar mi ubicación';
+        link.role = 'button';
+
+        // 3. Define lo que pasa al hacer clic
+        L.DomEvent.on(link, 'click', L.DomEvent.stop).on(link, 'click', function() {
+          map.locate({
+            setView: true,      // Centra el mapa en la ubicación
+            maxZoom: 16,        // Zoom máximo al centrar
+            watch: true,        // Sigue al usuario (opcional pero genial)
+            enableHighAccuracy: true // Pide la máxima precisión (GPS)
+          });
+        });
+        
+        return container;
+      }
+    });
+    
+    // 4. Añade el botón al mapa (en la misma posición del zoom)
+    new L.Control.FindMe({ position: 'topleft' }).addTo(map);
+
+    // 5. Define qué hacer cuando Leaflet encuentra la ubicación
+    map.on('locationfound', function(e) {
+      const latlng = e.latlng;
+      
+      // Si el marcador no existe, créalo
+      if (!marcadorUbicacion) {
+        marcadorUbicacion = L.circleMarker(latlng, estiloUbicacion).addTo(map);
+        marcadorUbicacion.bindPopup("¡Estás aquí!").openPopup();
+      } else {
+        // Si ya existe, solo mueve el marcador
+        marcadorUbicacion.setLatLng(latlng);
+      }
+      
+      // (Opcional) Centra el mapa si el usuario se mueve
+      // map.panTo(latlng); 
+    });
+
+    // 6. Define qué hacer si hay un error (ej: permiso denegado)
+    map.on('locationerror', function(e) {
+      alert("No se pudo obtener tu ubicación. Asegúrate de dar permisos.\n\nError: " + e.message);
+    });
+
+    // =======================================================
+    // --- FIN DE BLOQUE NUEVO ---
+    // =======================================================
+    
   </script>
 </body>
 </html>
