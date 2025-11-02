@@ -115,7 +115,6 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    
     // --- RUTAS ESTÁTICAS (Sin tilde) ---
     const rutas = [
       { nombre: "Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml" },
@@ -129,6 +128,41 @@
       })).addTo(map);
     });
 
+  	// 1. PMIs (KML fijos)
+  	const puntosFijosKML = [
+  	  { nombre: "PMIs Pachacutec", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PMIs%20Pachacutec.kml" },
+  	  { nombre: "PMIs Ventanilla Centro", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PMIs%20Ventanilla%20centro.kml" },
+  	  { nombre: "PMIs Villa Los Reyes", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PMIs%20Villa%20los%20reyes.kml" }
+  	];
+  
+  	// 2. Define el estilo de los círculos
+  	const estiloPuntosFijos = {
+  	  radius: 8,
+  	  fillColor: "#008f39", // Verde
+  	  color: "#000",
+  	  weight: 1,
+  	  opacity: 1,
+  	  fillOpacity: 0.8
+  	};
+  
+  	// 3. Carga cada KML y aplica el estilo de círculo
+  	puntosFijosKML.forEach(p => {
+  	  const capaPuntosFijos = L.geoJson(null, {
+  		pointToLayer: function (feature, latlng) {
+  		  return L.circleMarker(latlng, estiloPuntosFijos);
+  		},
+  		onEachFeature: function (feature, layer) {
+  		  let popupContent = feature.properties.name || "Punto Fijo";
+  		  if (feature.properties.description) {
+  			const descLimpia = feature.properties.description.replace(/(\r\n|\n|\r)/gm, "<br>");
+  			popupContent += `<br><hr>${descLimpia}`;
+  		  }
+  		  layer.bindPopup(popupContent);
+  		}
+  	  });
+  	  omnivore.kml(p.url, null, capaPuntosFijos).addTo(map);
+  	});
+   
     // --- CAPAS DINÁMICAS (Sin tilde) ---
     const capasDinamicas = [
       { nombre: "Postes Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
