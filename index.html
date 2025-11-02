@@ -54,42 +54,36 @@
       border-radius: 3px;
     }
 
-    /* --- INICIO DE CORRECCIONES CSS --- */
+    /* --- ESTILOS DASHBOARD --- */
     .dashboard {
       max-height: 300px;
       overflow-y: auto;
-      width: 250px; /* MODIFICADO: Aumentamos el ancho */
+      width: 250px;
     }
     .dashboard-list {
       padding-left: 10px;
     }
-
-    /* NUEVO: Contenedor de la línea de resumen */
     .dashboard-zone-summary {
-      display: flex; /* Usamos Flexbox para alinear */
-      justify-content: space-between; /* Separa los elementos */
-      align-items: center; /* Centra verticalmente */
-      margin-bottom: 5px; /* Espacio entre zonas */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
       font-size: 13px;
     }
-
-    /* NUEVO: Contenedor para el texto (así no choca con el botón) */
     .summary-label {
-      flex-grow: 1; /* Ocupa el espacio disponible */
-      white-space: nowrap; /* Evita que el texto se parta */
+      flex-grow: 1;
+      white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis; /* Pone "..." si es muy largo */
+      text-overflow: ellipsis;
     }
-
     .toggle-list {
       cursor: pointer;
       color: blue;
       font-family: monospace;
       font-weight: bold;
       padding: 0 5px;
-      flex-shrink: 0; /* Evita que el botón se encoja */
+      flex-shrink: 0;
     }
-    
     .dashboard-id-list {
       list-style: none;
       padding-left: 15px;
@@ -99,13 +93,23 @@
     .dashboard-id-item {
       cursor: pointer;
       padding: 2px;
-      white-space: nowrap; /* MODIFICADO: Evita que el ID se parta en líneas */
+      white-space: nowrap;
     }
     .dashboard-id-item:hover {
       background-color: #f0f0f0;
       font-weight: bold;
     }
-    /* --- FIN DE CORRECCIONES CSS --- */
+    
+    /* --- NUEVO ESTILO (Contexto de Lista) --- */
+    .dashboard-list-header {
+      font-weight: bold;
+      font-size: 12px;
+      color: #555;
+      margin: 5px 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+    }
+    /* --- FIN DE ESTILOS --- */
   </style>
 </head>
 
@@ -119,9 +123,12 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
+    /* --- INICIO DE CAMBIOS (Codificación) --- */
+    
     // --- RUTAS ESTÁTICAS ---
     const rutas = [
-      { nombre: "Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml" },
+      // CAMBIO: Quitando tilde de "Pachacutec" para evitar problemas de codificación
+      { nombre: "Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml" },
       { nombre: "Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml" },
       { nombre: "Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml" }
     ];
@@ -132,15 +139,15 @@
       })).addTo(map);
     });
 
-    
-    /* --- INICIO DE CAMBIOS IMPORTANTES (DASHBOARD) --- */
-
     // --- CAPAS DINÁMICAS (POSTES POR ZONA) ---
     const capasDinamicas = [
-      { nombre: "Postes Pachacútec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
+      // CAMBIO: Quitando tilde de "Pachacutec"
+      { nombre: "Postes Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
       { nombre: "Postes Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VR_Postes_Act.kml" },
       { nombre: "Postes Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VC_Postes_Act.kml" }
     ];
+
+    /* --- FIN DE CAMBIOS (Codificación) --- */
 
     const capasActivas = {};
     const dashboardData = {};
@@ -180,7 +187,6 @@
         const count = data.length;
 
         // Línea de resumen (Contador)
-        // MODIFICADO: Envolvemos el texto en un <span class="summary-label">
         html += `<div class="dashboard-zone-summary">`;
         html += `<span class="summary-label"><strong>${c.nombre}:</strong> ${count} p.</span>`;
         
@@ -191,6 +197,10 @@
         
         // Lista colapsable de IDs
         html += `<ul class="dashboard-id-list" id="list-${nombreZona}" style="display:none;">`;
+        
+        // --- NUEVO ENCABEZADO DE LISTA (Contexto) ---
+        html += `<li class="dashboard-list-header">${c.nombre}</li>`;
+        
         data.sort((a, b) => a.id.localeCompare(b.id)); 
         
         data.forEach(item => {
@@ -251,7 +261,8 @@
           const metadata = feature.properties.description;
 
           if (metadata) {
-            const popupContent = metadata.replace(/(\r-|\r|\n)/gm, "<br>");
+            // Corregido el reemplazo de saltos de línea
+            const popupContent = metadata.replace(/(\r\n|\n|\r)/gm, "<br>");
             layer.bindPopup(popupContent);
           }
 
@@ -279,10 +290,7 @@
       capasDinamicas.forEach(loadDynamicLayer);
     }, 60000); // 1 minuto
 
-    /* --- FIN DE CAMBIOS IMPORTANTES --- */
-
   </script>
 </body>
 </html>
-
 
