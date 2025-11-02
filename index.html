@@ -207,6 +207,7 @@
     // Función para añadir listeners (TÁCTIL + CLICK)
     function addDashboardListeners() {
       
+      // 1. Listeners para botones de expandir/colapsar [+]
       const toggles = document.querySelectorAll('.toggle-list');
       const handleToggle = function(e) {
         e.preventDefault(); 
@@ -221,9 +222,10 @@
 
       toggles.forEach(toggle => {
         toggle.addEventListener('click', handleToggle);
-        toggle.addEventListener('touchstart', handleToggle);
+        // HEMOS QUITADO 'touchstart' DE AQUÍ
       });
 
+      // 2. Listeners para items de la lista (el ID del poste)
       const items = document.querySelectorAll('.dashboard-id-item');
       const handleItemClick = function(e) {
         e.preventDefault(); 
@@ -241,7 +243,7 @@
 
       items.forEach(item => {
         item.addEventListener('click', handleItemClick);
-        item.addEventListener('touchstart', handleItemClick);
+         // HEMOS QUITADO 'touchstart' DE AQUÍ
       });
     }
 
