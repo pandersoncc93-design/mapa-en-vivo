@@ -160,9 +160,6 @@
       
       L.DomEvent.disableClickPropagation(this._div);
       L.DomEvent.disableScrollPropagation(this._div);
-      
-      // --- ¡ESTA ES LA LÍNEA ADICIONAL! ---
-      // Forzar la detención del evento 'touchmove' (scroll táctil)
       L.DomEvent.on(this._div, 'touchmove', L.DomEvent.stopPropagation);
       
       this._div.innerHTML = '<h4>Reporte de Postes</h4>';
@@ -263,7 +260,10 @@
         this.eachLayer(function(layer) {
           const feature = layer.feature;
           const id = feature.properties.name;
-          const metadata = feature.form.description;
+          
+          // --- ¡AQUÍ ESTÁ LA CORRECCIÓN! ---
+          // Era feature.properties.description, no feature.form
+          const metadata = feature.properties.description;
 
           if (metadata) {
             const popupContent = metadata.replace(/(\r\n|\n|\r)/gm, "<br>");
@@ -279,6 +279,8 @@
             dashboardData[nombreCapa].push({ id: id, layer: layer });
           }
         });
+        
+        // Esta función ahora sí se llamará
         updateDashboard();
       });
 
