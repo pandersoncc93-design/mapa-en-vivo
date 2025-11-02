@@ -54,26 +54,42 @@
       border-radius: 3px;
     }
 
-    /* --- NUEVOS ESTILOS PARA EL DASHBOARD --- */
+    /* --- INICIO DE CORRECCIONES CSS --- */
     .dashboard {
-      max-height: 300px; /* Altura máxima, luego scroll */
+      max-height: 300px;
       overflow-y: auto;
-      width: 200px; /* Ancho fijo */
+      width: 250px; /* MODIFICADO: Aumentamos el ancho */
     }
     .dashboard-list {
       padding-left: 10px;
     }
+
+    /* NUEVO: Contenedor de la línea de resumen */
     .dashboard-zone-summary {
-      margin-top: 5px;
+      display: flex; /* Usamos Flexbox para alinear */
+      justify-content: space-between; /* Separa los elementos */
+      align-items: center; /* Centra verticalmente */
+      margin-bottom: 5px; /* Espacio entre zonas */
       font-size: 13px;
     }
+
+    /* NUEVO: Contenedor para el texto (así no choca con el botón) */
+    .summary-label {
+      flex-grow: 1; /* Ocupa el espacio disponible */
+      white-space: nowrap; /* Evita que el texto se parta */
+      overflow: hidden;
+      text-overflow: ellipsis; /* Pone "..." si es muy largo */
+    }
+
     .toggle-list {
       cursor: pointer;
       color: blue;
       font-family: monospace;
       font-weight: bold;
       padding: 0 5px;
+      flex-shrink: 0; /* Evita que el botón se encoja */
     }
+    
     .dashboard-id-list {
       list-style: none;
       padding-left: 15px;
@@ -83,12 +99,13 @@
     .dashboard-id-item {
       cursor: pointer;
       padding: 2px;
+      white-space: nowrap; /* MODIFICADO: Evita que el ID se parta en líneas */
     }
     .dashboard-id-item:hover {
       background-color: #f0f0f0;
       font-weight: bold;
     }
-    /* --- FIN DE NUEVOS ESTILOS --- */
+    /* --- FIN DE CORRECCIONES CSS --- */
   </style>
 </head>
 
@@ -125,7 +142,6 @@
       { nombre: "Postes Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VC_Postes_Act.kml" }
     ];
 
-    // Almacenes globales para las capas y los datos del dashboard
     const capasActivas = {};
     const dashboardData = {};
 
@@ -144,7 +160,7 @@
     // --- DASHBOARD DE REPORTE (Dinámico) ---
     const dashboard = L.control({ position: 'topright' });
     dashboard.onAdd = function (map) {
-      this._div = L.DomUtil.create('div', 'dashboard legend'); // Reusamos clase 'legend'
+      this._div = L.DomUtil.create('div', 'dashboard legend');
       this._div.innerHTML = '<h4>Reporte de Postes</h4>';
       this._listContainer = L.DomUtil.create('div', 'dashboard-list', this._div);
       return this._div;
@@ -164,9 +180,10 @@
         const count = data.length;
 
         // Línea de resumen (Contador)
+        // MODIFICADO: Envolvemos el texto en un <span class="summary-label">
         html += `<div class="dashboard-zone-summary">`;
-        html += `<strong>${c.nombre}:</strong> ${count} postes`;
-        // Botón para expandir/colapsar
+        html += `<span class="summary-label"><strong>${c.nombre}:</strong> ${count} p.</span>`;
+        
         if (count > 0) {
           html += ` <span class="toggle-list" data-zone="${nombreZona}">[+]</span>`;
         }
@@ -174,7 +191,7 @@
         
         // Lista colapsable de IDs
         html += `<ul class="dashboard-id-list" id="list-${nombreZona}" style="display:none;">`;
-        data.sort((a, b) => a.id.localeCompare(b.id)); // Ordenar alfabéticamente
+        data.sort((a, b) => a.id.localeCompare(b.id)); 
         
         data.forEach(item => {
           html += `<li class="dashboard-id-item" data-id="${item.id}" data-zone="${nombreZona}">${item.id}</li>`;
@@ -183,12 +200,11 @@
       });
 
       container.innerHTML = html;
-      addDashboardListeners(); // Añadir listeners a los nuevos elementos
+      addDashboardListeners();
     }
 
     // Función para añadir listeners a los botones del dashboard
     function addDashboardListeners() {
-      // 1. Listeners para botones de expandir/colapsar [+]
       document.querySelectorAll('.toggle-list').forEach(toggle => {
         toggle.addEventListener('click', function() {
           const zone = this.getAttribute('data-zone');
@@ -201,19 +217,16 @@
         });
       });
 
-      // 2. Listeners para items de la lista (el ID del poste)
       document.querySelectorAll('.dashboard-id-item').forEach(item => {
         item.addEventListener('click', function() {
           const id = this.getAttribute('data-id');
           const zone = this.getAttribute('data-zone');
           
-          // Buscar el poste en nuestros datos guardados
           const posteData = dashboardData[zone].find(d => d.id === id);
           if (posteData && posteData.layer) {
             const layer = posteData.layer;
             
-            // ¡La magia! Volar al poste y abrir su popup
-            map.flyTo(layer.getLatLng(), 18); // Zoom 18
+            map.flyTo(layer.getLatLng(), 18);
             layer.openPopup();
           }
         });
@@ -221,59 +234,46 @@
     }
 
     // --- FUNCIÓN CENTRAL DE CARGA DE CAPAS ---
-    // Esta función se llama al inicio y en cada intervalo
     function loadDynamicLayer(capaConfig) {
       const nombreCapa = capaConfig.nombre;
 
-      // 1. Limpiar datos y capa anteriores
       if (capasActivas[nombreCapa]) {
         map.removeLayer(capasActivas[nombreCapa]);
       }
-      dashboardData[nombreCapa] = []; // Resetear datos
+      dashboardData[nombreCapa] = [];
 
-      // 2. Cargar el KML
       const kmlLayer = omnivore.kml(capaConfig.url + "?t=" + Date.now());
 
-      // 3. Cuando el KML esté listo, procesar CADA poste
       kmlLayer.on('ready', function() {
         this.eachLayer(function(layer) {
           const feature = layer.feature;
           const id = feature.properties.name;
           const metadata = feature.properties.description;
 
-          // a. Añadir Popup con Metadata (al hacer click)
           if (metadata) {
-            const popupContent = metadata.replace(/(\r\n|\n|\r)/gm, "<br>");
+            const popupContent = metadata.replace(/(\r-|\r|\n)/gm, "<br>");
             layer.bindPopup(popupContent);
           }
 
-          // b. Añadir Tooltip con ID (permanente)
           if (id) {
             layer.bindTooltip(id, {
               permanent: true, direction: 'auto',
               className: 'poste-id-tooltip', offset: [0, -10]
             });
             
-            // c. GUARDAR DATOS PARA EL DASHBOARD
             dashboardData[nombreCapa].push({ id: id, layer: layer });
           }
         });
-
-        // 4. Actualizar el dashboard CON LOS NUEVOS DATOS
         updateDashboard();
       });
 
-      // 5. Añadir la capa al mapa y guardarla
       capasActivas[nombreCapa] = kmlLayer;
       kmlLayer.addTo(map);
     }
 
     // --- CARGA INICIAL Y RECARGA AUTOMÁTICA ---
-    
-    // Carga inicial de todas las capas
     capasDinamicas.forEach(loadDynamicLayer);
 
-    // Recarga automática cada 1 minuto
     setInterval(() => {
       console.log("Actualizando capas y dashboard...", new Date().toLocaleTimeString());
       capasDinamicas.forEach(loadDynamicLayer);
@@ -284,6 +284,5 @@
   </script>
 </body>
 </html>
-
 
 
