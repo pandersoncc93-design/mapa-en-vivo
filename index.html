@@ -156,20 +156,18 @@
     const dashboard = L.control({ position: 'topright' });
     dashboard.onAdd = function (map) {
       
-      // --- INICIO DE LA CORRECCIÓN ---
-      // Usamos L.DomUtil.create (el correcto)
       this._div = L.DomUtil.create('div', 'legend dashboard-box');
       
-      // Estas líneas ahora funcionarán correctamente
       L.DomEvent.disableClickPropagation(this._div);
       L.DomEvent.disableScrollPropagation(this._div);
       
-      this._div.innerHTML = '<h4>Reporte de Postes</h4>';
+      // --- ¡ESTA ES LA LÍNEA ADICIONAL! ---
+      // Forzar la detención del evento 'touchmove' (scroll táctil)
+      L.DomEvent.on(this._div, 'touchmove', L.DomEvent.stopPropagation);
       
-      // Usamos L.DomUtil.create (el correcto)
+      this._div.innerHTML = '<h4>Reporte de Postes</h4>';
       this._listContainer = L.DomUtil.create('div', 'dashboard-list', this._div);
       return this._div;
-      // --- FIN DE LA CORRECCIÓN ---
     };
     dashboard.addTo(map);
     
@@ -251,7 +249,6 @@
     }
 
     // --- FUNCIÓN CENTRAL DE CARGA DE CAPAS ---
-    // (Esta función ahora volverá a ejecutarse)
     function loadDynamicLayer(capaConfig) {
       const nombreCapa = capaConfig.nombre;
 
@@ -266,7 +263,7 @@
         this.eachLayer(function(layer) {
           const feature = layer.feature;
           const id = feature.properties.name;
-          const metadata = feature.properties.description;
+          const metadata = feature.form.description;
 
           if (metadata) {
             const popupContent = metadata.replace(/(\r\n|\n|\r)/gm, "<br>");
@@ -290,7 +287,6 @@
     }
 
     // --- CARGA INICIAL Y RECARGA AUTOMÁTICA ---
-    // (Esta parte ahora volverá a ejecutarse)
     capasDinamicas.forEach(loadDynamicLayer);
 
     setInterval(() => {
