@@ -66,6 +66,23 @@
       padding-left: 10px;
     }
     
+    /* --- INICIO DE BLOQUE NUEVO (CSS para Reporte PMIs) --- */
+    .pmi-dashboard-box div {
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .pmi-dashboard-box span {
+      width: 12px; 
+      height: 12px; 
+      border-radius: 50%;
+      border: 1px solid #000;
+      margin-right: 8px;
+      display: inline-block;
+    }
+    /* --- FIN DE BLOQUE NUEVO --- */
+    
     .dashboard-zone-summary {
       margin-bottom: 5px;
       font-size: 13px;
@@ -111,6 +128,10 @@
   <script>
     // --- MAPA BASE ---
     const map = L.map('map').setView([-11.87, -77.13], 13);
+    
+    // --- LÍNEA NUEVA (Almacén de conteo) ---
+    const pmiCounts = {}; 
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
@@ -145,14 +166,35 @@
   	  fillOpacity: 0.8
   	};
   
-  	// 3. Carga cada KML y aplica el estilo de círculo
+    // =======================================================
+    // --- INICIO DE BLOQUE MODIFICADO (Carga y Conteo de PMIs) ---
+    // =======================================================
+  	// 3. Carga cada KML, aplica estilo, añade tooltips y CUENTA los puntos
   	puntosFijosKML.forEach(p => {
+  	  
+  	  // Inicializa el contador para esta zona
+  	  pmiCounts[p.nombre] = 0; 
+  	  
   	  const capaPuntosFijos = L.geoJson(null, {
   		pointToLayer: function (feature, latlng) {
+  		  // 1. Crea el Círculo-Marcador
   		  return L.circleMarker(latlng, estiloPuntosFijos);
   		},
   		onEachFeature: function (feature, layer) {
-  		  let popupContent = feature.properties.name || "Punto Fijo";
+  		  // 2. Incrementa el contador por cada punto
+  		  pmiCounts[p.nombre]++; 
+  		  
+  		  // 3. Añade Tooltip (ID)
+  		  const id = feature.properties.name;
+  		  let popupContent = id || "Punto Fijo";
+  		  if (id) {
+  			layer.bindTooltip(id, {
+  			  permanent: true, direction: 'auto',
+  			  className: 'poste-id-tooltip', offset: [0, -10]
+  			});
+  		  }
+
+  		  // 4. Añade Popup (Descripción)
   		  if (feature.properties.description) {
   			const descLimpia = feature.properties.description.replace(/(\r\n|\n|\r)/gm, "<br>");
   			popupContent += `<br><hr>${descLimpia}`;
@@ -160,8 +202,18 @@
   		  layer.bindPopup(popupContent);
   		}
   	  });
-  	  omnivore.kml(p.url, null, capaPuntosFijos).addTo(map);
+  	  
+  	  // Carga el KML
+  	  const kmlRun = omnivore.kml(p.url, null, capaPuntosFijos).addTo(map);
+  	  
+  	  // ¡CLAVE! Cuando el KML termine de cargar, actualiza el dashboard de PMIs
+  	  kmlRun.on('ready', function() {
+  		updatePmiDashboard();
+  	  });
   	});
+    // =======================================================
+    // --- FIN DE BLOQUE MODIFICADO ---
+    // =======================================================
    
     // --- CAPAS DINÁMICAS (Sin tilde) ---
     const capasDinamicas = [
@@ -202,6 +254,46 @@
     };
     dashboard.addTo(map);
     
+
+    // =======================================================
+    // --- INICIO DE BLOQUE NUEVO: DASHBOARD PMIs (FIJOS) ---
+    // =======================================================
+    const pmiDashboard = L.control({ position: 'bottomleft' });
+
+    pmiDashboard.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'legend pmi-dashboard-box');
+      // Evitar que el scroll mueva el mapa
+      L.DomEvent.disableScrollPropagation(this._div);
+      L.DomEvent.on(this._div, 'touchstart', L.DomEvent.stopPropagation);
+      L.DomEvent.on(this._div, 'touchmove', L.DomEvent.stopPropagation);
+
+      this._div.innerHTML = '<h4>Reporte de PMIs (Fijos)</h4>';
+      this._listContainer = L.DomUtil.create('div', 'pmi-list', this._div); 
+      return this._div;
+    };
+    pmiDashboard.addTo(map);
+
+    // Función para actualizar el dashboard de PMIs
+    function updatePmiDashboard() {
+      const container = pmiDashboard._listContainer;
+      if (!container) return;
+
+      let html = '';
+      const colorFijo = estiloPuntosFijos.fillColor; // Usa el color que ya definimos
+
+      puntosFijosKML.forEach(p => {
+        const count = pmiCounts[p.nombre] || 0; // Obtiene el conteo
+        html += `<div>`;
+        html += `<span style="background:${colorFijo};"></span>`; // Muestra el círculo de color
+        html += `<strong>${p.nombre}:</strong> ${count} p.`;
+        html += `</div>`;
+      });
+      container.innerHTML = html;
+    }
+    // =======================================================
+    // --- FIN DE BLOQUE NUEVO ---
+    // =======================================================
+
 
     // Función para actualizar el contenido del dashboard
     function updateDashboard() {
