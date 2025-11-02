@@ -70,12 +70,18 @@
       margin-bottom: 5px;
       font-size: 13px;
     }
+    
+    /* --- INICIO DE LA CORRECCIÓN CSS --- */
     .summary-label {
       flex-grow: 1;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      
+      /* Reemplazamos las 3 líneas problemáticas
+         por un ajuste de texto simple */
+      word-wrap: break-word; 
+      min-width: 0; /* Arreglo de Flexbox */
     }
+    /* --- FIN DE LA CORRECCIÓN CSS --- */
+    
     .toggle-list {
       cursor: pointer;
       color: blue;
@@ -206,16 +212,13 @@
       addDashboardListeners(); // Llamar a los listeners actualizados
     }
 
-
-    /* --- INICIO DE CAMBIOS (TÁCTIL) --- */
-
-    // Función para añadir listeners a los botones del dashboard
+    // Función para añadir listeners (TÁCTIL + CLICK)
     function addDashboardListeners() {
       
       // 1. Listeners para botones de expandir/colapsar [+]
       const toggles = document.querySelectorAll('.toggle-list');
       const handleToggle = function(e) {
-        e.preventDefault(); // Evita scroll o zoom no deseado
+        e.preventDefault(); 
         const zone = this.getAttribute('data-zone');
         const list = document.getElementById(`list-${zone}`);
         if (list) {
@@ -227,13 +230,13 @@
 
       toggles.forEach(toggle => {
         toggle.addEventListener('click', handleToggle);
-        toggle.addEventListener('touchstart', handleToggle); // Añadido evento táctil
+        toggle.addEventListener('touchstart', handleToggle); // Evento táctil
       });
 
       // 2. Listeners para items de la lista (el ID del poste)
       const items = document.querySelectorAll('.dashboard-id-item');
       const handleItemClick = function(e) {
-        e.preventDefault(); // Evita scroll o zoom no deseado
+        e.preventDefault(); 
         const id = this.getAttribute('data-id');
         const zone = this.getAttribute('data-zone');
         
@@ -248,12 +251,9 @@
 
       items.forEach(item => {
         item.addEventListener('click', handleItemClick);
-        item.addEventListener('touchstart', handleItemClick); // Añadido evento táctil
+        item.addEventListener('touchstart', handleItemClick); // Evento táctil
       });
     }
-
-    /* --- FIN DE CAMBIOS (TÁCTIL) --- */
-
 
     // --- FUNCIÓN CENTRAL DE CARGA DE CAPAS ---
     function loadDynamicLayer(capaConfig) {
