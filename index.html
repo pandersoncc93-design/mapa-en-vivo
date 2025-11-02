@@ -100,7 +100,6 @@
       font-weight: bold;
     }
     
-    /* --- NUEVO ESTILO (Contexto de Lista) --- */
     .dashboard-list-header {
       font-weight: bold;
       font-size: 12px;
@@ -109,7 +108,6 @@
       border-bottom: 1px solid #ccc;
       padding-bottom: 3px;
     }
-    /* --- FIN DE ESTILOS --- */
   </style>
 </head>
 
@@ -123,11 +121,9 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    /* --- INICIO DE CAMBIOS (Codificación) --- */
     
-    // --- RUTAS ESTÁTICAS ---
+    // --- RUTAS ESTÁTICAS (Sin tilde para evitar problemas) ---
     const rutas = [
-      // CAMBIO: Quitando tilde de "Pachacutec" para evitar problemas de codificación
       { nombre: "Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml" },
       { nombre: "Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml" },
       { nombre: "Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml" }
@@ -139,15 +135,12 @@
       })).addTo(map);
     });
 
-    // --- CAPAS DINÁMICAS (POSTES POR ZONA) ---
+    // --- CAPAS DINÁMICAS (Sin tilde para evitar problemas) ---
     const capasDinamicas = [
-      // CAMBIO: Quitando tilde de "Pachacutec"
       { nombre: "Postes Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
       { nombre: "Postes Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VR_Postes_Act.kml" },
       { nombre: "Postes Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VC_Postes_Act.kml" }
     ];
-
-    /* --- FIN DE CAMBIOS (Codificación) --- */
 
     const capasActivas = {};
     const dashboardData = {};
@@ -168,6 +161,10 @@
     const dashboard = L.control({ position: 'topright' });
     dashboard.onAdd = function (map) {
       this._div = L.DomUtil.create('div', 'dashboard legend');
+      // Detener que el click en el dashboard se propague al mapa (evita zoom no deseado)
+      L.DomEvent.disableClickPropagation(this._div);
+      L.DomEvent.on(this._div, 'mousewheel', L.DomEvent.stopPropagation);
+      
       this._div.innerHTML = '<h4>Reporte de Postes</h4>';
       this._listContainer = L.DomUtil.create('div', 'dashboard-list', this._div);
       return this._div;
@@ -186,7 +183,6 @@
         const data = dashboardData[nombreZona] || [];
         const count = data.length;
 
-        // Línea de resumen (Contador)
         html += `<div class="dashboard-zone-summary">`;
         html += `<span class="summary-label"><strong>${c.nombre}:</strong> ${count} p.</span>`;
         
@@ -195,10 +191,7 @@
         }
         html += `</div>`;
         
-        // Lista colapsable de IDs
         html += `<ul class="dashboard-id-list" id="list-${nombreZona}" style="display:none;">`;
-        
-        // --- NUEVO ENCABEZADO DE LISTA (Contexto) ---
         html += `<li class="dashboard-list-header">${c.nombre}</li>`;
         
         data.sort((a, b) => a.id.localeCompare(b.id)); 
@@ -210,38 +203,57 @@
       });
 
       container.innerHTML = html;
-      addDashboardListeners();
+      addDashboardListeners(); // Llamar a los listeners actualizados
     }
+
+
+    /* --- INICIO DE CAMBIOS (TÁCTIL) --- */
 
     // Función para añadir listeners a los botones del dashboard
     function addDashboardListeners() {
-      document.querySelectorAll('.toggle-list').forEach(toggle => {
-        toggle.addEventListener('click', function() {
-          const zone = this.getAttribute('data-zone');
-          const list = document.getElementById(`list-${zone}`);
-          if (list) {
-            const isHidden = list.style.display === 'none';
-            list.style.display = isHidden ? 'block' : 'none';
-            this.textContent = isHidden ? '[-]' : '[+]';
-          }
-        });
+      
+      // 1. Listeners para botones de expandir/colapsar [+]
+      const toggles = document.querySelectorAll('.toggle-list');
+      const handleToggle = function(e) {
+        e.preventDefault(); // Evita scroll o zoom no deseado
+        const zone = this.getAttribute('data-zone');
+        const list = document.getElementById(`list-${zone}`);
+        if (list) {
+          const isHidden = list.style.display === 'none';
+          list.style.display = isHidden ? 'block' : 'none';
+          this.textContent = isHidden ? '[-]' : '[+]';
+        }
+      };
+
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', handleToggle);
+        toggle.addEventListener('touchstart', handleToggle); // Añadido evento táctil
       });
 
-      document.querySelectorAll('.dashboard-id-item').forEach(item => {
-        item.addEventListener('click', function() {
-          const id = this.getAttribute('data-id');
-          const zone = this.getAttribute('data-zone');
+      // 2. Listeners para items de la lista (el ID del poste)
+      const items = document.querySelectorAll('.dashboard-id-item');
+      const handleItemClick = function(e) {
+        e.preventDefault(); // Evita scroll o zoom no deseado
+        const id = this.getAttribute('data-id');
+        const zone = this.getAttribute('data-zone');
+        
+        const posteData = dashboardData[zone].find(d => d.id === id);
+        if (posteData && posteData.layer) {
+          const layer = posteData.layer;
           
-          const posteData = dashboardData[zone].find(d => d.id === id);
-          if (posteData && posteData.layer) {
-            const layer = posteData.layer;
-            
-            map.flyTo(layer.getLatLng(), 18);
-            layer.openPopup();
-          }
-        });
+          map.flyTo(layer.getLatLng(), 18);
+          layer.openPopup();
+        }
+      };
+
+      items.forEach(item => {
+        item.addEventListener('click', handleItemClick);
+        item.addEventListener('touchstart', handleItemClick); // Añadido evento táctil
       });
     }
+
+    /* --- FIN DE CAMBIOS (TÁCTIL) --- */
+
 
     // --- FUNCIÓN CENTRAL DE CARGA DE CAPAS ---
     function loadDynamicLayer(capaConfig) {
@@ -261,7 +273,6 @@
           const metadata = feature.properties.description;
 
           if (metadata) {
-            // Corregido el reemplazo de saltos de línea
             const popupContent = metadata.replace(/(\r\n|\n|\r)/gm, "<br>");
             layer.bindPopup(popupContent);
           }
@@ -293,4 +304,3 @@
   </script>
 </body>
 </html>
-
