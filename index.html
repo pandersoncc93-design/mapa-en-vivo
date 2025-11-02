@@ -16,7 +16,6 @@
       padding: 0;
     }
     
-    /* Clase base compartida (caja blanca) */
     .legend {
       background: white;
       padding: 10px 14px;
@@ -26,7 +25,6 @@
       font-size: 13px;
       box-shadow: 0 0 5px rgba(0,0,0,0.3);
     }
-    /* Estilo de título compartido */
     .legend h4 {
       margin: 0 0 6px 0;
       font-size: 14px;
@@ -34,7 +32,6 @@
       color: #333;
     }
     
-    /* Estilos SOLO para la leyenda de zonas */
     .info-legend-box div {
       display: flex;
       align-items: center;
@@ -69,7 +66,6 @@
       padding-left: 10px;
     }
     
-    /* Filas del dashboard */
     .dashboard-zone-summary {
       margin-bottom: 5px;
       font-size: 13px;
@@ -155,27 +151,28 @@
     };
     legend.addTo(map);
 
-    /* --- INICIO DE LA CORRECCIÓN (TÁCTIL) --- */
     
     // --- DASHBOARD DE REPORTE (Dinámico) ---
     const dashboard = L.control({ position: 'topright' });
     dashboard.onAdd = function (map) {
-      this._div = L.DomEvent.create('div', 'legend dashboard-box');
       
-      // Detener que el click en el dashboard se propague al mapa
+      // --- INICIO DE LA CORRECCIÓN ---
+      // Usamos L.DomUtil.create (el correcto)
+      this._div = L.DomUtil.create('div', 'legend dashboard-box');
+      
+      // Estas líneas ahora funcionarán correctamente
       L.DomEvent.disableClickPropagation(this._div);
-      
-      // ¡ESTA ES LA LÍNEA CORREGIDA!
-      // Detener que el SCROLL (rueda o táctil) se propague al mapa
       L.DomEvent.disableScrollPropagation(this._div);
       
       this._div.innerHTML = '<h4>Reporte de Postes</h4>';
-      this._listContainer = L.DomEvent.create('div', 'dashboard-list', this._div);
+      
+      // Usamos L.DomUtil.create (el correcto)
+      this._listContainer = L.DomUtil.create('div', 'dashboard-list', this._div);
       return this._div;
+      // --- FIN DE LA CORRECCIÓN ---
     };
     dashboard.addTo(map);
     
-    /* --- FIN DE LA CORRECCIÓN (TÁCTIL) --- */
 
     // Función para actualizar el contenido del dashboard
     function updateDashboard() {
@@ -254,6 +251,7 @@
     }
 
     // --- FUNCIÓN CENTRAL DE CARGA DE CAPAS ---
+    // (Esta función ahora volverá a ejecutarse)
     function loadDynamicLayer(capaConfig) {
       const nombreCapa = capaConfig.nombre;
 
@@ -292,6 +290,7 @@
     }
 
     // --- CARGA INICIAL Y RECARGA AUTOMÁTICA ---
+    // (Esta parte ahora volverá a ejecutarse)
     capasDinamicas.forEach(loadDynamicLayer);
 
     setInterval(() => {
@@ -302,4 +301,3 @@
   </script>
 </body>
 </html>
-
