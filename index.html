@@ -131,16 +131,33 @@
   <div id="map"></div>
 
   <script>
-    // --- MAPA BASE ---
+       // --- MAPA BASE (CON SELECTOR) ---
     const map = L.map('map').setView([-11.87, -77.13], 13);
     
     // --- LÍNEA NUEVA (Almacén de conteo) ---
     const pmiCounts = {}; 
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    
+    // 1. Define los dos mapas base
+    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
+    });
+    
+    const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    });
+    
+    // 2. Añade el mapa que quieres que se vea por defecto
+    osm.addTo(map);
+    
+    // 3. Define el objeto de control
+    const baseMaps = {
+      "Calles (OpenStreetMap)": osm,
+      "Satélite (Esri)": esriSat
+    };
+    
+    // 4. Añade el control de capas al mapa (aparecerá en la esquina superior derecha)
+    L.control.layers(baseMaps).addTo(map);
+    
     // --- RUTAS ESTÁTICAS (Sin tilde) ---
     const rutas = [
       { nombre: "Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml" },
