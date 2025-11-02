@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,6 +16,10 @@
       margin: 0;
       padding: 0;
     }
+    
+    /* --- INICIO DE CAMBIOS CSS --- */
+    
+    /* Esta es la clase base compartida (caja blanca, sombra, etc.) */
     .legend {
       background: white;
       padding: 10px 14px;
@@ -24,24 +29,30 @@
       font-size: 13px;
       box-shadow: 0 0 5px rgba(0,0,0,0.3);
     }
+    /* Estilo de título compartido */
     .legend h4 {
       margin: 0 0 6px 0;
       font-size: 14px;
       text-align: center;
       color: #333;
     }
-    .legend div {
+    
+    /* ¡LA REGLA PROBLEMÁTICA HA SIDO CORREGIDA! */
+    /* Ahora, esto SOLO se aplica a la leyenda de abajo (info-legend-box) */
+    .info-legend-box div {
       display: flex;
       align-items: center;
       margin-bottom: 4px;
     }
-    .legend span {
+    .info-legend-box span {
       display: inline-block;
       width: 18px;
       height: 10px;
       margin-right: 8px;
       border: 1px solid #555;
     }
+    /* --- FIN DE CAMBIOS CSS --- */
+    
     
     .poste-id-tooltip {
       background: rgba(255, 255, 255, 0.75);
@@ -54,8 +65,8 @@
       border-radius: 3px;
     }
 
-    /* --- ESTILOS DASHBOARD --- */
-    .dashboard {
+    /* ESTILOS DASHBOARD (Ahora usa 'dashboard-box') */
+    .dashboard-box {
       max-height: 300px;
       overflow-y: auto;
       width: 250px;
@@ -64,19 +75,16 @@
       padding-left: 10px;
     }
     
-    /* --- INICIO DE LA CORRECCIÓN CSS --- */
-    /* Eliminamos 'display: flex' y todas las reglas Flexbox.
-       Ahora esto es un simple bloque, una fila por zona. */
+    /* Esta regla ahora sí funcionará como 3 filas,
+       porque .legend div ya no la afecta */
     .dashboard-zone-summary {
       margin-bottom: 5px;
       font-size: 13px;
     }
     
-    /* Ya no necesitamos esta clase para alinear */
     .summary-label {
-      /* Estilos flex eliminados */
+      /* Ya no necesita reglas de flex */
     }
-    /* --- FIN DE LA CORRECCIÓN CSS --- */
     
     .toggle-list {
       cursor: pointer;
@@ -84,7 +92,6 @@
       font-family: monospace;
       font-weight: bold;
       padding: 0 5px;
-      /* Estilos flex eliminados */
     }
     .dashboard-id-list {
       list-style: none;
@@ -124,7 +131,7 @@
     }).addTo(map);
 
     
-    // --- RUTAS ESTÁTICAS (Sin tilde para evitar problemas) ---
+    // --- RUTAS ESTÁTICAS (Sin tilde) ---
     const rutas = [
       { nombre: "Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Pachacutec.kml" },
       { nombre: "Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Villa%20los%20reyes.kml" },
@@ -137,7 +144,7 @@
       })).addTo(map);
     });
 
-    // --- CAPAS DINÁMICAS (Sin tilde para evitar problemas) ---
+    // --- CAPAS DINÁMICAS (Sin tilde) ---
     const capasDinamicas = [
       { nombre: "Postes Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
       { nombre: "Postes Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VR_Postes_Act.kml" },
@@ -150,7 +157,9 @@
     // --- LEYENDA (Estática) ---
     const legend = L.control({ position: 'bottomright' });
     legend.onAdd = function () {
-      const div = L.DomUtil.create('div', 'legend');
+      // --- CAMBIO JS ---
+      // Se añade la clase 'info-legend-box' para aislar su CSS
+      const div = L.DomUtil.create('div', 'legend info-legend-box');
       div.innerHTML += '<h4>Zonas del Proyecto</h4>';
       rutas.forEach(r => {
         div.innerHTML += `<div><span style="background:${r.color}"></span>${r.nombre}</div>`;
@@ -162,7 +171,9 @@
     // --- DASHBOARD DE REPORTE (Dinámico) ---
     const dashboard = L.control({ position: 'topright' });
     dashboard.onAdd = function (map) {
-      this._div = L.DomUtil.create('div', 'dashboard legend');
+      // --- CAMBIO JS ---
+      // Se reemplaza 'dashboard' por 'dashboard-box' para aislar su CSS
+      this._div = L.DomUtil.create('div', 'legend dashboard-box');
       L.DomEvent.disableClickPropagation(this._div);
       L.DomEvent.on(this._div, 'mousewheel', L.DomEvent.stopPropagation);
       
@@ -184,7 +195,7 @@
         const data = dashboardData[nombreZona] || [];
         const count = data.length;
 
-        // El HTML ahora es más simple
+        // Este HTML ahora se mostrará como una fila
         html += `<div class="dashboard-zone-summary">`;
         html += `<span class="summary-label"><strong>${c.nombre}:</strong> ${count} p.</span>`;
         
