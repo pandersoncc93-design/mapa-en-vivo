@@ -63,22 +63,18 @@
     .dashboard-list {
       padding-left: 10px;
     }
+    
+    /* --- INICIO DE LA CORRECCIÓN CSS --- */
+    /* Eliminamos 'display: flex' y todas las reglas Flexbox.
+       Ahora esto es un simple bloque, una fila por zona. */
     .dashboard-zone-summary {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       margin-bottom: 5px;
       font-size: 13px;
     }
     
-    /* --- INICIO DE LA CORRECCIÓN CSS --- */
+    /* Ya no necesitamos esta clase para alinear */
     .summary-label {
-      flex-grow: 1;
-      
-      /* Reemplazamos las 3 líneas problemáticas
-         por un ajuste de texto simple */
-      word-wrap: break-word; 
-      min-width: 0; /* Arreglo de Flexbox */
+      /* Estilos flex eliminados */
     }
     /* --- FIN DE LA CORRECCIÓN CSS --- */
     
@@ -88,7 +84,7 @@
       font-family: monospace;
       font-weight: bold;
       padding: 0 5px;
-      flex-shrink: 0;
+      /* Estilos flex eliminados */
     }
     .dashboard-id-list {
       list-style: none;
@@ -167,7 +163,6 @@
     const dashboard = L.control({ position: 'topright' });
     dashboard.onAdd = function (map) {
       this._div = L.DomUtil.create('div', 'dashboard legend');
-      // Detener que el click en el dashboard se propague al mapa (evita zoom no deseado)
       L.DomEvent.disableClickPropagation(this._div);
       L.DomEvent.on(this._div, 'mousewheel', L.DomEvent.stopPropagation);
       
@@ -189,6 +184,7 @@
         const data = dashboardData[nombreZona] || [];
         const count = data.length;
 
+        // El HTML ahora es más simple
         html += `<div class="dashboard-zone-summary">`;
         html += `<span class="summary-label"><strong>${c.nombre}:</strong> ${count} p.</span>`;
         
@@ -209,13 +205,12 @@
       });
 
       container.innerHTML = html;
-      addDashboardListeners(); // Llamar a los listeners actualizados
+      addDashboardListeners();
     }
 
     // Función para añadir listeners (TÁCTIL + CLICK)
     function addDashboardListeners() {
       
-      // 1. Listeners para botones de expandir/colapsar [+]
       const toggles = document.querySelectorAll('.toggle-list');
       const handleToggle = function(e) {
         e.preventDefault(); 
@@ -230,10 +225,9 @@
 
       toggles.forEach(toggle => {
         toggle.addEventListener('click', handleToggle);
-        toggle.addEventListener('touchstart', handleToggle); // Evento táctil
+        toggle.addEventListener('touchstart', handleToggle);
       });
 
-      // 2. Listeners para items de la lista (el ID del poste)
       const items = document.querySelectorAll('.dashboard-id-item');
       const handleItemClick = function(e) {
         e.preventDefault(); 
@@ -251,7 +245,7 @@
 
       items.forEach(item => {
         item.addEventListener('click', handleItemClick);
-        item.addEventListener('touchstart', handleItemClick); // Evento táctil
+        item.addEventListener('touchstart', handleItemClick);
       });
     }
 
