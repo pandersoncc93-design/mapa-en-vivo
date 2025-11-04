@@ -562,5 +562,12 @@
                 <coordinates>-77.161582,-11.835671,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="163">
+            <name>P9M-PA-081</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-PA-081&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; PACHACUTEC&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Hay que poner un dado de concreto de 1.30 metros&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-04</description>
+            <Point id="162">
+                <coordinates>-77.162187,-11.835518,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
