@@ -674,5 +674,19 @@
                 <coordinates>-77.168468,-11.831212,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="195">
+            <name>P9M-PA-097</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-PA-097&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; PACHACUTEC&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-04</description>
+            <Point id="194">
+                <coordinates>-77.168806,-11.830798,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="197">
+            <name>P9M-PA-098</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-PA-098&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; PACHACUTEC&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-04</description>
+            <Point id="196">
+                <coordinates>-77.169181,-11.831186,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
