@@ -169,46 +169,42 @@
   <div id="map"></div>
 
   <script>
-       // --- MAPA BASE (CON SELECTOR) ---
+    // =======================================================
+    // --- INICIO: MAPA BASE CON ZOOM Y CAPA POR DEFECTO (CORREGIDO) ---
+    // =======================================================
+    // 1. Zoom máximo añadido al crear el mapa
     const map = L.map('map', { maxZoom: 21 }).setView([-11.87, -77.13], 13);
     
-    // --- LÍNEA NUEVA (Almacén de conteo) ---
     const pmiCounts = {}; 
     
-    // 1. Define los dos mapas base
+    // 2. Zoom máximo añadido a la capa OSM
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
+      attribution: '&copy; OpenStreetMap contributors',
       maxZoom: 21
     });
     
+    // 3. Zoom máximo añadido a la capa Esri
     const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
       maxZoom: 21
     });
     
-    // 2. Añade el mapa que quieres que se vea por defecto
+    // 4. Satélite (Esri) es ahora la capa por defecto
     esriSat.addTo(map);
     
-    // 3. Define el objeto de control
     const baseMaps = {
       "Calles (OpenStreetMap)": osm,
       "Satélite (Esri)": esriSat
     };
     
-    // =======================================================
-    // --- INICIO DE BLOQUE MODIFICADO (Control de Capas) ---
-    // =======================================================
-    
-    // 4. Define el objeto para las capas de filtro (Overlays)
     const overlayMaps = {};
 
-    // 5. Crea el control de capas (aún no lo añadimos al mapa)
     const layerControl = L.control.layers(baseMaps, overlayMaps, {
-      position: 'topright', // Moverlo a la derecha
-      collapsed: true // Que aparezca expandido
+      position: 'topright',
+      collapsed: true // Colapsado por defecto
     });
     // =======================================================
-    // --- FIN DE BLOQUE MODIFICADO ---
+    // --- FIN: MAPA BASE ---
     // =======================================================
     
     
