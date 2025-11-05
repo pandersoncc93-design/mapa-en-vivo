@@ -170,7 +170,7 @@
 
   <script>
        // --- MAPA BASE (CON SELECTOR) ---
-    const map = L.map('map').setView([-11.87, -77.13], 13);
+    const map = L.map('map', { maxZoom: 21 }).setView([-11.87, -77.13], 13);
     
     // --- LÍNEA NUEVA (Almacén de conteo) ---
     const pmiCounts = {}; 
@@ -178,14 +178,16 @@
     // 1. Define los dos mapas base
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
+      maxZoom: 21
     });
     
     const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
       attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+      maxZoom: 21
     });
     
     // 2. Añade el mapa que quieres que se vea por defecto
-    osm.addTo(map);
+    esriSat.addTo(map);
     
     // 3. Define el objeto de control
     const baseMaps = {
