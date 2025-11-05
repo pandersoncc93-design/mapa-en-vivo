@@ -173,20 +173,20 @@
     // --- INICIO: MAPA BASE CON ZOOM Y CAPA POR DEFECTO (CORREGIDO) ---
     // =======================================================
     // 1. Zoom máximo añadido al crear el mapa
-    const map = L.map('map', { maxZoom: 21 }).setView([-11.87, -77.13], 13);
+    const map = L.map('map', { maxZoom: 20 }).setView([-11.87, -77.13], 13);
     
     const pmiCounts = {}; 
     
     // 2. Zoom máximo añadido a la capa OSM
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors',
-      maxZoom: 21
+      maxZoom: 20
     });
     
     // 3. Zoom máximo añadido a la capa Esri
     const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
       attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
-      maxZoom: 21
+      maxZoom: 20
     });
     
     // 4. Satélite (Esri) es ahora la capa por defecto
