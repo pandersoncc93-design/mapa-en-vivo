@@ -1458,5 +1458,12 @@
                 <coordinates>-77.147305,-11.848222,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="419">
+            <name>P9M-PA-209</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-PA-209&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; PACHACUTEC&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-06</description>
+            <Point id="418">
+                <coordinates>-77.147558,-11.847806,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
