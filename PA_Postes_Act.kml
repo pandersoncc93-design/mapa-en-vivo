@@ -1325,5 +1325,12 @@
                 <coordinates>-77.162559,-11.841849,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="381">
+            <name>P9M-PA-190</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-PA-190&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; PACHACUTEC&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Arena&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-06</description>
+            <Point id="380">
+                <coordinates>-77.162157,-11.842316,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
