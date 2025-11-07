@@ -1696,5 +1696,12 @@
                 <coordinates>-77.139266,-11.839486,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="487">
+            <name>P9M-PA-243</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-PA-243&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; PACHACUTEC&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Por asfaltar&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-07</description>
+            <Point id="486">
+                <coordinates>-77.138911,-11.839676,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
