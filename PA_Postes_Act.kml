@@ -2599,5 +2599,12 @@
                 <coordinates>-77.147511,-11.833054,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="745">
+            <name>P9M-PA-372</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-PA-372&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; PACHACUTEC&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-12</description>
+            <Point id="744">
+                <coordinates>-77.14762,-11.833551,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
