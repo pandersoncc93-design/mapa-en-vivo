@@ -289,5 +289,12 @@
                 <coordinates>-77.129845,-11.843476,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="835">
+            <name>P9M-VR-042</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VR-042&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VILLA LOS REYES&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-13</description>
+            <Point id="834">
+                <coordinates>-77.130178,-11.843382,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
