@@ -345,5 +345,12 @@
                 <coordinates>-77.125428,-11.845545,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="851">
+            <name>P11M-VR-050</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P11M-VR-050&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VILLA LOS REYES&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 11 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-13</description>
+            <Point id="850">
+                <coordinates>-77.125013,-11.845621,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
