@@ -415,5 +415,12 @@
                 <coordinates>-77.120266,-11.847177,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="871">
+            <name>P9M-VR-060</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VR-060&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VILLA LOS REYES&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; CONCRETO&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Postes de fibra, tipo de suelo roca , se suguiere empotrar a 1 a 1.20 mm  cin un dado de concreto&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-13</description>
+            <Point id="870">
+                <coordinates>-77.120314,-11.847492,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
