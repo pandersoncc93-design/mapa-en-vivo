@@ -492,5 +492,12 @@
                 <coordinates>-77.123657,-11.827789,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="893">
+            <name>P9M-VR-071</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VR-071&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VILLA LOS REYES&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; ADOQUIN&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-14</description>
+            <Point id="892">
+                <coordinates>-77.123887,-11.827469,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
