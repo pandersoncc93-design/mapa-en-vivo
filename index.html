@@ -309,7 +309,6 @@
 
     // 2. Definir la URL
     const urlPostesExistentes = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_postes%20existentes.kml";
-    const urlPostesExistentes = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VR_postes%20existentes.kml";
     
     // 3. Crear la capa
     const capaPostesExistentes = L.geoJson(null, {
@@ -347,7 +346,48 @@
     // --- FIN DE BLOQUE NUEVO ---
     // =======================================================
 
+    // =======================================================
+    // --- BLOQUE 2: Postes Existentes VILLA REYES ---
+    // =======================================================
+    
+    // 1. URL Única (Fíjate que le puse 'VR' al nombre)
+    const urlPostesVR = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VR_postes%20existentes.kml";
 
+    // 2. Capa Única (También le puse 'VR')
+    const capaPostesVR = L.geoJson(null, {
+      pointToLayer: function (feature, latlng) {
+        // AQUÍ REUSAMOS EL ICONO QUE YA CREASTE ARRIBA (No hay que definirlo de nuevo)
+        return L.marker(latlng, { icon: iconoPosteExistente });
+      },
+      onEachFeature: function (feature, layer) {
+        // (Misma lógica de tooltips...)
+        const id = feature.properties.name;
+        if (id) {
+          layer.bindTooltip(id, {
+            permanent: true, direction: 'auto',
+            className: 'poste-id-tooltip', offset: [0, -5] 
+          });
+        }
+        let popupContent = id || "Poste Existente";
+        if (feature.properties.description) {
+          const descLimpia = feature.properties.description.replace(/(\r\n|\n|\r)/gm, "<br>");
+          popupContent += `<br><hr>${descLimpia}`;
+        }
+        layer.bindPopup(popupContent);
+      }
+    });
+
+    // 3. Cargar y añadir al filtro (Con nombre único 'kmlRunVR')
+    const kmlRunVR = omnivore.kml(urlPostesVR, null, capaPostesVR);
+    kmlRunVR.addTo(map); 
+    
+    // Aquí pones el nombre que saldrá en la lista del filtro:
+    layerControl.addOverlay(kmlRunVR, "Postes Existentes VR");
+
+    // =======================================================
+    // --- FIN DE BLOQUE NUEVO ---
+    // =======================================================
+    
     // --- CAPAS DINÁMICAS (Sin tilde) ---
     const capasDinamicas = [
       { nombre: "Postes Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
