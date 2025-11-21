@@ -2634,5 +2634,12 @@
                 <coordinates>-77.152954,-11.824206,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="755">
+            <name>P11M-PA-377</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P11M-PA-377&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; PACHACUTEC&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 11 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="754">
+                <coordinates>-77.152641,-11.82444,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
