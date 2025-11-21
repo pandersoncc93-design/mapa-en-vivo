@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <name>VENTANILLA CENTRO</name>
+        <Placemark id="3">
+            <name>P9M-VC-001</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-001&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="2">
+                <coordinates>-77.139858,-11.871794,0.0</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
