@@ -166,22 +166,28 @@
 
   <script>
     // =======================================================
-    // --- INICIO: MAPA BASE ---
+    // --- INICIO: MAPA BASE CON ZOOM DIGITAL ---
     // =======================================================
-    const map = L.map('map', { maxZoom: 19 }).setView([-11.87, -77.13], 13);
+    // 1. Aumentamos el zoom máximo del mapa a 22 para poder separar puntos muy juntos
+    const map = L.map('map', { maxZoom: 22 }).setView([-11.87, -77.13], 13);
     
     const pmiCounts = {}; 
     
+    // 2. Configuración de Calles (OSM) con Zoom Digital
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors',
-      maxZoom: 19
+      maxNativeZoom: 19, // Las imágenes reales llegan hasta el 19
+      maxZoom: 22        // Permitimos hacer zoom hasta el 22 estirando la imagen
     });
     
+    // 3. Configuración de Satélite (Esri) con Zoom Digital
     const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
       attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
-      maxZoom: 19
+      maxNativeZoom: 19, // El límite real de Esri es 19
+      maxZoom: 22        // Estiramos la imagen del 19 hasta el 22
     });
     
+    // 4. Satélite (Esri) es ahora la capa por defecto
     esriSat.addTo(map);
     
     const baseMaps = {
@@ -193,8 +199,11 @@
 
     const layerControl = L.control.layers(baseMaps, overlayMaps, {
       position: 'topright',
-      collapsed: true
+      collapsed: true 
     });
+    // =======================================================
+    // --- FIN: MAPA BASE ---
+    // =======================================================
     
     // --- RUTAS ESTÁTICAS (Sin tilde) ---
     const rutas = [
