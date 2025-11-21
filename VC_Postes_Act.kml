@@ -23,5 +23,201 @@
                 <coordinates>-77.140719,-11.871801,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="9">
+            <name>P9M-VC-004</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-004&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="8">
+                <coordinates>-77.141238,-11.871799,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="11">
+            <name>P9M-VC-005</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-005&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="10">
+                <coordinates>-77.141599,-11.871879,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="13">
+            <name>P9M-VC-006</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-006&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="12">
+                <coordinates>-77.142117,-11.871877,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="15">
+            <name>P9M-VC-007</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-007&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="14">
+                <coordinates>-77.142641,-11.871926,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="17">
+            <name>P9M-VC-008</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-008&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="16">
+                <coordinates>-77.143119,-11.871948,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="19">
+            <name>P9M-VC-009</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-009&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="18">
+                <coordinates>-77.143634,-11.871962,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="21">
+            <name>P9M-VC-010</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-010&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="20">
+                <coordinates>-77.144096,-11.871981,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="23">
+            <name>P9M-VC-011</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-011&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="22">
+                <coordinates>-77.144594,-11.871991,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="25">
+            <name>P9M-VC-012</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-012&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="24">
+                <coordinates>-77.145121,-11.872024,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="27">
+            <name>P9M-VC-013</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-013&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="26">
+                <coordinates>-77.145567,-11.872039,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="29">
+            <name>P9M-VC-014</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-014&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; pantano, agua a 1m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="28">
+                <coordinates>-77.14162,-11.872306,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="31">
+            <name>P9M-VC-015</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-015&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="30">
+                <coordinates>-77.141581,-11.872771,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="33">
+            <name>P9M-VC-016</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-016&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de profundida&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="32">
+                <coordinates>-77.141592,-11.873314,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="35">
+            <name>P9M-VC-017</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-017&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de  profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="34">
+                <coordinates>-77.141544,-11.875516,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="37">
+            <name>P9M-VC-018</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-018&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1 m de profundidas&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="36">
+                <coordinates>-77.141527,-11.876036,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="39">
+            <name>P9M-VC-019</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-019&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1 m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="38">
+                <coordinates>-77.141541,-11.876495,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="41">
+            <name>P9M-VC-020</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-020&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1 m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="40">
+                <coordinates>-77.141503,-11.877028,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="43">
+            <name>P9M-VC-021</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-021&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="42">
+                <coordinates>-77.141498,-11.877567,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="45">
+            <name>P9M-VC-022</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-022&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="44">
+                <coordinates>-77.141473,-11.877967,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="47">
+            <name>P9M-VC-023</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-023&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de altura&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="46">
+                <coordinates>-77.142596,-11.880262,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="49">
+            <name>P9M-VC-024</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-024&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de agua&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="48">
+                <coordinates>-77.143005,-11.880286,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="51">
+            <name>P9M-VC-025</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-025&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1 m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="50">
+                <coordinates>-77.143507,-11.88028,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="53">
+            <name>P9M-VC-026</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-026&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1 m de profundidas&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="52">
+                <coordinates>-77.143886,-11.88028,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="55">
+            <name>P9M-VC-027</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-027&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="54">
+                <coordinates>-77.143882,-11.880668,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="57">
+            <name>P9M-VC-028</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-028&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="56">
+                <coordinates>-77.144496,-11.880704,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="59">
+            <name>P9M-VC-029</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-029&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de profundida&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="58">
+                <coordinates>-77.145024,-11.880957,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="61">
+            <name>P9M-VC-030</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-030&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1 m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="60">
+                <coordinates>-77.145005,-11.881409,0.0</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark id="63">
+            <name>P9M-VC-031</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-031&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Agua a 1m de profundidad&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-21</description>
+            <Point id="62">
+                <coordinates>-77.145614,-11.88146,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
