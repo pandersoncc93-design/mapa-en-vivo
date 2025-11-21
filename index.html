@@ -9,6 +9,13 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-measure@2.1.7/dist/leaflet-measure.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
   <style>
     html, body, #map {
       height: 100%;
@@ -25,11 +32,9 @@
       font-size: 13px;
       box-shadow: 0 0 5px rgba(0,0,0,0.3);
     }
-    /* --- INICIO BLOQUE MODIFICADO (Subir Paneles) --- */
     .leaflet-bottom .legend {
       margin-bottom: 30px; 
     }
-    /* --- FIN BLOQUE MODIFICADO --- */
 
     .legend h4 {
       margin: 0 0 6px 0;
@@ -72,7 +77,6 @@
       padding-left: 10px;
     }
     
-    /* --- INICIO DE BLOQUE (CSS para Reporte PMIs) --- */
     .pmi-list {
       display: block; /* Asegura que la lista sea vertical */
     }
@@ -92,7 +96,6 @@
       display: inline-block;
       flex-shrink: 0; /* Evita que el círculo se aplaste */
     }
-    /* --- FIN DE BLOQUE--- */
     
     .dashboard-zone-summary {
       margin-bottom: 5px;
@@ -131,18 +134,14 @@
       padding-bottom: 3px;
     }
     
-    /* --- INICIO DE BLOQUE (Botón "Find Me") --- */
     .leaflet-bar a.find-me-btn {
       background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%23333" d="M256 0c-17.67 0-32 14.33-32 32v14.08C108.7 61.12 21.12 108.7 6.08 224H32c17.67 0 32 14.33 32 32s-14.33 32-32 32H6.08C21.12 403.3 108.7 490.9 224 505.9V480c0-17.67 14.33-32 32-32s32 14.33 32 32v25.92C403.3 490.9 490.9 403.3 505.9 288H480c-17.67 0-32-14.33-32-32s14.33-32 32-32h25.92C490.9 108.7 403.3 21.12 288 6.08V32c0-17.67-14.33-32-32-32zM256 128c-70.69 0-128 57.31-128 128s57.31 128 128 128 128-57.31 128-128-57.31-128-128-128zm0 192c-35.35 0-64-28.65-64-64s28.65-64 64-64 64 28.65 64 64-28.65 64-64 64z"/></svg>');
       background-size: 16px 16px;
       background-position: center;
       background-repeat: no-repeat;
     }
-    /* --- FIN DE BLOQUE --- */
 
-    /* --- INICIO BLOQUE (Ocultar Leyendas) --- */
     .leaflet-bar a.toggle-legends-btn {
-      /* Icono de Menu ☰ */
       background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="18" height="18"><path fill="%23333" stroke="%23333" stroke-width="3" stroke-linecap="round" d="M4 7h22M4 15h22M4 23h22"/></svg>');
       background-size: 18px 18px;
       background-position: center;
@@ -151,9 +150,7 @@
     .info-panel.hidden {
       display: none;
     }
-    /* --- FIN BLOQUE --- */
 
-    /* --- INICIO BLOQUE NUEVO (Marcador Cuadrado) --- */
     .poste-existente-marker {
       width: 10px;
       height: 10px;
@@ -161,7 +158,6 @@
       border: 1px solid #000; /* Borde Negro */
       opacity: 0.8;
     }
-    /* --- FIN BLOQUE NUEVO --- */
   </style>
 </head>
 
@@ -170,26 +166,22 @@
 
   <script>
     // =======================================================
-    // --- INICIO: MAPA BASE CON ZOOM Y CAPA POR DEFECTO (CORREGIDO) ---
+    // --- INICIO: MAPA BASE ---
     // =======================================================
-    // 1. Zoom máximo añadido al crear el mapa
-    const map = L.map('map', { maxZoom: 19 }).setView([-11.87, -77.13], 13);
+    const map = L.map('map', { maxZoom: 20 }).setView([-11.87, -77.13], 13);
     
     const pmiCounts = {}; 
     
-    // 2. Zoom máximo añadido a la capa OSM
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors',
       maxZoom: 19
     });
     
-    // 3. Zoom máximo añadido a la capa Esri
     const esriSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
       attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
-      maxZoom: 19
+      maxZoom: 20
     });
     
-    // 4. Satélite (Esri) es ahora la capa por defecto
     esriSat.addTo(map);
     
     const baseMaps = {
@@ -201,12 +193,8 @@
 
     const layerControl = L.control.layers(baseMaps, overlayMaps, {
       position: 'topright',
-      collapsed: true // Colapsado por defecto
+      collapsed: true
     });
-    // =======================================================
-    // --- FIN: MAPA BASE ---
-    // =======================================================
-    
     
     // --- RUTAS ESTÁTICAS (Sin tilde) ---
     const rutas = [
@@ -215,23 +203,23 @@
       { nombre: "Ventanilla Centro", color: "#8000FF", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/Rutas_Ventanilla%20centro.kml" }
     ];
 
-    // --- MODIFICADO: Carga de Rutas ---
     rutas.forEach(r => {
       const rutaLayer = omnivore.kml(r.url, null, L.geoJson(null, {
         style: { color: r.color, weight: 3, opacity: 0.9 }
       }));
-      rutaLayer.addTo(map); // Añade al mapa por defecto
-      layerControl.addOverlay(rutaLayer, "Ruta: " + r.nombre); // Añade al control
+      rutaLayer.addTo(map);
+      layerControl.addOverlay(rutaLayer, "Ruta: " + r.nombre);
     });
 
-  	// 1. PMIs (KML fijos)
+  	// =======================================================
+  	// --- PMIs (CON CLUSTERING) ---
+  	// =======================================================
   	const puntosFijosKML = [
   	  { nombre: "PMIs Pachacutec", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PMIs%20Pachacutec.kml" },
   	  { nombre: "PMIs Ventanilla Centro", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PMIs%20Ventanilla%20centro.kml" },
   	  { nombre: "PMIs Villa Los Reyes", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PMIs%20Villa%20los%20reyes.kml" }
   	];
   
-  	// 2. Define el estilo de los círculos
   	const estiloPuntosFijos = {
   	  radius: 8,
   	  fillColor: "#008f39", // Verde
@@ -241,91 +229,73 @@
   	  fillOpacity: 0.8
   	};
   
-    // =======================================================
-    // --- INICIO DE BLOQUE MODIFICADO (Carga y Conteo de PMIs) ---
-    // =======================================================
-  	// 3. Carga cada KML, aplica estilo, añade tooltips y CUENTA los puntos
   	puntosFijosKML.forEach(p => {
-  	  
-  	  // Inicializa el contador para esta zona
   	  pmiCounts[p.nombre] = 0; 
-  	  
-  	  const capaPuntosFijos = L.geoJson(null, {
-  		pointToLayer: function (feature, latlng) {
-  		  // 1. Crea el Círculo-Marcador
-  		  return L.circleMarker(latlng, estiloPuntosFijos);
-  		},
-  		onEachFeature: function (feature, layer) {
-  		  // 2. Incrementa el contador por cada punto
-  		  pmiCounts[p.nombre]++; 
-  		  
-  		  // 3. Añade Tooltip (ID)
-  		  const id = feature.properties.name;
-  		  let popupContent = id || "Punto Fijo";
-  		  if (id) {
-  			layer.bindTooltip(id, {
-  			  permanent: true, direction: 'auto',
-  			  className: 'poste-id-tooltip', offset: [0, -10]
-  			});
-  		  }
+      
+      // Crear grupo de cluster
+      const clusterGroup = L.markerClusterGroup();
 
-  		  // 4. Añade Popup (Descripción)
-  		  if (feature.properties.description) {
-  			const descLimpia = feature.properties.description.replace(/(\r\n|\n|\r)/gm, "<br>");
-  			popupContent += `<br><hr>${descLimpia}`;
-  		  }
-  		  layer.bindPopup(popupContent);
-  		}
+  	  const capaPuntosFijos = L.geoJson(null, {
+    		pointToLayer: function (feature, latlng) {
+    		  return L.circleMarker(latlng, estiloPuntosFijos);
+    		},
+    		onEachFeature: function (feature, layer) {
+    		  pmiCounts[p.nombre]++; 
+    		  const id = feature.properties.name;
+    		  let popupContent = id || "Punto Fijo";
+    		  if (id) {
+      			layer.bindTooltip(id, {
+      			  permanent: true, direction: 'auto',
+      			  className: 'poste-id-tooltip', offset: [0, -10]
+      			});
+    		  }
+    		  if (feature.properties.description) {
+      			const descLimpia = feature.properties.description.replace(/(\r\n|\n|\r)/gm, "<br>");
+      			popupContent += `<br><hr>${descLimpia}`;
+    		  }
+    		  layer.bindPopup(popupContent);
+    		}
   	  });
   	  
-  	  // Carga el KML
   	  const kmlRun = omnivore.kml(p.url, null, capaPuntosFijos);
-  	  kmlRun.addTo(map); // Añade al mapa por defecto
-      layerControl.addOverlay(kmlRun, "PMI: " + p.nombre); // Añade al control
-  	  
-  	  // ¡CLAVE! Cuando el KML termine de cargar, actualiza el dashboard de PMIs
+      
+      // Al cargar, añadir al cluster y luego al mapa
   	  kmlRun.on('ready', function() {
-  		updatePmiDashboard();
+        clusterGroup.addLayer(kmlRun);
+        map.addLayer(clusterGroup);
+        layerControl.addOverlay(clusterGroup, "PMI: " + p.nombre); // Añadir el CLUSTER al filtro
+    		updatePmiDashboard();
   	  });
   	});
-    // =======================================================
-    // --- FIN DE BLOQUE MODIFICADO ---
-    // =======================================================
    
-    // --- AÑADE EL CONTROL DE CAPAS AL MAPA ---
-    // (Lo añadimos aquí después de que todas las capas se han definido)
     layerControl.addTo(map);
 
     
     // =======================================================
-    // --- INICIO DE BLOQUE NUEVO (Postes Existentes Pachacutec) ---
+    // --- POSTES EXISTENTES (CON CLUSTERING) ---
     // =======================================================
     
-    // 1. Definir el icono cuadrado (usando DivIcon)
     const iconoPosteExistente = L.divIcon({
       className: 'poste-existente-marker',
-      iconSize: [12, 12] // Tamaño total del div (10px + 2px borde)
+      iconSize: [12, 12] 
     });
 
-    // 2. Definir la URL
+    // --- Bloque 1: Pachacutec ---
     const urlPostesExistentes = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_postes%20existentes.kml";
-    
-    // 3. Crear la capa
+    const clusterPA = L.markerClusterGroup(); // Cluster
+
     const capaPostesExistentes = L.geoJson(null, {
       pointToLayer: function (feature, latlng) {
-        // Usamos un L.marker normal, pero con nuestro icono DivIcon
         return L.marker(latlng, { icon: iconoPosteExistente });
       },
       onEachFeature: function (feature, layer) {
-        // Añadir Tooltip (ID)
         const id = feature.properties.name;
         if (id) {
           layer.bindTooltip(id, {
             permanent: true, direction: 'auto',
-            className: 'poste-id-tooltip', offset: [0, -5] // Ajustar offset
+            className: 'poste-id-tooltip', offset: [0, -5] 
           });
         }
-        // Añadir Popup (Descripción)
         let popupContent = id || "Poste Existente";
         if (feature.properties.description) {
           const descLimpia = feature.properties.description.replace(/(\r\n|\n|\r)/gm, "<br>");
@@ -335,32 +305,24 @@
       }
     });
 
-    // 4. Cargar el KML
     const kmlRunPostesEx = omnivore.kml(urlPostesExistentes, null, capaPostesExistentes);
-    kmlRunPostesEx.addTo(map); // Añadir al mapa
-
-    // 5. Añadir al filtro de capas
-    layerControl.addOverlay(kmlRunPostesEx, "Postes Existentes");
     
-    // =======================================================
-    // --- FIN DE BLOQUE NUEVO ---
-    // =======================================================
-
-    // =======================================================
-    // --- BLOQUE 2: Postes Existentes VILLA REYES ---
-    // =======================================================
+    kmlRunPostesEx.on('ready', function() {
+        clusterPA.addLayer(kmlRunPostesEx);
+        map.addLayer(clusterPA);
+        layerControl.addOverlay(clusterPA, "Postes Existentes PA");
+    });
     
-    // 1. URL Única (Fíjate que le puse 'VR' al nombre)
+
+    // --- Bloque 2: Villa Reyes ---
     const urlPostesVR = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VR_postes%20existentes.kml";
+    const clusterVR = L.markerClusterGroup(); // Cluster
 
-    // 2. Capa Única (También le puse 'VR')
     const capaPostesVR = L.geoJson(null, {
       pointToLayer: function (feature, latlng) {
-        // AQUÍ REUSAMOS EL ICONO QUE YA CREASTE ARRIBA (No hay que definirlo de nuevo)
         return L.marker(latlng, { icon: iconoPosteExistente });
       },
       onEachFeature: function (feature, layer) {
-        // (Misma lógica de tooltips...)
         const id = feature.properties.name;
         if (id) {
           layer.bindTooltip(id, {
@@ -377,29 +339,19 @@
       }
     });
 
-    // 3. Cargar y añadir al filtro (Con nombre único 'kmlRunVR')
     const kmlRunVR = omnivore.kml(urlPostesVR, null, capaPostesVR);
-    kmlRunVR.addTo(map); 
-    
-    // Aquí pones el nombre que saldrá en la lista del filtro:
-    layerControl.addOverlay(kmlRunVR, "Postes Existentes VR");
+    kmlRunVR.on('ready', function() {
+        clusterVR.addLayer(kmlRunVR);
+        map.addLayer(clusterVR);
+        layerControl.addOverlay(clusterVR, "Postes Existentes VR");
+    });
 
-    // =======================================================
-    // --- FIN DE BLOQUE NUEVO ---
-    // =======================================================
-
-    // =======================================================
-    // --- BLOQUE 3: Postes Existentes VENTANILLA CENTRO ---
-    // =======================================================
-    
-    // 1. URL Única (Fíjate que le puse 'VC' al nombre)
-    // ASEGÚRATE DE QUE EL NOMBRE DEL ARCHIVO KML SEA CORRECTO AQUÍ:
+    // --- Bloque 3: Ventanilla Centro ---
     const urlPostesVC = "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VC_postes%20existentes.kml";
+    const clusterVC = L.markerClusterGroup(); // Cluster
 
-    // 2. Capa Única (También le puse 'VC')
     const capaPostesVC = L.geoJson(null, {
       pointToLayer: function (feature, latlng) {
-        // Reusamos el mismo icono cuadrado azul
         return L.marker(latlng, { icon: iconoPosteExistente });
       },
       onEachFeature: function (feature, layer) {
@@ -419,18 +371,15 @@
       }
     });
 
-    // 3. Cargar y añadir al filtro (Con nombre único 'kmlRunVC')
     const kmlRunVC = omnivore.kml(urlPostesVC, null, capaPostesVC);
-    kmlRunVC.addTo(map); 
-    
-    // Aquí pones el nombre que saldrá en la lista del filtro:
-    layerControl.addOverlay(kmlRunVC, "Postes Existentes VC");
+    kmlRunVC.on('ready', function() {
+        clusterVC.addLayer(kmlRunVC);
+        map.addLayer(clusterVC);
+        layerControl.addOverlay(clusterVC, "Postes Existentes VC");
+    });
 
-     // =======================================================
-    // --- FIN DE BLOQUE NUEVO ---
-    // =======================================================
-    
-    // --- CAPAS DINÁMICAS (Sin tilde) ---
+
+    // --- CAPAS DINÁMICAS (CON CLUSTERING) ---
     const capasDinamicas = [
       { nombre: "Postes Pachacutec", color: "#FFA500", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/PA_Postes_Act.kml" },
       { nombre: "Postes Villa Los Reyes", color: "#FF0000", url: "https://raw.githubusercontent.com/pandersoncc93-design/mapa-en-vivo/refs/heads/main/VR_Postes_Act.kml" },
@@ -443,7 +392,6 @@
     // --- LEYENDA (Estática) ---
     const legend = L.control({ position: 'bottomright' });
     legend.onAdd = function () {
-      // --- MODIFICADO: Añadida clase 'info-panel' ---
       const div = L.DomUtil.create('div', 'legend info-legend-box info-panel');
       div.innerHTML += '<h4>Zonas del Proyecto</h4>';
       rutas.forEach(r => {
@@ -458,7 +406,6 @@
     const dashboard = L.control({ position: 'topright' });
     dashboard.onAdd = function (map) {
       
-      // --- MODIFICADO: Añadida clase 'info-panel' ---
       this._div = L.DomUtil.create('div', 'legend dashboard-box info-panel');
       
       L.DomEvent.disableClickPropagation(this._div);
@@ -473,14 +420,12 @@
     
 
     // =======================================================
-    // --- INICIO DE BLOQUE: DASHBOARD PMIs (FIJOS) ---
+    // --- DASHBOARD PMIs (FIJOS) ---
     // =======================================================
     const pmiDashboard = L.control({ position: 'bottomleft' });
 
     pmiDashboard.onAdd = function (map) {
-      // --- MODIFICADO: Añadida clase 'info-panel' ---
       this._div = L.DomUtil.create('div', 'legend pmi-dashboard-box info-panel');
-      // Evitar que el scroll mueva el mapa
       L.DomEvent.disableScrollPropagation(this._div);
       L.DomEvent.on(this._div, 'touchstart', L.DomEvent.stopPropagation);
       L.DomEvent.on(this._div, 'touchmove', L.DomEvent.stopPropagation);
@@ -508,10 +453,6 @@
       });
       container.innerHTML = html;
     }
-    // =======================================================
-    // --- FIN DE BLOQUE ---
-    // =======================================================
-
 
     // Función para actualizar el contenido del dashboard
     function updateDashboard() {
@@ -534,7 +475,7 @@
         html += `</div>`;
         
         html += `<ul class="dashboard-id-list" id="list-${c.nombre}" style="display:none;">`;
-        html += `<li class="dashboard-id-list-header">${c.nombre}</li>`;
+        html += `<li class="dashboard-list-header">${c.nombre}</li>`;
         
         data.sort((a, b) => a.id.localeCompare(b.id)); 
         
@@ -551,7 +492,6 @@
     // Función para añadir listeners (TÁCTIL + CLICK)
     function addDashboardListeners() {
       
-      // 1. Listeners para botones de expandir/colapsar [+]
       const toggles = document.querySelectorAll('.toggle-list');
       const handleToggle = function(e) {
         e.preventDefault(); 
@@ -566,39 +506,48 @@
 
       toggles.forEach(toggle => {
         toggle.addEventListener('click', handleToggle);
-        // HEMOS QUITADO 'touchstart' DE AQUÍ
       });
 
-      // 2. Listeners para items de la lista (el ID del poste)
       const items = document.querySelectorAll('.dashboard-id-item');
       const handleItemClick = function(e) {
         e.preventDefault(); 
         const id = this.getAttribute('data-id');
         const zone = this.getAttribute('data-zone');
         
+        // --- MODIFICADO PARA CLUSTERING ---
+        // Si el usuario hace clic en la lista, hay que buscar el punto en el cluster
+        
         const posteData = dashboardData[zone].find(d => d.id === id);
         if (posteData && posteData.layer) {
           const layer = posteData.layer;
+          const clusterGroup = capasActivas[zone]; // Recuperamos el grupo
           
-          map.flyTo(layer.getLatLng(), 18);
-          layer.openPopup();
+          if (clusterGroup) {
+             // Esta función mágica del plugin hace zoom hasta encontrar el punto y lo abre
+             clusterGroup.zoomToShowLayer(layer, function () {
+                layer.openPopup();
+             });
+          }
         }
       };
 
       items.forEach(item => {
         item.addEventListener('click', handleItemClick);
-         // HEMOS QUITADO 'touchstart' DE AQUÍ
       });
     }
 
-    // --- FUNCIÓN CENTRAL DE CARGA DE CAPAS ---
+    // --- FUNCIÓN CENTRAL DE CARGA DE CAPAS (MODIFICADA PARA CLUSTER) ---
     function loadDynamicLayer(capaConfig) {
       const nombreCapa = capaConfig.nombre;
 
       if (capasActivas[nombreCapa]) {
+        // Si ya existe, la quitamos del mapa (el cluster entero)
         map.removeLayer(capasActivas[nombreCapa]);
       }
       dashboardData[nombreCapa] = [];
+
+      // Crear el Cluster Group para esta zona
+      const clusterGroup = L.markerClusterGroup();
 
       const kmlLayer = omnivore.kml(capaConfig.url + "?t=" + Date.now());
 
@@ -606,9 +555,6 @@
         this.eachLayer(function(layer) {
           const feature = layer.feature;
           const id = feature.properties.name;
-          
-          // --- ¡AQUÍ ESTÁ LA CORRECCIÓN! ---
-          // Era feature.properties.description, no feature.form
           const metadata = feature.properties.description;
 
           if (metadata) {
@@ -622,16 +568,22 @@
               className: 'poste-id-tooltip', offset: [0, -10]
             });
             
+            // Guardamos la referencia para el dashboard
             dashboardData[nombreCapa].push({ id: id, layer: layer });
           }
         });
         
-        // Esta función ahora sí se llamará
+        // Añadir los puntos al cluster
+        clusterGroup.addLayer(kmlLayer);
+        
+        // Guardar el cluster en capasActivas (para poder borrarlo luego)
+        capasActivas[nombreCapa] = clusterGroup;
+        
+        // Añadir el cluster al mapa
+        map.addLayer(clusterGroup);
+        
         updateDashboard();
       });
-
-      capasActivas[nombreCapa] = kmlLayer;
-      kmlLayer.addTo(map);
     }
 
     // --- CARGA INICIAL Y RECARGA AUTOMÁTICA ---
@@ -643,10 +595,7 @@
     }, 60000); // 1 minuto
 
     
-    // =======================================================
-    // --- INICIO BLOQUE CORREGIDO (Geolocalización) ---
-    // (Este bloque estaba roto por los comentarios HTML, ya está limpio)
-    // =======================================================
+    // --- GEOLOCALIZACIÓN ---
     const estiloUbicacion = {
       radius: 7,
       fillColor: "#1a73e8", color: "#fff",
@@ -694,14 +643,8 @@
     map.on('locationerror', function(e) {
       alert("No se pudo obtener tu ubicación. Asegúrate de dar permisos.\n\nError: " + e.message);
     });
-    // =======================================================
-    // --- FIN BLOQUE CORREGIDO ---
-    // =======================================================
 
-
-    // =======================================================
-    // --- INICIO DE BLOQUE NUEVO (Ocultar Leyendas) ---
-    // =======================================================
+    // --- OCULTAR LEYENDAS ---
     L.Control.ToggleLegends = L.Control.extend({
       onAdd: function(map) {
         const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
@@ -721,12 +664,43 @@
       }
     });
     
-    // Añade el botón (debajo del zoom y 'find me')
     new L.Control.ToggleLegends({ position: 'topleft' }).addTo(map);
     
-    // =G======================================================
-    // --- FIN DE BLOQUE NUEVO ---
-    // =======================================================
+    // --- REGLA DE MEDICIÓN ---
+    const measureControl = L.control.measure({
+      position: 'topleft',
+      primaryLengthUnit: 'meters',
+      secondaryLengthUnit: 'kilometers',
+      primaryAreaUnit: 'sqmeters',
+      secondaryAreaUnit: undefined,
+      activeColor: '#d80a0a',   // Color de la línea al medir
+      completedColor: '#d80a0a' // Color de la línea terminada
+    });
+    measureControl.addTo(map);
+    
+    L.Measure.setLocale('es', {
+      strings: {
+        "measure": "Medir",
+        "measureDistancesAndAreas": "Medir distancias y áreas",
+        "createNewMeasurement": "Crear una nueva medición",
+        "startCreating": "Comienza a medir haciendo clic en el mapa",
+        "finishMeasurement": "Terminar medición",
+        "lastPoint": "Último punto",
+        "area": "Área",
+        "totalLength": "Longitud Total",
+        "meters": "Metros",
+        "miles": "Millas",
+        "sqmeters": "Metros cuadrados",
+        "sqmiles": "Millas cuadradas",
+        "acres": "Acres",
+        "hectares": "Hectáreas",
+        "Cancel": "Cancelar",
+        "cancel": "cancelar",
+        "deleteLastPoint": "Eliminar último punto",
+        "example": "Ejemplo"
+      }
+    });
+    measureControl.setLocale('es');
 
   </script>
 </body>
