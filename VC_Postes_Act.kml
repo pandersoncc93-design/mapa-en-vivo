@@ -450,5 +450,12 @@
                 <coordinates>-77.123603,-11.885953,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="131">
+            <name>P11M-VC-065</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P11M-VC-065&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 11 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-24</description>
+            <Point id="130">
+                <coordinates>-77.124133,-11.886122,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
