@@ -303,5 +303,12 @@
                 <coordinates>-77.112993,-11.943764,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="89">
+            <name>P9M-VC-044</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-044&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-24</description>
+            <Point id="88">
+                <coordinates>-77.112535,-11.943949,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
