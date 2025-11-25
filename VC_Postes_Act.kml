@@ -807,5 +807,12 @@
                 <coordinates>-77.129206,-11.89738,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="233">
+            <name>P9M-VC-116</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-116&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; TIERRA&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Poste de fibra&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-25</description>
+            <Point id="232">
+                <coordinates>-77.1296,-11.897248,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
