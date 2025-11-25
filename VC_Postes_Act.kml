@@ -870,5 +870,12 @@
                 <coordinates>-77.124807,-11.891072,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="251">
+            <name>P9M-VC-125</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-125&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; CONCRETO&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; Poste de fibra , zona rocosa&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-25</description>
+            <Point id="250">
+                <coordinates>-77.124449,-11.891127,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
