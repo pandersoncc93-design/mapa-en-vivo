@@ -1213,5 +1213,12 @@
                 <coordinates>-77.109238,-11.876485,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="349">
+            <name>P9M-VC-174</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-174&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; CONCRETO&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-26</description>
+            <Point id="348">
+                <coordinates>-77.109364,-11.876834,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
