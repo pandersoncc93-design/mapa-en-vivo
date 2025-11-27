@@ -1381,5 +1381,12 @@
                 <coordinates>-77.113005,-11.872631,0.0</coordinates>
             </Point>
         </Placemark>
+        <Placemark id="397">
+            <name>P9M-VC-198</name>
+            <description>&lt;b&gt;ID:&lt;/b&gt; P9M-VC-198&lt;br/&gt;&lt;b&gt;Zona:&lt;/b&gt; VENTANILLA CENTRO&lt;br/&gt;&lt;b&gt;Altura:&lt;/b&gt; 9 metros&lt;br/&gt;&lt;b&gt;Suelo:&lt;/b&gt; CONCRETO&lt;br/&gt;&lt;b&gt;Obs:&lt;/b&gt; None&lt;br/&gt;&lt;b&gt;Fecha:&lt;/b&gt; 2025-11-27</description>
+            <Point id="396">
+                <coordinates>-77.104429,-11.877554,0.0</coordinates>
+            </Point>
+        </Placemark>
     </Document>
 </kml>
